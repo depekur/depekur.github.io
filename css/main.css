@@ -1,0 +1,73 @@
+@import url('reset.css');
+@import url(http://fonts.googleapis.com/css?family=Finger+Paint);
+@import url(http://fonts.googleapis.com/css?family=Alice);
+
+.wrap{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/***********************HEADER************************/
+
+.header-fix{
+	min-height: 42px;
+}
+header{
+	background: url(../img/px_by_Gre3g.png);
+	min-height: 30px;
+	position: fixed;
+	width: 100%;
+}
+header nav a{
+	text-decoration: none;
+}
+header nav a h1{
+	font-family: 'Finger Paint', cursive;
+	color: #fff;
+	font-size: 25px;
+
+	display: inline-block;
+	
+
+	margin: 7px 0;
+}
+header nav ul {
+	display: inline-block;
+	margin: 0 0 0 7%;
+}
+header nav ul li{
+	display: inherit;
+	padding: 0 20px 0;
+	margin: 10px 0;
+}
+header nav ul li:first-child{
+	padding-left: 0;
+}
+header nav ul li:last-child{
+	padding-right: 0;
+}
+header nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Alice', serif;
+	font-size: 22px;
+}
+
+header nav ul li a:active,
+header nav ul li a:focus{
+	color: #049cdb;
+}
+
+
+/***********************INFO-BLOCK************************/
+
+article.main-info{
+	margin: 110px 0 0 120px;
+	max-width: 540px;
+
+}
+article.main-info p{
+	font-family: font-family: 'Alice', serif;
+	font-size: 20px;
+	line-height:1.4;
+}
