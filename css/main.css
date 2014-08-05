@@ -117,7 +117,7 @@ only screen and (max-device-width : 420px){
 
 .screenshot{
 	float: left;
-	max-width: 65%;
+	max-width: 60%;
 	margin: 4% 1% 4% 1%;
 }
 .screenshot img{
@@ -132,15 +132,21 @@ only screen and (max-device-width : 420px){
 }
 .project-info p{
 	max-width: 220px;
+	margin: 10px 0;
+	
 }
 .project-info h2{
-	font-family: font-family: 'Alice', serif;
-	font-size: 20px;
+	font-family: 'Alice', serif;
+	font-size: 25px;
 	line-height:1.4;
+	margin: 0 0 3% 0;
 }
 .project-info .tehnology{
-	width: 31.3333%;
+	width: 23%;
 	float: left;
-	background: #324341;
-	margin: 1%;
+
+	margin: 4% 1%;
+}
+.project-info .tehnology img{
+	max-width: 100%;
 }
