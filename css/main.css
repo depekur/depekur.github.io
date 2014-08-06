@@ -3,10 +3,18 @@
 @import url(http://fonts.googleapis.com/css?family=Alice);
 
 .wrap{
-	max-width: 960px;
+	max-width: 1170px;
+	min-width: 900px;
 	margin: 0 auto;
 }
-
+.clearfix:after{
+	clear: both;
+	content: '';
+	display: block;
+	visibility: hidden;
+	height: 0;
+	width: 100%;
+}
 /**************************HEADER***************************/
 
 .header-fix{
@@ -26,16 +34,18 @@ header nav a h1{
 	color: #fff;
 	font-size: 25px;
 	display: inline-block;
-	margin: 7px 0 7px 1%;
+	margin: 7px 0 7px 3%;
 }
 header nav ul {
 	display: inline-block;
-	margin: 0 0 0 13%;
+	margin: 0 0 0 10%;
+	float: right;
 }
 header nav ul li{
 	display: inherit;
 	padding: 0 20px 0;
 	margin: 10px 0;
+	float: right;
 }
 header nav ul li:first-child{
 	padding-left: 0;
@@ -73,15 +83,15 @@ article.main-info p{
 /**************************PROJECTS***************************/
 
 .container {
-    width: 80%;
+    width: 85%;
     margin: 30px auto;
     overflow: hidden;
 }
 .galleryItem {
     color: #797478;
-    float: left;
-    width: 29.33333%;
-    margin:  2%; 
+    display: inline-block;
+    width: 30.33333%;
+    margin:  1%; 
 }
  
 .galleryItem img {
@@ -90,17 +100,10 @@ article.main-info p{
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
+.portfolio-fix{
+	margin-top: 3%;
+}
 /*
-@media only screen and (max-width : 940px),
-only screen and (max-device-width : 940px){
-    .galleryItem {width: 21%;}
-}
- 
-@media only screen and (max-width : 720px),
-only screen and (max-device-width : 720px){
-    .galleryItem {width: 29.33333%;}
-}
- */
 @media only screen and (max-width : 720px),
 only screen and (max-device-width : 720px){
     .galleryItem {width: 46%;}
@@ -112,28 +115,28 @@ only screen and (max-device-width : 420px){
     .galleryItem img {width: 96%;}
 }
 
-
+*/
 /**************************PROJECT PAGE***************************/
 
 .screenshot{
 	float: left;
-	max-width: 60%;
-	margin: 4% 1% 4% 1%;
+	max-width: 66%;
+	margin: 2.8% 0 4% 1%;
 }
 .screenshot img{
 	max-width: 100%;
 }
 .project-info{
-	min-width: 25%;
-	margin: 4% 1% 3% 1%;
+	max-width: 27%;
+	min-width: 250px;
+	margin: 4% 1% 1% 0;
 	padding: 2%;
-	float: left;
+	float: right;
 	background: #F2F2F2;
 }
+
 .project-info p{
-	max-width: 220px;
-	margin: 10px 0;
-	
+	margin: 15px 0;	
 }
 .project-info h2{
 	font-family: 'Alice', serif;
@@ -141,12 +144,44 @@ only screen and (max-device-width : 420px){
 	line-height:1.4;
 	margin: 0 0 3% 0;
 }
-.project-info .tehnology{
-	width: 23%;
-	float: left;
 
-	margin: 4% 1%;
+.project-info .tehnology-pic,
+.project-info .browsers-pic{
+	width: 18%;
+	float: left;
+	margin: 3% 1%;
 }
-.project-info .tehnology img{
+.project-info .tehnology-pic{
+
+}
+
+.project-info .tehnology-pic img{
 	max-width: 100%;
 }
+
+.firefox{
+	background: url('../img/main-desktop.png') no-repeat -64px -2px;
+	width: 55px;
+	height: 55px;
+}
+.opera{
+	background: url('../img/main-desktop.png') no-repeat -186px -2px;
+	width: 55px;
+	height: 55px;
+}
+.safari{
+	background: url('../img/main-desktop.png') no-repeat -245px -2px;
+	width: 55px;
+	height: 55px;
+}
+.chrome{
+	background: url('../img/main-desktop.png') no-repeat -4px -2px;
+	width: 55px;
+	height: 55px;
+}
+.ie{
+	background: url('../img/main-desktop.png') no-repeat -122px -2px;
+	width: 55px;
+	height: 55px;
+}
+
