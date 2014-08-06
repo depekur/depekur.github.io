@@ -22,7 +22,6 @@
 }
 header{
 	background: url(../img/px_by_Gre3g.png);
-	min-height: 30px;
 	position: fixed;
 	width: 100%;
 }
@@ -38,14 +37,15 @@ header nav a h1{
 }
 header nav ul {
 	display: inline-block;
-	margin: 0 0 0 10%;
-	float: right;
+	margin: 0 0 0 5%;
+	vertical-align: middle;
+
 }
 header nav ul li{
 	display: inherit;
 	padding: 0 20px 0;
-	margin: 10px 0;
-	float: right;
+	margin-bottom: 10px;
+
 }
 header nav ul li:first-child{
 	padding-left: 0;
