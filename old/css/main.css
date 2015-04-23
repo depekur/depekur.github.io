@@ -1,0 +1,187 @@
+@import url('reset.css');
+@import url(http://fonts.googleapis.com/css?family=Finger+Paint);
+@import url(http://fonts.googleapis.com/css?family=Alice);
+
+.wrap{
+	max-width: 1170px;
+	min-width: 900px;
+	margin: 0 auto;
+}
+.clearfix:after{
+	clear: both;
+	content: '';
+	display: block;
+	visibility: hidden;
+	height: 0;
+	width: 100%;
+}
+/**************************HEADER***************************/
+
+.header-fix{
+	min-height: 42px;
+}
+header{
+	background: url(../img/px_by_Gre3g.png);
+	position: fixed;
+	width: 100%;
+}
+header nav a{
+	text-decoration: none;
+}
+header nav a h1{
+	font-family: 'Finger Paint', cursive;
+	color: #fff;
+	font-size: 25px;
+	display: inline-block;
+	margin: 7px 0 7px 3%;
+}
+header nav ul {
+	display: inline-block;
+	margin: 0 0 0 5%;
+	vertical-align: middle;
+
+}
+header nav ul li{
+	display: inherit;
+	padding: 0 20px 0;
+	margin-bottom: 10px;
+
+}
+header nav ul li:first-child{
+	padding-left: 0;
+}
+header nav ul li:last-child{
+	padding-right: 0;
+}
+header nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Alice', serif;
+	font-size: 22px;
+}
+
+header nav ul li a:active,
+header nav ul li a:focus{
+	color: #049cdb;
+}
+
+
+/**************************INFO-BLOCK***************************/
+
+article.main-info{
+	margin: 110px 0 0 120px;
+	max-width: 540px;
+
+}
+article.main-info p{
+	font-family: font-family: 'Alice', serif;
+	font-size: 20px;
+	line-height:1.4;
+}
+
+
+/**************************PROJECTS***************************/
+
+.container {
+    width: 85%;
+    margin: 30px auto;
+    overflow: hidden;
+}
+.galleryItem {
+    color: #797478;
+    display: inline-block;
+    width: 30.33333%;
+    margin:  1%; 
+}
+ 
+.galleryItem img {
+    max-width: 100%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.portfolio-fix{
+	margin-top: 3%;
+}
+/*
+@media only screen and (max-width : 720px),
+only screen and (max-device-width : 720px){
+    .galleryItem {width: 46%;}
+}
+ 
+@media only screen and (max-width : 420px),
+only screen and (max-device-width : 420px){
+    .galleryItem {width: 96%;}
+    .galleryItem img {width: 96%;}
+}
+
+*/
+/**************************PROJECT PAGE***************************/
+
+.screenshot{
+	float: left;
+	max-width: 66%;
+	margin: 2.8% 0 4% 1%;
+}
+.screenshot img{
+	max-width: 100%;
+}
+.project-info{
+	max-width: 27%;
+	min-width: 250px;
+	margin: 4% 1% 1% 0;
+	padding: 2%;
+	float: right;
+	background: #F2F2F2;
+}
+
+.project-info p{
+	margin: 15px 0;	
+}
+.project-info h2{
+	font-family: 'Alice', serif;
+	font-size: 25px;
+	line-height:1.4;
+	margin: 0 0 3% 0;
+}
+
+.project-info .tehnology-pic,
+.project-info .browsers-pic{
+	width: 18%;
+	float: left;
+	margin: 3% 1%;
+}
+.project-info .tehnology-pic{
+
+}
+
+.project-info .tehnology-pic img{
+	max-width: 100%;
+}
+
+.firefox{
+	background: url('../img/main-desktop.png') no-repeat -64px -2px;
+	width: 55px;
+	height: 55px;
+}
+.opera{
+	background: url('../img/main-desktop.png') no-repeat -186px -2px;
+	width: 55px;
+	height: 55px;
+}
+.safari{
+	background: url('../img/main-desktop.png') no-repeat -245px -2px;
+	width: 55px;
+	height: 55px;
+}
+.chrome{
+	background: url('../img/main-desktop.png') no-repeat -4px -2px;
+	width: 55px;
+	height: 55px;
+}
+.ie{
+	background: url('../img/main-desktop.png') no-repeat -122px -2px;
+	width: 55px;
+	height: 55px;
+}
+
