@@ -3,9 +3,12 @@
 ---
 @charset "utf-8";
 
+$banana-color:       #EEC20F;
+$banana-color-light: lighten($banana-color, 40%);
+$banana-color-dark:  darken($banana-color, 25%);
 
 $base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   18px;
+$base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 

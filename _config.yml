@@ -6,13 +6,15 @@ baseurl: "" # /blog/
 url: "http://bananagarden.net" # the base hostname & protocol for your site
 
 
-# Build settings
-markdown: kramdown
-
 # meta
 copyright: 
 author: 
 keywords: 
 description: Разработка сайтов под ваш бизнес. Сайты которые решают реальные задачи.
+
 twitter_username: depekur
 github_username:  depekur
+
+
+# Build settings
+markdown: kramdown
