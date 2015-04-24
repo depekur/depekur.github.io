@@ -1,13 +1,7 @@
 ---
 layout: post
-title:  "Hello World"
+title:  "Why GitHub is the best place to build your personal site"
 date:   2015-04-24 
-permalink: /hello/
+categories: web
+permalink: /Why-GitHub-is-the-best-place-to-build-your-personal-website/
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sequi voluptatem vero laborum praesentium odio debitis, accusantium iusto vitae enim atque. Distinctio iure atque fuga sequi, at ducimus saepe minus.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sequi voluptatem vero laborum praesentium odio debitis, accusantium iusto vitae enim atque. Distinctio iure atque fuga sequi, at ducimus saepe minus.
-
-*header*
-
-'some stuff'
