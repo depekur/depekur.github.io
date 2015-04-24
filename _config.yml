@@ -2,7 +2,7 @@
 title: bananagarden.net
 email: depekur@gmail.com
 
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "" # /blog/
 url: "http://bananagarden.net" # the base hostname & protocol for your site
 
 
