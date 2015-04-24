@@ -6,10 +6,12 @@ nav.sidebar{
     position:   fixed;
     left:       0;
     top:        0;
+    
     padding:    $woid/2;
 
     h2 {
         margin:$woid/2;
+
 
         a {
             color: $brand-color;
