@@ -4,8 +4,8 @@
 @charset "utf-8";
 
 $banana-color:       #EEC20F;
-$banana-color-light: lighten($banana-color, 40%);
-$banana-color-dark:  darken($banana-color, 25%);
+$banana-color-light: lighten($banana-color, 20%);
+$banana-color-dark:  darken($banana-color, 19%);
 
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;

@@ -1,21 +1,31 @@
-nav.sidebar{
+aside.sidebar {
     height:     100%;
-    width:      20%;
+    width:      260px;
     background: $banana-color;
 
     position:   fixed;
     left:       0;
     top:        0;
-    
-    padding:    $woid/2;
+
+    border-left:3px solid $banana-color-dark;
+
+    section {
+        padding:$woid*2 $woid;
+    }
 
     h2 {
-        margin:$woid/2;
-
-
-        a {
-            color: $brand-color;
-        }
+        width:  100%;
+        height: 100%;
+        margin: $woid;       
     }
+
+    a {
+        color:  $brand-color;
+    }
+}
+
+aside.content {
+    width:      720px;
+    margin:     $woid $woid $woid 280px+$woid;
 
 }

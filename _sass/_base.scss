@@ -21,9 +21,16 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    width: 100%;
+    height: 100%;
 }
 
-
+body::before{
+    content:'';
+    height: 5px;
+    width:100%;
+    background: $banana-color;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -32,7 +39,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $woid;
 }
 
 
@@ -46,7 +53,9 @@ img {
 }
 
 
-
+ul {
+    list-style-type: none;    
+}
 
 
 /**
@@ -122,26 +131,6 @@ pre {
 }
 
 
-
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
-    max-width:         calc(800px - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(800px - (#{$spacing-unit}));
-        max-width:         calc(800px - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
 
 
 

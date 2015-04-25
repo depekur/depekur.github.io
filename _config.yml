@@ -1,7 +1,5 @@
 # Site settings
 title: bananagarden.net
-email: depekur@gmail.com
-
 baseurl: "" # /blog/
 url: "http://bananagarden.net" # the base hostname & protocol for your site
 
@@ -12,8 +10,10 @@ author: bananagarden.net
 keywords: 
 description: 
 
-twitter_username: depekur
-github_username:  depekur
+# contacts
+mail: depekur@gmail.com
+twitter: https://twitter.com/depekur
+github:  https://github.com/depekur
 
 
 # Build settings
