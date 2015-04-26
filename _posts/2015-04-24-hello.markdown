@@ -5,6 +5,13 @@ date:   2015-04-24
 categories: web
 permalink: /blog/Why-GitHub-is-the-best-place-to-build-your-personal-website/
 ---
+1. Для начала
+2. Чуть позже
+3. Окончание
+
+- first
+- second
+- third 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
 
