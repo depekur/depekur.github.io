@@ -21,7 +21,9 @@ $font-banana:        "pfr-reg";
 $font-banana-italic: "pfr-reg-italic";
 $font-banana-medium: "pfr-reg-medium";
 $font-banana-bold:   "pfr-reg-bold";
+
 $font-banana-logo:   "junction";
+$font-banana-junc:  "junction-light";
 
 
 $base-font-size:     17px;
@@ -79,6 +81,11 @@ $on-laptop:          800px;
 }
 
 @font-face {
-    font-family: $font-banana-logo;
+    font-family: $font-banana-junc;
     src: url({{ site.url }}/fonts/junction/Junction-light.otf);
+}
+
+@font-face {
+    font-family: $font-banana-logo;
+    src: url({{ site.url }}/fonts/junction/Junction-regular.otf);
 }

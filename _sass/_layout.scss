@@ -8,10 +8,10 @@ aside.sidebar {
     top:        0;
 
     border-left:3px solid $banana-color-dark;
-    border-right:1px dotted $banana-color-old;
+    border-right:1px dotted $banana-color-red;
 
     section {
-        padding:$woid*2 $woid;
+        padding:$woid;
     }
 
     section.contact {
@@ -32,17 +32,18 @@ aside.sidebar {
                     display:block;
                     height: 100%;
                     color:#fff;
-                    font-size: 1.9em;
+
+                    font-family: $font-banana-junc;
+                    font-size: 1.8em;
                     padding-left:$woid;
                 }
         }
     }
 
     h2.logo {
-        -margin: $woid;   
+
         color:  $brand-color; 
         font-family: $font-banana-logo;   
-        font-size: 2em;
 
             a {
                 &:hover {        
