@@ -8,7 +8,9 @@ dl, dd, ol, ul, figure, div {
     padding: 0;
 }
 
-
+::selection {
+    background: #EFC232; 
+}
 
 /**
  * Basic styling
@@ -21,8 +23,9 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
-    width: 100%;
-    height: 100%;
+    
+    border-top:5px double #99CC99;
+
 }
 
 
@@ -57,7 +60,13 @@ ul {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-family: $font-banana-medium;
+    font-weight: 400;
+
+}
+
+h1 {
+    font-size: 2.9em;
 }
 
 
@@ -88,7 +97,7 @@ blockquote {
     color: $banana-color;
     border-left: 4px solid $banana-color-light;
     padding-left: $woid;
-    font-size: 18px;
+    font-size: 19px;
     letter-spacing: -1px;
     font-style: italic;
 

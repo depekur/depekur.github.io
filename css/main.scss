@@ -8,20 +8,30 @@ $banana-color-light: lighten($banana-color, 20%);
 $banana-color-dark:  darken($banana-color, 20%);
 $banana-color-old:   darken($banana-color, 60%);
 
-$font-banana: pfr-reg;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$banana-color-red:   #CC3333;
+$banana-color-orange:#FF9900;
+$banana-color-blue:  #003366;
+$banana-color-grey:  #CCCCCC;
 
-$woid:			   15px;
+$text-color:         #121;
+$background-color:   #fff;
+$brand-color:        $banana-color-red;
 
-$text-color:       #121;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$font-banana:        "pfr-reg";
+$font-banana-italic: "pfr-reg-italic";
+$font-banana-medium: "pfr-reg-medium";
+$font-banana-bold:   "pfr-reg-bold";
+$font-banana-logo:   "junction";
 
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$base-font-size:     17px;
+$small-font-size:    $base-font-size * 0.875;
+$base-line-height:   1.5;
+
+$woid:			     15px;
+
+$on-palm:            600px;
+$on-laptop:          800px;
 
 
 
@@ -51,4 +61,24 @@ $on-laptop:        800px;
 @font-face {
     font-family: $font-banana;
     src: url({{ site.url }}/fonts/PFRegal/PFRegalTextPro-RegB.otf);
+}
+
+@font-face {
+    font-family: $font-banana-italic;
+    src: url({{ site.url }}/fonts/PFRegal/PFRegalTextPro-RegBItalic.otf);
+}
+
+@font-face {
+    font-family: $font-banana-medium;
+    src: url({{ site.url }}/fonts/PFRegal/PFRegalTextPro-Medium.otf);
+}
+
+@font-face {
+    font-family: $font-banana-bold;
+    src: url({{ site.url }}/fonts/PFRegal/PFRegalTextPro-Bold.otf);
+}
+
+@font-face {
+    font-family: $font-banana-logo;
+    src: url({{ site.url }}/fonts/junction/Junction-light.otf);
 }
