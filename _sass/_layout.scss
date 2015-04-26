@@ -39,10 +39,11 @@ aside.sidebar {
     h2.logo {
 
         color:  $brand-color; 
-        font-family: $font-banana-logo;   
-        font-size: 31px;
+        font-family: $font-banana-italic;   
+        font-size: 36px;
         background: $banana-color;
-        width:280px;
+        width:275px;
+        border-right:1px dotted $banana-color-red;
 
             a {
                 &:hover {        
