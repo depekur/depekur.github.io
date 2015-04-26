@@ -5,24 +5,20 @@
 
 $banana-color:       #EEC20F;
 $banana-color-light: lighten($banana-color, 20%);
-$banana-color-dark:  darken($banana-color, 19%);
+$banana-color-dark:  darken($banana-color, 20%);
+$banana-color-old:   darken($banana-color, 60%);
 
-$base-font-family: Helvetica, Arial, sans-serif;
+$font-banana: pfr-reg;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $woid:			   15px;
 
-$spacing-unit:     30px;
-
 $text-color:       #121;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -48,5 +44,11 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
+        "yoba",
         "syntax-highlighting"
 ;
+
+@font-face {
+    font-family: $font-banana;
+    src: url({{ site.url }}/fonts/PFRegal/PFRegalTextPro-RegB.otf);
+}

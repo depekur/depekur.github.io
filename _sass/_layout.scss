@@ -1,6 +1,6 @@
 aside.sidebar {
     height:     100%;
-    width:      260px;
+    width:      250px;
     background: $banana-color;
 
     position:   fixed;
@@ -8,14 +8,34 @@ aside.sidebar {
     top:        0;
 
     border-left:3px solid $banana-color-dark;
+    border-right:1px dotted $banana-color-old;
 
     section {
         padding:$woid*2 $woid;
     }
 
     section.contact {
-        position: absolute;
-        bottom:0;
+        position:absolute;
+        bottom:  0;
+    }
+
+    nav {
+        ul li {
+            margin:     $woid 0;
+            height:     45px;
+            width:      256px;
+            background: $banana-color;
+            border:     2px inset $banana-color-dark;
+
+
+                a {
+                    display:block;
+                    height: 100%;
+                    color:#fff;
+                    font-size: 2em;
+                    padding-left:$woid;
+                }
+        }
     }
 
     h2 {
@@ -31,6 +51,6 @@ aside.sidebar {
 
 aside.content {
     width:      720px;
-    margin:     $woid $woid $woid 280px+$woid;
+    margin:     $woid $woid $woid 320px+$woid;
 
 }
