@@ -14,11 +14,7 @@ aside.sidebar {
         padding:$woid;
     }
 
-    section.contact {
-        position:absolute;
-        bottom:  0;
-    }
-
+   
     nav {
         ul li {
             margin:     $woid 0;
@@ -44,6 +40,7 @@ aside.sidebar {
 
         color:  $brand-color; 
         font-family: $font-banana-logo;   
+        font-size: 26px;
 
             a {
                 &:hover {        
@@ -52,6 +49,15 @@ aside.sidebar {
             }
     }
 
+    section.contact {
+        position:absolute;
+        bottom:  0;
+
+            ul li {
+                display:inline-block;
+                margin:0 $woid/2;
+            }
+    }
     
 }
 
