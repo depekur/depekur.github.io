@@ -19,6 +19,10 @@ permalink: /blog/banana-theme/
 
 ## h2 header
 
+## {{ page.permalink }}
+
+## {{ page.content | number_of_words }}
+
 1. *italic*
 2. strstr**ong**
 3. _italic_
@@ -27,6 +31,8 @@ permalink: /blog/banana-theme/
 ### h3 header
 
 [banana](http://bananagarden.net/)
+
+
 
 ## [BIG BANANA](http://bananagarden.net/)
 

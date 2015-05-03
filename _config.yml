@@ -18,3 +18,4 @@ github:  https://github.com/depekur
 
 # Build settings
 markdown: kramdown
+paginate: 5
