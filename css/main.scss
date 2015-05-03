@@ -53,13 +53,6 @@ $on-laptop:          800px;
 
 
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "yoba",
-        "syntax-highlighting"
-;
 
 @font-face {
     font-family: $font-banana;
@@ -90,3 +83,14 @@ $on-laptop:          800px;
     font-family: $font-banana-logo;
     src: url({{ site.url }}/fonts/junction/Junction-regular.otf);
 }
+
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "yoba",
+        "syntax-highlighting"
+;
