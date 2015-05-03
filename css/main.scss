@@ -4,8 +4,8 @@
 @charset "utf-8";
 
 $banana-color:       #EFC232;
-$banana-color-light: lighten($banana-color, 20%);
-$banana-color-dark:  darken($banana-color, 20%);
+$banana-color-light: lighten($banana-color, 25%);
+$banana-color-dark:  darken($banana-color, 15%);
 $banana-color-old:   darken($banana-color, 60%);
 
 $banana-color-red:   #CC3333;
@@ -53,13 +53,6 @@ $on-laptop:          800px;
 
 
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "yoba",
-        "syntax-highlighting"
-;
 
 @font-face {
     font-family: $font-banana;
@@ -90,3 +83,14 @@ $on-laptop:          800px;
     font-family: $font-banana-logo;
     src: url({{ site.url }}/fonts/junction/Junction-regular.otf);
 }
+
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "yoba",
+        "syntax-highlighting"
+;

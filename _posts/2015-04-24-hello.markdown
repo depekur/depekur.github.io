@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Why GitHub is the best place to build your personal website"
+title:  "Banana theme & settings"
 date:   2015-04-24 
 categories: web
-permalink: /blog/Why-GitHub-is-the-best-place-to-build-your-personal-website/
+permalink: /blog/banana-theme/
 ---
 1. Для начала
 2. Чуть позже
@@ -19,6 +19,10 @@ permalink: /blog/Why-GitHub-is-the-best-place-to-build-your-personal-website/
 
 ## h2 header
 
+## {{ page.permalink }}
+
+## {{ page.content | number_of_words }}
+
 1. *italic*
 2. strstr**ong**
 3. _italic_
@@ -26,9 +30,15 @@ permalink: /blog/Why-GitHub-is-the-best-place-to-build-your-personal-website/
 
 ### h3 header
 
-[banana]http://bananagarden.net/
+[banana](http://bananagarden.net/)
 
-#### h4 header
+
+
+## [BIG BANANA](http://bananagarden.net/)
+
+## [virgin BANANA](http://banana.net/)
+
+####h4 header
 
 ![picture!]({{ site.url }}/media/5Bisss002.jpg)
 
@@ -56,4 +66,18 @@ permalink: /blog/Why-GitHub-is-the-best-place-to-build-your-personal-website/
 > Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
 {: title="Blockquote title"}
 
+~~~css
+a {
+    display:block;
+    height: 100%;
+    color:#fff;
+}    
+~~~
  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
+
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
+
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
+
