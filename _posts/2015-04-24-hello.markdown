@@ -15,7 +15,7 @@ permalink: /blog/banana-theme/
 - second
 - third 
 
-
+![picture!]({{ site.url }}/media/5Bisss002.jpg)
 
 ## h2 header
 
