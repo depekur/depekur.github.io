@@ -2,9 +2,8 @@
 layout: post
 title:  "Banana theme & settings"
 date:   2015-04-24 
-categories: web
 permalink: /blog/banana-theme/
-
+categories: web
 ---
 
 1. Для начала
@@ -57,16 +56,10 @@ permalink: /blog/banana-theme/
 
 >Lorem ipsum dolor sit amet, 
 
-~~~html
-<html>
-	<head></head>
-	<body></body>
-</html>
-~~~
+
 <h2>consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? </h2>
 
-> Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
-{: title="Blockquote title"}
+
 
 ~~~css
 a {
