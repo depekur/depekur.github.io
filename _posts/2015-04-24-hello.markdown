@@ -15,8 +15,6 @@ permalink: /blog/banana-theme/
 - second
 - third 
 
-![picture!]({{ site.url }}/media/5Bisss002.jpg)
-
 ## h2 header
 
 ## {{ page.permalink }}
@@ -61,10 +59,7 @@ permalink: /blog/banana-theme/
 	<body></body>
 </html>
 ~~~
-<h2>consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? </h2>
 
-> Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
-{: title="Blockquote title"}
 
 ~~~css
 a {
