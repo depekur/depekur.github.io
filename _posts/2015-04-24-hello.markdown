@@ -8,8 +8,9 @@ permalink: /blog/banana-theme/
 
 ## {{ page.permalink }}
 
+## {{ site.post_url }}
 
-## {{ page.content | number_of_words }}
+##{{page.content|number_of_words}}
 
 ## h2 header
 
