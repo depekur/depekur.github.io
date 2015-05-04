@@ -6,16 +6,20 @@ categories: web
 permalink: /blog/banana-theme/
 ---
 
+## {{ page.permalink }}
 
 ## h2 header
 
+### h3 header
+
+####h4 header
 
 1. *italic*
 2. strstr**ong**
 3. _italic_
 4. __strstrstr__ong
 
-### h3 header
+
 
 [banana](http://bananagarden.net/)
 
@@ -24,7 +28,7 @@ permalink: /blog/banana-theme/
 
 ## [virgin BANANA](http://banana.net/)
 
-####h4 header
+
 
 ![picture!]({{ site.url }}/media/5Bisss002.jpg)
 
