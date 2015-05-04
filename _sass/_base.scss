@@ -23,9 +23,8 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
-    
-    border-top: 25px solid $banana-color;
 
+    border-top: 0;
 
     height: 100%;
 }
@@ -94,22 +93,6 @@ a {
 }
 
 
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $banana-color;
-    border-left: 4px solid $banana-color-light;
-    padding-left: $woid;
-    font-size: 19px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
 
 
 

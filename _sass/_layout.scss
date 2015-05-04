@@ -36,14 +36,15 @@ aside.sidebar {
         }
     }
 
-    h2.logo {
+    .logo {
 
         color:  $brand-color; 
         font-family: $font-banana-bold;   
         font-size: 31px;
         background: $banana-color;
-        width:275px;
-        border-right:1px dotted $banana-color-red;
+
+        border-left:1px dotted $banana-color-red;
+        padding-left:2px;
 
             a {
                 &:hover {        
@@ -78,7 +79,5 @@ aside.sidebar {
 aside.content {
     width:      680px;
     margin:     $woid $woid $woid 350px+$woid;
-    padding-right: 80px;
-
-    
+    padding-right: 80px;    
 }

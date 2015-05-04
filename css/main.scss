@@ -14,7 +14,7 @@ $banana-color-blue:  #003366;
 $banana-color-grey:  #CCCCCC;
 $color-green-nice:   #99CC99;
 
-$text-color:         #121;
+$text-color:         lighten(#000, 33%);
 $background-color:   #fff;
 $brand-color:        $banana-color-red;
 
@@ -29,7 +29,7 @@ $font-banana-junc:  "junction-light";
 
 $base-font-size:     18px;
 $small-font-size:    $base-font-size * 0.875;
-$base-line-height:   1.5;
+$base-line-height:   1.4;
 
 $woid:			     15px;
 
@@ -91,5 +91,6 @@ $on-laptop:          800px;
 @import
         "base",
         "layout",
+        "theme",
         "syntax-highlighting"
 ;

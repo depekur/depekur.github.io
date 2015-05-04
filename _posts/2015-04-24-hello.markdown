@@ -5,21 +5,15 @@ date:   2015-04-24
 categories: web
 permalink: /blog/banana-theme/
 ---
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? <mark>Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </mark>Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
 
-{% highlight ruby linenos %}
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
-{% endhighlight %}
 <!--more-->
 
-## {{ page.permalink }}
 
-# h1 header
+
+now: {{ site.time | date_to_long_string }}
+
+## {{ page.permalink }}
 
 ## h2 header
 
@@ -30,10 +24,10 @@ end
 #####h5 header
 
 1. *italic*
-2. strstr**ong**
+2. **strstrong**
 3. _italic_
-4. __strstrstr__ong
-
+4. __ong
+5. five
 
 
 
@@ -49,18 +43,35 @@ end
 
 ![picture!]({{ site.url }}/media/5Bisss002.jpg)
 
-***Lorem ipsum dolor*** sit amet, 
+
+**Lorem ipsum dolor sit amet,**
 
 >consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem 
 >culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, 
->debitis, mollitia eos vel. Lorem ipsum dolor sit amet, consectetur 
+>debitis, mollitia eos vel. Lorem [virgin BANANA](http://banana.net/) ipsum dolor sit amet, consectetur 
 >adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
+
+
+1. Lorem ipsum [BIG BANANA](http://bananagarden.net/) dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
+2. **strstrong**
+3. _italic_
+4. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo [fock](http://bananagarden.net/) facere nam, et voluptatibus, debitis, mollitia eos vel.
+5. five
+
+
+
+Lorem ipsum [BIG BANANA](http://bananagarden.net/) dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
 
 * and the first word will be god 
 * after god take a bong
 * and do his work
 
+Lorem ipsum dolor sit amet, consectetur  [virgin](http://banana.net/) adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
+
 >Lorem ipsum dolor sit amet, 
 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, [BANANA](http://banana.net/) mollitia eos vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
 
-{{ site.time | date_to_long_string }}
+![picture!]({{ site.url }}/media/13112014938.jpg)
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo [fock](http://bananagarden.net/) facere nam, et voluptatibus, debitis, mollitia eos vel.
