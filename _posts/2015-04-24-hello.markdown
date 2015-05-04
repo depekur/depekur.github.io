@@ -4,13 +4,19 @@ title:  "Banana theme & settings"
 date:   2015-04-24 
 categories: web
 permalink: /blog/banana-theme/
+excerpt_separator: <!--more-->
 ---
 
 ## {{ page.permalink }}
 
 ## {{ site.post_url }}
 
-##{{page.content|number_of_words}}
+## {{ site.posts }}
+
+## {{ site.pages }}
+
+## {{ site.categories.web }}
+
 
 ## h2 header
 
@@ -23,7 +29,17 @@ permalink: /blog/banana-theme/
 3. _italic_
 4. __strstrstr__ong
 
+{% highlight ruby linenos %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+{% endhighlight %}
 
+<!--more-->
 
 [banana](http://bananagarden.net/)
 
