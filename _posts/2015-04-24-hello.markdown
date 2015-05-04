@@ -8,6 +8,9 @@ permalink: /blog/banana-theme/
 
 ## {{ page.permalink }}
 
+
+## {{ page.content | number_of_words }}
+
 ## h2 header
 
 ### h3 header
