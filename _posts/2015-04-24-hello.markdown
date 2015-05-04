@@ -4,7 +4,9 @@ title:  "Banana theme & settings"
 date:   2015-04-24 
 categories: web
 permalink: /blog/banana-theme/
+
 ---
+
 1. Для начала
 2. Чуть позже
 3. Окончание
