@@ -7,28 +7,6 @@ permalink: /blog/banana-theme/
 excerpt_separator: <!--more-->
 ---
 
-## {{ page.permalink }}
-
-## {{ site.post_url }}
-
-## {{ site.posts }}
-
-## {{ site.pages }}
-
-## {{ site.categories.web }}
-
-
-## h2 header
-
-### h3 header
-
-####h4 header
-
-1. *italic*
-2. strstr**ong**
-3. _italic_
-4. __strstrstr__ong
-
 {% highlight ruby linenos %}
 def show
   @widget = Widget(params[:id])
@@ -40,6 +18,25 @@ end
 {% endhighlight %}
 
 <!--more-->
+
+## {{ page.permalink }}
+
+## h2 header
+
+### h3 header
+
+####h4 header
+
+#####h5 header
+
+1. *italic*
+2. strstr**ong**
+3. _italic_
+4. __strstrstr__ong
+
+
+
+
 
 [banana](http://bananagarden.net/)
 
