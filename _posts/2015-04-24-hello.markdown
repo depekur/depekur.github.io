@@ -4,7 +4,6 @@ title:  "Banana theme & settings"
 date:   2015-04-24 
 categories: web
 permalink: /blog/banana-theme/
-excerpt_separator: <!--more-->
 ---
 
 {% highlight ruby linenos %}
@@ -17,9 +16,10 @@ def show
 end
 {% endhighlight %}
 
-<!--more-->
 
 ## {{ page.permalink }}
+
+# h1 header
 
 ## h2 header
 
@@ -61,3 +61,8 @@ end
 * and do his work
 
 >Lorem ipsum dolor sit amet, 
+
+
+{{ site.time | date_to_long_string }}
+
+{{ page.content | number_of_words }}
