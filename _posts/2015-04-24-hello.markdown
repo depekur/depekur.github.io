@@ -64,5 +64,3 @@ end
 
 
 {{ site.time | date_to_long_string }}
-
-{{ page.content | number_of_words }}
