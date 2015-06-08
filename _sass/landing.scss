@@ -1,0 +1,34 @@
+.sky, .about, .contact {
+	min-height: 700px;
+	background: transparent;
+}
+
+.portfolio {
+	min-height: 500px;
+	padding-top: 50px;
+
+}
+
+
+h1.theater {
+	max-width: 800px;
+	padding: 15% 0 0 15%; 
+
+	font-size: 5.5em;
+	text-align: center;
+
+		span {
+			vertical-align: left;
+		}
+}
+
+.saying:after{
+	content:"|";
+	font-family:Arial, sans-serif;
+	font-size:1.2em;
+	line-height:1;
+	display:inline-block;
+	vertical-align:baseline;
+	opacity:1;
+	-webkit-animation:caret 500ms infinite;
+	animation:caret 500ms infinite;}
