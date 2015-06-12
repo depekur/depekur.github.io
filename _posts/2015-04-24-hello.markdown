@@ -4,7 +4,7 @@ title:  "Banana theme & settings"
 date:   2015-04-24 
 categories: web
 permalink: /blog/banana-theme/
-published: false
+published: true
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ab sapiente odit cumque impedit? <mark>Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </mark>Dolore ab sapiente odit cumque impedit? Rem culpa aperiam dolor, in quas cupiditate illo facere nam, et voluptatibus, debitis, mollitia eos vel.
 

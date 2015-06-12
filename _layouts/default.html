@@ -2,20 +2,29 @@
 <html>
 
 <head>
+
   {% include head.html %}
+
 </head>
 
   <body>
 
-    {% include sidebar.html %}
+	<div class="stripes"></div>
 
-    <aside class="content">
+	<div class="wrap">
 
-        {{ content }}
+	    {% include sidebar.html %}
 
-    </aside>
+	    <aside class="content">
 
+	        {{ content }}
 
+	    </aside>
+
+{% include footer.html %}
+	</div>
+
+	
 
   </body>
 

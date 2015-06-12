@@ -1,19 +1,37 @@
+
+div.wrap {
+
+    padding-left: $woid*2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
 aside.sidebar {
     height:     100%;
-    width:      150px;
+    width:      25%;
     background: $banana-color;
+    opacity: 0.9;
 
-    position:   fixed;
-    left:       0;
-    top:        0;
+    float: left;
 
-    border-left:3px solid $banana-color-dark;
-    border-right:1px dotted $banana-color-red;
+    -display: inline-block;
+
+    margin-top: $woid;
+
+    -border-left:3px solid $banana-color-dark;
+    border: 2px dotted $banana-color-red;
 
     section {
         padding:$woid;
     }
 
+    p {
+        padding-left: $woid;
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 1.2;
+    }
    
     nav {
         ul li {
@@ -58,8 +76,8 @@ aside.sidebar {
     }
 
     section.contact {
-        position:absolute;
-        bottom:  0;
+        -position:absolute;
+        -bottom:  0;
 
             h4{
                 text-align: center;
@@ -76,8 +94,32 @@ aside.sidebar {
     
 }
 
+
 aside.content {
-    width:      680px;
-    margin:     $woid $woid $woid 350px+$woid;
-    padding-right: 80px;    
+    width:      60%;
+    min-width: 600px;
+    margin:     $woid;
+    display: inline-block;
+    padding: $woid $woid*3 $woid*4;    
+
+
+    background: #fff;
+    border: 1px dotted $banana-color-red;
+
+}
+
+
+footer.blog-footer {
+    background: #fff;
+    -width: 100%;
+    padding: $woid;
+    margin-bottom: $woid;
+
+        ul li {
+            display: inline-block;
+        }
+
+        p a {
+            vertical-align: middle;
+        }
 }

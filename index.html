@@ -1,7 +1,7 @@
 ---
 layout: landing
 
-title: Разработка интернет решений от студии BananaGarden.net
+title: Разработка интернет решений от студии bananagarden.net
 
 keywords: создание сайтов, лендинг, интернет магазин
 
@@ -15,12 +15,13 @@ description:  Создание сайтов которые решают реал
 
 <section class="portfolio">
   <ul class="portfolio-grid">
-  {% for portf in site.portfolio %}
+  
+  {% for portf in site.data.portfolio %}
 
     
-    <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
-      <img src="{{ portf.image }}">
-        <a class="ajax-link" href="{{ portf.image }}">  
+    <li class="grid-item" >
+      <img src="{{ portf.link }}">
+        <a class="ajax-link" href="{{ portf.link }}">  
           <div class="grid-hover">
             <h1>Single</h1>
             <p>Branding</p>
@@ -33,6 +34,6 @@ description:  Создание сайтов которые решают реал
   </ul>
 </section>
 
-<section class="contact">
+<section class="landing-contact">
 	
 </section>

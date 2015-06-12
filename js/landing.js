@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /*
 * 	menu button
 */
@@ -14,26 +14,16 @@ $('#button').on('click', function() {
 
 $('.sky').parallax({
 	imageSrc: 'media/landing/OSJQVTURTM.jpg',
-	speed: '0.1',
+	speed: '0.3',
 	bleed: '1',
-	androidFix: false,
-	iosFix: false
 });
 
-$('.portfolio').parallax({
-	imageSrc: 'media/landing/CXJJLUNOT4.jpg',
-	speed: '0.8',
-	bleed: '1',
-	androidFix: false,
-	iosFix: false
-});
-
-$('.contact').parallax({
+$('.landing-contact').parallax({
 	imageSrc: 'media/landing/4YCB0VAY1L.jpg',
-	speed: '0.4',
+	speed: '0',
 	bleed: '1',
-	androidFix: false,
-	iosFix: false
+	//androidFix: false,
+	//iosFix: false
 });
 
 

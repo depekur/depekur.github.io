@@ -1,0 +1,87 @@
+$banana-color:       #EFC232;
+$banana-color-light: lighten($banana-color, 25%);
+$banana-color-dark:  darken($banana-color, 15%);
+$banana-color-old:   darken($banana-color, 60%);
+
+$banana-color-red:   #CC3333;
+$banana-color-orange:#FF9900;
+$banana-color-blue:  #003366;
+$banana-color-grey:  #CCCCCC;
+$color-green-nice:   #99CC99;
+
+$text-color:         lighten(#000, 33%);
+$background-color:   #fff;
+$brand-color:        $banana-color-red;
+
+$font-banana:        "pfr-reg";
+$font-banana-italic: "pfr-reg-italic";
+$font-banana-medium: "pfr-reg-medium";
+$font-banana-bold:   "pfr-reg-bold";
+
+$font-banana-logo:   "junction";
+$font-banana-junc:  "junction-light";
+
+
+$base-font-size:     18px;
+$small-font-size:    $base-font-size * 0.875;
+$base-line-height:   1.4;
+
+$woid:			     15px;
+
+$on-palm:            600px;
+$on-laptop:          800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: $font-banana;
+    src: url(../fonts/PFRegal/PFRegalTextPro-RegB.otf);
+}
+
+@font-face {
+    font-family: $font-banana-italic;
+    src: url(../fonts/PFRegal/PFRegalTextPro-RegBItalic.otf);
+}
+
+@font-face {
+    font-family: $font-banana-medium;
+    src: url(../fonts/PFRegal/PFRegalTextPro-Medium.otf);
+}
+
+@font-face {
+    font-family: $font-banana-bold;
+    src: url(../fonts/PFRegal/PFRegalTextPro-Bold.otf);
+}
+
+@font-face {
+    font-family: $font-banana-junc;
+    src: url(../fonts/junction/Junction-light.otf);
+}
+
+@font-face {
+    font-family: $font-banana-logo;
+    src: url(../fonts/junction/Junction-regular.otf);
+}
+
+
+

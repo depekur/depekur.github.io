@@ -1,8 +1,7 @@
 /**
  * Reset some basic elements
- */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  */
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -22,8 +21,10 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+
 ::selection {
     background: #EFC232; 
+    color: #fff;
 }
 
 /**
@@ -41,6 +42,8 @@ body {
     border-top: 0;
 
     height: 100%;
+
+    background: url(../media/tumblr_mb093wW1xv1r9xnnwo1_1280.png);
 }
 
 
@@ -119,6 +122,9 @@ code {
     border: 1px solid $banana-color-light;
     border-radius: 3px;
     background-color: #eef;
+
+    display: inline-block;
+
 }
 
 code {
@@ -127,7 +133,9 @@ code {
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll;
+
+
+    margin-left: $woid*3;
 
     > code {
         border: 0;
@@ -154,3 +162,9 @@ pre {
 
 
 
+div.stripes {
+    height: $woid/2;
+    width: 100%;
+    background: url(../media/stripes.png);
+    border-bottom: 5px solid $banana-color-red;
+}
