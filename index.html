@@ -7,33 +7,38 @@ keywords: создание сайтов, лендинг, интернет маг
 
 description:  Создание сайтов которые решают реальные проблемы
 ---
+<div id="fullPage">
 
-<header class="sky">
-		<h1 class="theater">Разработка сайтов <br><span id="god"></span></h1>
-</header>
+   <header class="sky section">
+   		<h1 class="theater">Разработка сайтов <br><span id="god" class="saying"></span></h1>
+   </header>
 
 
-<section class="portfolio">
-  <ul class="portfolio-grid">
-  
-  {% for portf in site.data.portfolio %}
+   <section class="portfolio section">
+      <div class="slide">
+         <div class="slide-content">
+               <h2>1</h2>
 
-    
-    <li class="grid-item" >
-      <img src="{{ portf.link }}">
-        <a class="ajax-link" href="{{ portf.link }}">  
-          <div class="grid-hover">
-            <h1>Single</h1>
-            <p>Branding</p>
-          </div>
-        </a>  
-    </li>
+         </div>
+      </div>
+      <div class="slide"><h2>2</h2></div>
+      <div class="slide"><h2>3</h2></div>
+      <div class="slide"><h2>4</h2></div>
+      <div class="slide"><h2>5</h2></div>
+   </section>
 
-    {% endfor %}
+   <section class="landing-contact section">
+      <div>
 
-  </ul>
-</section>
+         <h2 class="landing-contact-mail"><a href="mailto:hello@bananagarden.net">hello@bananagarden.net</a></h2>
 
-<section class="landing-contact">
-	
-</section>
+         <ul>
+            <li><a href="">vkontakte</a></li>
+            <li><a href="">facebook</a></li>
+            <li><a href="">twitter</a></li>
+         </ul>
+         
+      </div>
+   </section>
+
+</div>

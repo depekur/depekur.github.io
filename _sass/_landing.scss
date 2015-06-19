@@ -1,27 +1,42 @@
-.sky, .about, .landing-contact {
+.section{
+		text-align:center;
+}
+
+.sky, .about {
 	min-height: 700px;
 	background: transparent;
 }
 
 .portfolio {
 	min-height: 500px;
-	padding-top: 50px;
+	padding: $woid*3 $woid*4;
+
+
+		.slide {
+			background: $banana-color;
+			
+
+			.slide-content {
+				padding: $woid*3 $woid*4;
+			}
+		}
 
 }
 
 
 h1.theater {
-	max-width: 800px;
-	padding: 15% 0 0 15%; 
+
+	padding-top: 15%; 
 
 	font-size: 5.5em;
-	text-align: center;
+
 	margin:0;
 
 		span {
 			vertical-align: left;
 		}
 }
+
 
 .saying:after{
 	content:"|";
@@ -31,5 +46,45 @@ h1.theater {
 	display:inline-block;
 	vertical-align:baseline;
 	opacity:1;
+	/*
 	-webkit-animation:caret 500ms infinite;
-	animation:caret 500ms infinite;}
+	animation:caret 500ms infinite;
+	*/
+}
+
+.sky {
+	background: url('../media/landing/OSJQVTURTM.jpg') transparent;
+
+	height: 500px;
+}
+
+.landing-contact {
+	background: url('../media/landing/4YCB0VAY1L.jpg') transparent;
+	background-size: cover;
+
+	padding-top:150px;
+	padding-bottom:150px;
+
+	div {
+		background: #eff;
+		height: 300px;
+		width: 60%;
+		margin: 0 auto;
+		padding-top: 2em;
+	}
+
+	h2.landing-contact-mail {
+		font-size: 2.7em;
+
+			a:hover {
+        		text-decoration: none;
+			}
+	}
+
+}
+
+#fp-nav {
+	-background: #fff;
+}
+
+
