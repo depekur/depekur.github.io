@@ -4,19 +4,25 @@ div.wrapper {
     height: 100%;
     padding-left: $woid*2;
     padding-bottom: $woid*2;
+    padding-left: 0;
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 aside.sidebar  {
+    position: absolute;
+
     
     width:      25%;
     background: $banana-color;
-    opacity: 0.9;
+    opacity: 1;
+
+    -height: 100%;
 
     float: left;
 
-    margin-top: $woid;
+    -margin-top: $woid;
     margin-bottom: $woid;
 
     border: 2px dotted $banana-color-red;
@@ -113,6 +119,8 @@ aside.content {
     box-sizing: border-box;
 
     margin:     $woid;
+    margin-right: 5%;
+    float: right;
     display: inline-block;
     padding: $woid $woid*3 $woid*4;    
 
@@ -138,5 +146,27 @@ footer.blog-footer {
 
         p a {
             vertical-align: middle;
+        }
+}
+
+
+section.aboutAll {
+    -height: 100%;
+    padding: 3%;
+
+    -background: url('../media/grass.jpg');
+    -background-size: cover;
+
+        div {
+            width: 80%;
+            margin: 0 auto;
+            padding: $woid;
+            background: url('../media/landing/crumpled_white_paper_texture_by_melemel.jpg');
+            background-size: cover;
+
+                p {
+
+
+                }
         }
 }

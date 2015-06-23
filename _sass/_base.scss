@@ -202,7 +202,7 @@ div.stripes {
   width: 40px;
   height: 40px;
   margin: 0px auto;
-  background-color: #333;
+  background-color: $banana-color-red;
   border-radius: 100%;  
   -webkit-animation: scaleout 1.0s infinite ease-in-out;
   animation: scaleout 1.0s infinite ease-in-out;
@@ -231,16 +231,21 @@ div.stripes {
 
 
 
+.fock-the-king {
+  
 
+  -webkit-transition: all 0.9s ease-in;
+    -moz-transition: all 0.9s ease-in;
+    -ms-transition: all 0.9s ease-in;
+    -o-transition: all 0.9s ease-in;
+    transition: all 0.9s ease-in;
 
-@mixin respond-to($media) {
-  @if $media == phone {
-    @media only screen and (max-width: 479px) { @content; }
-  }
-  @else if $media == large-phone {
-    @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
-  }
-  @else if $media == tablets {
-    @media only screen and (min-width: 768px) and (max-width: 959px) { @content; }
-  }
+    text-decoration: line-through; 
 }
+
+
+
+.death {
+  display: none;
+}
+
