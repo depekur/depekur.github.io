@@ -15,6 +15,11 @@ description:  Создание сайтов которые решают реал
       <li>{% include icons/flower203.svg %}</li>      
 
       <li>{% include icons/email14.svg %}</li>
+      <li>
+         <!-- Put this div tag to the place, where the Like block will be -->
+         <div id="vk_like"></div>
+       
+   </li>
    </ul>
 
 </nav>
@@ -134,3 +139,8 @@ description:  Создание сайтов которые решают реал
 
 
 <span id="how-to-nav"><img src="/media/landing/arrow_keys.png"></span>
+
+
+  <script type="text/javascript">
+         VK.Widgets.Like("vk_like", {type: "button"});
+         </script>
