@@ -52,11 +52,13 @@ $(document).ready(function() {
 				css3: true,
 				scrollBar: true,
 				scrollingSpeed: 700,
-				autoScrolling: true,
-				loopHorizontal: true,
 				controlArrows: true,
 				keyboardScrolling: true,
-				animateAnchor: true
+				animateAnchor: true,
+				responsiveWidth: 900,
+				responsiveHeight: 600,
+				anchors: ['bananagarden', 'work', 'contacts'],
+			  	menu: '#landing-menu'
 	
 
 

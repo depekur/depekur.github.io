@@ -15,6 +15,7 @@
 }
 
 span#how-to-nav {
+	display: none;
 	position: fixed;
 	right: 20px;
 	bottom: 10px;
@@ -90,14 +91,14 @@ div#fullPage {
 		border-width: 58.5px 71px 58.5px 0;
 		border-color: transparent $banana-color-red transparent transparent;
 
-
+		display: none;
 	}
 	.fp-controlArrow.fp-next {
 		right: 5px;
 		border-width: 58.5px 0 58.5px 71px;
 		border-color: transparent transparent transparent $banana-color-red;
 
-
+		display: none;
 	}
 }
 
@@ -136,7 +137,7 @@ header.sky {
 
 section.portfolio {
 	min-height: 500px;
-	padding: $woid*3 $woid*4;
+	padding: $woid*4 $woid*4 $woid*2;
 
 	text-align:left;
 
@@ -146,6 +147,29 @@ section.portfolio {
 			float: left;
 			clear: both;
 			color: $banana-color-red;
+		}
+
+		nav#portfolio-nav {
+			position: absolute;
+			top: 0;
+
+			ul {
+
+				
+			}
+
+			ul li {
+				display: inline-block;
+
+				background: url('../media/landing/ricepaper.png');
+				border: 1px solid $banana-color-red;
+				margin: $woid/2 $woid;
+				padding: $woid/2 $woid;
+
+			}
+			h4 {
+				margin: 0;
+			}
 		}
 
 		div.slide {
