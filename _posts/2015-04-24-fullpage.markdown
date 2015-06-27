@@ -4,7 +4,7 @@ title:  "fullPage.js"
 date:   2015-04-24 
 categories: web
 permalink: /md/
-published: true
+published: false
 ---
 
 <!--more-->

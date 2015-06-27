@@ -4,6 +4,6 @@ title:  "Я, снова я, и лист фанеры (или как канбан
 date:   2015-06-11 
 categories: web
 permalink: /kanban/
-published: true
+published: false
 ---
 

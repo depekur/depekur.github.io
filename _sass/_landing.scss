@@ -1,5 +1,3 @@
-@-webkit-keyframes caret{0%, 100%{opacity:1}50%{opacity:0}}
-@keyframes caret{0%, 100%{opacity:1}50%{opacity:0}}
 
 .saying:after{
 	content:"|";
@@ -9,9 +7,6 @@
 	display:inline-block;
 	vertical-align:baseline;
 	opacity:1;
-	-webkit-animation:caret 500ms infinite;
-	animation:caret 500ms infinite;
-	
 }
 
 span#how-to-nav {
@@ -105,7 +100,8 @@ div#fullPage {
 
 
 header.sky {
-	background: url('../media/landing/OSJQVTURTM.jpg') transparent;
+	background: url('../media/landing/OSJQVTURTM.jpg');
+	background-size: cover;
 	height: 500px;
 	text-align:center;
 
@@ -137,7 +133,7 @@ header.sky {
 
 section.portfolio {
 	min-height: 500px;
-	padding: $woid*4 $woid*4 $woid*2;
+	padding: $woid*4 $woid*4 $woid;
 
 	text-align:left;
 
@@ -174,12 +170,13 @@ section.portfolio {
 
 		div.slide {
 			background: $banana-color;
+			height: 91%;
 			
 
 			div.slide-content {
 				height: 100%;
 				border: 1px solid $banana-color-red; 
-				padding: $woid*3 $woid*4;
+				padding: $woid*3 $woid*4 0;
 				background: url('../media/landing/ricepaper.png');
 	
 					ol {
@@ -192,8 +189,15 @@ section.portfolio {
 						display: inline-block;
 						padding: $woid;
 						background: $color-green-nice;
+						border: 1px solid $banana-color;
 						color: #fff;
 						font-size: 2em;
+					}
+
+					h3 {
+						margin: 0;
+						margin-bottom: $woid;
+						font-size: 19px;
 					}
 
 			}
@@ -219,8 +223,7 @@ section.portfolio {
 
 
 section.landing-contact {
-	background: url('../media/landing/4YCB0VAY1L.jpg') transparent;
-
+	background: url('../media/landing/4YCB0VAY1L.jpg');
 	background-size: cover;
 
 	padding-top:150px;
