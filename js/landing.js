@@ -1,4 +1,18 @@
 'use strict';
+/*
+$(".nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+});
+*/
+
+
+
+$('#landing-menu li').on("click", function() {
+	$('#landing-menu').find("active-letter").removeClass("active-letter");
+	$(this).parent().addClass("active-letter");			  
+});
+
 
 /*
 * 	theater
@@ -57,7 +71,7 @@ $(document).ready(function() {
 				animateAnchor: true,
 				responsiveWidth: 900,
 				responsiveHeight: 600,
-				anchors: ['bananagarden', 'work', 'contacts'],
+				anchors: ['hello', 'work', 'contacts'],
 			  	menu: '#landing-menu'
 	
 
@@ -120,5 +134,7 @@ $(document).ready(function() {
 				onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
 						*/
 
-			});
+			}); //fullpage END
+	
+
 		});

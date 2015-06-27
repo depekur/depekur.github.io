@@ -41,20 +41,51 @@ nav#landing-nav {
 			opacity: 0.7;
 			
 		}
-	
+		.active-letter {
+					background: rgba($banana-color-red, 0.8);
+
+					a {
+						color: #fff;
+					}
+
+					&:after {
+						content: '';
+						position: absolute;
+						border-style: solid;
+						border-width: 17px 0 17px 14px;
+						border-color: transparent rgba($banana-color-red, 0.8);
+						display: block;
+						width: 0;
+						z-index: 1;
+						right: -12px;
+						top: 21px;
+					}					
+					&:last-child {
+						background: 0;
+						&:after {
+							display: none;
+						}				
+				}
+			
+		}
+
 		ul li {
 
 			margin: 0;
 			padding: $woid/3;
 			position: relative;
-
 			border-bottom: 1px solid $banana-color-red;
 
-			font-size: 2.4em;
-			color: #fff;
-
+				&:hover {
+					background: rgba($color-green-nice, 0.8);
+					a {
+						color: #fff;
+					}
+				}
+	
 				a {
 					display: block;
+					font-size: 2.4em;
 					
 					&:hover {
 						text-decoration: none;
@@ -72,41 +103,24 @@ nav#landing-nav {
 					}
 				}
 
-				&:hover {
-					background: rgba($banana-color-red, 0.8);
-
-					a {
-						color: #fff;
-					}
-
-					&:after {
-						content: '';
-						position: absolute;
-						border-style: solid;
-						border-width: 14px 0 14px 12px;
-						border-color: transparent $banana-color-red;
-						display: block;
-						width: 0;
-						z-index: 1;
-						right: -12px;
-						top: 21px;
-					}					
-					&:last-child {
-						background: 0;
-
-						&:after {
-							display: none;
-						}
-					}					
-					
+				h4 {
+					color: #fff;
+					font-size: 1em;
 				}
 
+				
+
 				&:first-child {
-					-border-top: 1px solid $banana-color-red;
+					
+					margin-top: $woid;
+					margin-bottom: $woid;
+
+					border-bottom: 0;
 				}
 				&:last-child {
 					border-bottom: 0;
-					margin-top: $woid;
+					width: auto;
+					margin-top: -$woid;
 				}
 				
 		
