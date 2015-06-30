@@ -36,6 +36,7 @@ nav#landing-nav {
 		#vk_like {
 			position: absolute !important;
 			bottom: 100px;
+			margin-left: $woid;
 		}
 
 	}
@@ -44,6 +45,14 @@ nav#landing-nav {
 div#fullPage {
 	margin-left: 70px;
 }
+
+
+/*
+*
+*
+*		sky
+*
+*/
 
 header.sky {
 	background: url('../media/landing/OSJQVTURTM.jpg');
@@ -77,11 +86,20 @@ header.sky {
 }
 
 
-section.portfolio {
+/*
+*
+*
+*		work
+*
+*/
+
+section.offer {
 	min-height: 500px;
 	padding: $woid*4 $woid*4 $woid;
 
 	text-align:left;
+
+	background: url('../media/landing/paper_texture_v4_by_bashcorpo.jpg');
 
 		hr {
 			border-style: solid;
@@ -168,8 +186,29 @@ section.portfolio {
 
 
 
+/*
+*
+*
+*		portfolio
+*
+*/
+
+
+section.portfolio {
+	background: url('../media/landing/Texture5.jpg');
+	background-size: cover;
+}
+
+section.about {
+	background: url('../media/texture.png');
+}
+
+section.comments {
+	background: url('../media/landing/ricepaper.png');
+}
+
 section.landing-contact {
-	background: url('../media/landing/4YCB0VAY1L.jpg');
+	background: url('../media/landing/stardust.png');
 	background-size: cover;
 	padding-top: 150px;
 	padding-bottom: 150px;

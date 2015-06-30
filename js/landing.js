@@ -38,11 +38,12 @@ theater
 
 theater
 	.write("god: для твоего бизнеса", 2000, false, fuckTheKing)	
-	.write("god: лендингов, магазинов", 2000, fuckTheKing)
-	.write("god: которые продают", 2000)	
+	
+		
 	.write("god: и их сопровождение", 2000, false)
-	.write("god: для твоего производства", 2000, false, fuckTheKing)
-	.write("god: для твоего стартапа", 2000, fuckTheKing)
+	.write("god: для производств", 2000, false, fuckTheKing)
+	.write("god: которые продают", 2000)
+	.write("god: лендингов, магазинов", 2000, fuckTheKing)
 	.write("god: для твоего магазина", 2000)
 	.write("god: которые решают задачи", 2000)
 	.write(function () { theater.play(true); });
@@ -66,17 +67,17 @@ $(document).ready(function() {
 				continuousVertical: false,
 				css3: true,
 				scrollBar: true,
-				scrollingSpeed: 700,
+				scrollingSpeed: 800,
 				controlArrows: true,
 				keyboardScrolling: true,
 				animateAnchor: true,
 				responsiveWidth: 800,
 				responsiveHeight: 600,
-				anchors: ['hello', 'work', 'portfolio', 'contacts'],
+				anchors: ['hello', 'offer', 'portfolio', 'about', 'comments', 'contacts'],
 			  	//menu: '#landing-menu',
 			  	navigation: true,
 				navigationPosition: 'left',
-				navigationTooltips: ['hello', 'work', 'portfolio', 'contacts']
+				navigationTooltips: ['hello', 'offer', 'portfolio', 'about', 'comments', 'contacts']
 	
 
 
