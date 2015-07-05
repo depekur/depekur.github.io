@@ -1,18 +1,4 @@
 'use strict';
-/*
-$(".nav a").on("click", function(){
-   $(".nav").find(".active").removeClass("active");
-   $(this).parent().addClass("active");
-});
-*/
-
-
-
-$('#landing-menu li').on("click", function() {
-	$('#landing-menu').find("active-letter").removeClass("active-letter");
-	$(this).parent().addClass("active-letter");			  
-});
-
 
 /*
 * 	theater
@@ -37,15 +23,14 @@ theater
     });
 
 theater
-	.write("god: для твоего бизнеса", 2000, false, fuckTheKing)	
-	
-		
+	.write("god: для твоего бизнеса", 2000, false)
+	.write(fuckTheKing, "god: которые решают задачи", 2000, fuckTheKing)				
 	.write("god: и их сопровождение", 2000, false)
-	.write("god: для производств", 2000, false, fuckTheKing)
-	.write("god: которые продают", 2000)
-	.write("god: лендингов, магазинов", 2000, fuckTheKing)
+	.write("god: для производств", 2000, false)
+	.write(fuckTheKing, "god: лендингов, магазинов", 2000, fuckTheKing)
 	.write("god: для твоего магазина", 2000)
-	.write("god: которые решают задачи", 2000)
+	.write(fuckTheKing, "god: которые продают", 2000, fuckTheKing)	
+	.write("god: для твоей компании", 2000)
 	.write(function () { theater.play(true); });
 
 
@@ -53,7 +38,6 @@ function fuckTheKing() {
 	$("#coma").toggleClass("death");
 }
 
-//window.theater = theater;	
 
 
 /*
@@ -69,75 +53,21 @@ $(document).ready(function() {
 				scrollBar: true,
 				scrollingSpeed: 800,
 				controlArrows: true,
-				keyboardScrolling: true,
-				animateAnchor: true,
-				responsiveWidth: 800,
-				responsiveHeight: 600,
+				//animateAnchor: true,
+				responsiveWidth: 768,
+				responsiveHeight: 500,
 				anchors: ['hello', 'offer', 'portfolio', 'about', 'comments', 'contacts'],
-			  	//menu: '#landing-menu',
 			  	navigation: true,
 				navigationPosition: 'left',
-				navigationTooltips: ['hello', 'offer', 'portfolio', 'about', 'comments', 'contacts']
-	
+				navigationTooltips: ['hello', 'offer', 'portfolio', 'about', 'comments', 'contacts'],
 
 
-				/*
-				//Navigation
-				menu: false,
-				lockAnchors: false,
-				anchors:['firstPage', 'secondPage'],
-				navigation: false,
-				navigationPosition: 'right',
-				navigationTooltips: ['firstSlide', 'secondSlide'],
-				showActiveTooltip: false,
-				slidesNavigation: true,
-				slidesNavPosition: 'bottom',
+				onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
+			            var leavingSlide = $(this);
+			            console.log(anchorLink);
+			        }
 
-				//Scrolling
-				css3: true,
-				scrollingSpeed: 700,
-				autoScrolling: true,
-				fitToSection: true,
-				scrollBar: false,
-				easing: 'easeInOutCubic',
-				easingcss3: 'ease',
-				loopBottom: false,
-				loopTop: false,
-				loopHorizontal: true,
-				continuousVertical: false,
-				normalScrollElements: '#element1, .element2',
-				scrollOverflow: false,
-				touchSensitivity: 15,
-				normalScrollElementTouchThreshold: 5,
-
-				//Accessibility
-				keyboardScrolling: true,
-				animateAnchor: true,
-				recordHistory: true,
-
-				//Design
-				controlArrows: true,
-				verticalCentered: true,
-				resize : false,
-				sectionsColor : ['#ccc', '#fff'],
-				paddingTop: '3em',
-				paddingBottom: '10px',
-				fixedElements: '#header, .footer',
-				responsiveWidth: 0,
-				responsiveHeight: 0,
-
-				//Custom selectors
-				sectionSelector: '.section',
-				slideSelector: '.slide',
-
-				//events
-				onLeave: function(index, nextIndex, direction){},
-				afterLoad: function(anchorLink, index){},
-				afterRender: function(){},
-				afterResize: function(){},
-				afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-				onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
-						*/
+				
 
 			}); //fullpage END
 	

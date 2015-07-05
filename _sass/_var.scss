@@ -55,7 +55,9 @@ $on-laptop:          800px;
 
 @font-face {
     font-family: $font-banana;
-    src: url(../fonts/PFRegal/PFRegalTextPro-RegB.otf);
+    -src: url(../fonts/PFRegal/PFRegalTextPro-RegB.otf);
+    src: url(../fonts/NeueCyr/HelveticaNeueCyr-Light.otf);
+    
 }
 
 @font-face {

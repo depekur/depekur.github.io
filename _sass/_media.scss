@@ -12,12 +12,22 @@
 	span#how-to-nav {
 		display: none;
 	}
+
 	header.sky h1.theater {
-  		font-size: 2em;
-  		padding-top: 15%;
-  	}
+		padding-top: 20%;
+  		font-size: 2.6em !important;
+
+	}
   	h2.landing-contact-mail {
 		font-size: 1.2em !important;
+	}
+
+	nav#portfolio-nav {
+		display: none;
+	}
+
+	.fp-controlArrow {
+		display: none !important;
 	}
 }
 
@@ -27,4 +37,27 @@
 
 @media only screen and (min-width: 768px) and (max-width: 959px) { 
 
+	header.sky h1.theater {
+	  		font-size: 3.8em;
+
+	}
+
+	nav#portfolio-nav {
+		ul {
+			margin-bottom: 0;
+		}
+		ul li {
+			margin-left: 0 !important;
+			margin-right: 0 !important;
+
+			a {
+				padding-right: $woid/3 !important;
+				padding-left: $woid/3 !important;
+			}
+		}
+	}
+
+	.fp-controlArrow {
+		display: none !important;
+	}
  }

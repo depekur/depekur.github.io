@@ -17,7 +17,14 @@ nav#landing-nav {
 
 
 		h2 {
-			display: inline-block;
+			width: 70px;
+			margin-top: 0;
+			font-size: 2.4em;
+			color: $banana-color-red;
+
+				sub {
+					color: $color-green-nice;
+				}
 		}
 		ul {
 			margin-bottom: 300px;
@@ -94,37 +101,47 @@ header.sky {
 */
 
 section.offer {
-	min-height: 500px;
-	padding: $woid*4 $woid*4 $woid;
+	-min-height: 500px;
+	padding: $woid $woid*4 0;
 
 	text-align:left;
 
-	background: url('../media/landing/paper_texture_v4_by_bashcorpo.jpg');
+	background: url('../media/landing/stardust.png');
+
+	.fp-slides {
+		height: 90%;
+	}
 
 		hr {
 			border-style: solid;
-			width: 30%;
+			width: 80%;
 			float: left;
 			clear: both;
 			color: $banana-color-red;
 		}
 
 		nav#portfolio-nav {
-			position: absolute;
-			top: 0;
-
-			ul {
-
-				
-			}
+			text-align: center;
 
 			ul li {
 				display: inline-block;
 
 				background: url('../media/landing/ricepaper.png');
 				border: 1px solid $banana-color-red;
-				margin: $woid/2 $woid;
-				padding: $woid/2 $woid;
+				margin: 0 $woid;
+				
+
+					a {
+						display: block;
+						padding: $woid/2 $woid;
+						height: 100%;
+
+						&:hover {
+							text-decoration: none;
+							background: $banana-color;
+							color: #fff;
+						}
+					}
 
 			}
 			h4 {
@@ -133,57 +150,106 @@ section.offer {
 		}
 
 		div.slide {
-			background: $banana-color;
-			height: 91%;
+			height: 100%;
+			border: 1px solid $banana-color-red; 
+			-padding: $woid/2 $woid*2;
+			background: url('../media/landing/ricepaper.png');
+			box-sizing: border-box;
 			
 
-			div.slide-content {
-				height: 100%;
-				border: 1px solid $banana-color-red; 
-				padding: $woid*3 $woid*4 0;
-				background: url('../media/landing/ricepaper.png');
-	
-					ol {
-						display: inline-block;
-						min-width: 40%;
-						padding-left: $woid; 
-					}
-					
-					h4 {
-						display: inline-block;
-						padding: $woid;
-						background: $color-green-nice;
-						border: 1px solid $banana-color-red;
+				div.slide-text, div.slide-img {
+					height: 90%;
+					width: 50%;
+					margin: 0;
+					padding: $woid;
+					box-sizing: border-box;
+				}
+
+				div.slide-text {
+					float: left;
+				}
+				div.slide-img {
+					float: right;
+
+						img {
+							border: 1px solid $banana-color-red;
+						}
+				}
+
+				h2 {
+					-display: inline-block;
+				}
+
+				ol, ul {
+					display: inline-block;
+					min-width: 40%;
+					margin-left: $woid*2; 
+				}
+				
+				h4 {
+					margin: 0;
+					display: inline-block;
+					padding: $woid/2;
+					background: $color-green-nice;
+					border: 1px solid $banana-color-red;
+					color: #fff;
+					font-size: 1.1em;
+				}
+
+				h3 {
+					margin: 0;
+					margin-bottom: $woid/2;
+					font-size: 19px;
+				}
+
+				div.brief {
+					width: 80%;
+					margin: 0 auto;
+					border: 1px dashed $banana-color-red;
+					text-align: center;
+					clear: both;
+
+
+					a {
+						display: block;
+						height: 100%;
+						padding: $woid/2;
+						background: rgba($banana-color-red, 0.9);
 						color: #fff;
-						font-size: 2em;
+						font-size: 1.4em;
+
+						&:hover {
+							text-decoration: none;
+						}
 					}
 
-					h3 {
-						margin: 0;
-						margin-bottom: $woid;
-						font-size: 19px;
-					}
-
-			}
-
-			div.portal {
-				background: url('../media/landing/1.png') no-repeat 90% 25%;
-			}
-			div.seo {
-
-			}
-			div.landos {
-
-			}
-			div.support {
-
-			}
-			div.e-commerce {
-
-			}
+				}
 		}
 }
 
+div.portal {
+					
+}
+div.seo {
+
+}
+div.landos {
+
+}
+div.support {
+
+}
+div.e-commerce {
+	img {
+		width: 100%;
+		height: 30%;
+		margin-bottom: $woid;
+
+		&:first-child {
+			margin-top: $woid;
+		}
+	}
+}
 
 
 /*
@@ -195,8 +261,7 @@ section.offer {
 
 
 section.portfolio {
-	background: url('../media/landing/Texture5.jpg');
-	background-size: cover;
+	background: url('../media/landing/stardust.png');
 }
 
 section.about {
@@ -207,8 +272,18 @@ section.comments {
 	background: url('../media/landing/ricepaper.png');
 }
 
+
+
+/*
+*
+*
+*		contact
+*
+*/
+
+
 section.landing-contact {
-	background: url('../media/landing/stardust.png');
+	background: url('../media/landing/4YCB0VAY1L.jpg');
 	background-size: cover;
 	padding-top: 150px;
 	padding-bottom: 150px;
@@ -233,6 +308,8 @@ section.landing-contact {
 	}
 
 }
+
+
 
 
 .saying:after{
@@ -268,4 +345,10 @@ section.landing-contact {
 
 .fp-controlArrow.fp-next {
   border-color: transparent transparent transparent $banana-color-red !important;
+}
+
+
+.active-offer {
+	background: $banana-color;
+	color: #fff !important;
 }
