@@ -87,22 +87,22 @@ header.sky {
 
 		}
 
-		.like-and-share {
-			-height: 30px;
+		ul.like-and-share {
 			margin: 0;
-			padding-bottom: $woid;
+			padding: $woid;
+			line-height: 0 !important;
 			
 			li {
-				-max-height: 30px;
-				-background: $banana-color-red;
 				display: inline-block;
 				margin: 0 $woid;
 				padding-bottom: $woid;
 				padding-top: $woid;
+				vertical-align: top;
 
-				div {
-					vertical-align: bottom;
-				}
+			}
+
+			li.vk {
+				vertical-align: top;
 			}
 		}
 }
