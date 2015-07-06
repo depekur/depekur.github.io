@@ -65,11 +65,7 @@ $(document).ready(function() {
 				onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
 			            var leavingSlide = $(this);
 			            console.log(anchorLink);
-			        }
-
-				
+			        }				
 
 			}); //fullpage END
-	
-
 		});

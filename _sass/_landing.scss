@@ -40,11 +40,7 @@ nav#landing-nav {
 					color: $color-green-nice;
 				}	
 		}
-		#vk_like {
-			position: absolute !important;
-			bottom: 100px;
-			margin-left: $woid;
-		}
+		
 
 	}
 
@@ -72,8 +68,8 @@ header.sky {
 
 			font-size: 5.5em;
 			margin: 0;
-			-margin-left: 9%;	
-			padding-top: 14%;
+			padding-top: 15%;
+			margin-bottom: 11%;
 
 			span#god {
 				-display: block;
@@ -89,6 +85,25 @@ header.sky {
 			padding: $woid*2 $woid*3;
 			-color: $banana-color-red;
 
+		}
+
+		.like-and-share {
+			-height: 30px;
+			margin: 0;
+			padding-bottom: $woid;
+			
+			li {
+				-max-height: 30px;
+				-background: $banana-color-red;
+				display: inline-block;
+				margin: 0 $woid;
+				padding-bottom: $woid;
+				padding-top: $woid;
+
+				div {
+					vertical-align: bottom;
+				}
+			}
 		}
 }
 
@@ -228,12 +243,35 @@ section.offer {
 }
 
 div.portal {
+	img {
+		width: 100%;
+		height: 30%;
+		margin-bottom: $woid;
+
+		&:first-child {
+			margin-top: $woid;
+		}
+	}
 					
 }
 div.seo {
-
+	img {
+		width: 45%;
+		height: 45%;
+		display: inline-block;
+	}
 }
 div.landos {
+	img {
+		width: 45%;
+		height: 100%;
+		display: inline-block;
+
+		&:first-child {
+			margin-right: $woid;
+		}
+
+	}
 
 }
 div.support {
