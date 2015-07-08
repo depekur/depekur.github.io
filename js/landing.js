@@ -56,10 +56,10 @@ $(document).ready(function() {
 				//animateAnchor: true,
 				responsiveWidth: 768,
 				responsiveHeight: 500,
-				anchors: ['hello', 'offer', 'portfolio', 'about', 'comments', 'contacts'],
+				anchors: ['hello', 'offer', 'portfolio', 'about', 'contacts'],
 			  	navigation: true,
 				navigationPosition: 'left',
-				navigationTooltips: ['hello', 'offer', 'portfolio', 'about', 'comments', 'contacts'],
+				navigationTooltips: ['hello', 'offer', 'portfolio', 'about', 'contacts'],
 
 
 				onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){

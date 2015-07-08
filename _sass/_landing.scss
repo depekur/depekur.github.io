@@ -102,7 +102,7 @@ header.sky {
 			}
 
 			li.vk {
-				vertical-align: top;
+				margin-right: -20px;
 			}
 		}
 }
@@ -138,18 +138,23 @@ section.offer {
 		nav#portfolio-nav {
 			text-align: center;
 
+			ul {
+				margin-bottom: $woid/2;
+			}
+
 			ul li {
 				display: inline-block;
 
 				background: url('../media/landing/ricepaper.png');
 				border: 1px solid $banana-color-red;
 				margin: 0 $woid;
-				
+				max-height: 40px;
 
 					a {
 						display: block;
 						padding: $woid/2 $woid;
 						height: 100%;
+						color: darken($brand-color, 15%);
 
 						&:hover {
 							text-decoration: none;
@@ -188,6 +193,7 @@ section.offer {
 
 						img {
 							border: 1px solid $banana-color-red;
+							box-sizing: border-box; 
 						}
 				}
 
@@ -263,7 +269,7 @@ div.seo {
 }
 div.landos {
 	img {
-		width: 45%;
+		width: 48%;
 		height: 100%;
 		display: inline-block;
 
@@ -299,11 +305,124 @@ div.e-commerce {
 
 
 section.portfolio {
-	background: url('../media/landing/stardust.png');
+	background: url('../media/grass.jpg');
+	background-size: cover;
+	text-align: center;
+
+	h2 {
+		padding: $woid;
+		font-size: 2.3em;
+		-border-bottom: 2px dotted $banana-color-red;
+		margin: 0;
+		background: url('../media/landing/ricepaper.png');
+	}
+
+	ul.banana-grid {
+		padding-top: $woid;
+		li {
+			width: (100% / 3.5);
+			height: 253px;
+			display: inline-block;
+			margin: $woid;
+			box-sizing: border-box;
+			border: 3px solid $banana-color;
+			background: $banana-color-red;
+
+			&:nth-child(1) {
+				background: url('../media/landing/portfolio/11_cart.jpg');
+			}
+			&:nth-child(2) {
+				background: url('../media/landing/portfolio/07_product_page.jpg');
+			}
+			&:nth-child(3) {
+				background: url('../media/landing/portfolio/06_shoppingcart.jpg');
+			}
+			&:nth-child(4) {
+				background: url('../media/landing/portfolio/02_overview.jpg');
+			}
+			&:nth-child(5) {
+				background: url('../media/landing/portfolio/02_home2321321.jpg');
+			}
+			&:nth-child(6) {
+				background: url('../media/landing/portfolio/02_home (1).jpg');
+			}
+		}
+	}
+
+
 }
 
+
+/*
+*
+*
+*		banana people
+*
+*/
+
 section.about {
-	background: url('../media/texture.png');
+	background: url('../media/landing/ricepaper.png');
+
+
+	div.about-banana {	
+		width: 40%;
+		height: 100%;
+		float: left;
+		box-sizing: border-box;
+
+		border-right: 2px dashed $banana-color-red;
+
+		h2 {
+			margin: 0;
+			padding: $woid*2 $woid;
+		}
+		p {
+			padding: $woid*2;
+		}
+	}
+	ul {
+		width: 60%;
+		height: 92%;
+		float: right;
+		box-sizing: border-box;
+		margin-bottom: 0;
+		padding-top: $woid;
+
+		li {
+			padding: $woid;
+			border-bottom: 2px dashed $banana-color-red;
+	
+				&:last-child {
+					border-bottom: 0;
+				}
+		}
+
+		div.slave-meta {
+			width: 60%;
+			display: inline-block;
+			margin-right: $woid*2;
+
+			&:nth-child(2) {
+				margin-right: 0;
+				margin-left: $woid*2;
+			}
+
+			h3 {
+				
+			}
+		}
+		
+		img {
+			width: 180px;
+			height: 180px;
+			display: inline-block;
+			vertical-align: top;
+
+			border-radius: 100%;
+			border: 3px dotted $banana-color-red;
+			box-shadow: 0 0 7px #666;
+		}
+	}
 }
 
 section.comments {
