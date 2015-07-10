@@ -1,0 +1,257 @@
+
+/*
+*
+*
+*		portfolio
+*
+*/
+
+
+section.portfolio {
+	-background: url('../media/grass.jpg');
+	background: url('../media/landing/ricepaper.png');
+	-background-size: cover;
+	text-align: center;
+
+	h2 {
+		padding: $woid;
+		font-size: 2.3em;
+		-border-bottom: 2px dotted $banana-color-red;
+		margin: 0;
+		background: url('../media/landing/ricepaper.png');
+		-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+  		box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+	}
+
+	ul.banana-grid {
+		padding-top: $woid;
+		li {
+			width: (100% / 3.5);
+			height: 253px;
+			display: inline-block;
+			margin: $woid;
+			box-sizing: border-box;
+			border: 3px solid $banana-color;
+			background: $banana-color-red;
+
+			&:nth-child(1) {
+				background: $banana-color-red;
+			}
+			&:nth-child(2) {
+				background: $banana-color-red;
+			}
+			&:nth-child(3) {
+				background: $banana-color-red;
+			}
+			&:nth-child(4) {
+				background: $banana-color-red;
+			}
+			&:nth-child(5) {
+				background: $banana-color-red;
+			}
+			&:nth-child(6) {
+				background: $banana-color-red;
+			}
+		}
+	}
+
+
+}
+
+
+/*
+*
+*
+*		banana people
+*
+*/
+
+section.about {
+	background: url('../media/landing/ricepaper.png');
+
+	p {
+		text-indent: $woid;
+	}
+
+	div.about-banana {	
+		width: 50%;
+		height: 100%;
+		float: left;
+		box-sizing: border-box;
+
+		border-right: 2px dashed $banana-color-red;
+
+		h2 {
+			margin-left: $woid*2;
+			margin-top: 0;
+			padding-top: $woid*2;
+			padding-bottom: $woid;
+		}
+		p {
+			margin: $woid $woid*2;
+			overflow: hidden;			
+		}
+		div {
+			width: 80%;
+			margin: 0 auto;
+			background: rgba($banana-color, 0.3);
+			padding: $woid/2;
+		}
+		a.about-brief {
+			display: block;
+			width: 70%;
+			margin: 0 auto;
+			padding: $woid;
+			margin-top: $woid;
+			text-align: center;
+
+			color: #fff;
+			font-size: 1.4em;			
+			border: 3px solid $banana-color;
+			background: $color-green-nice;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	ul {
+		width: 50%;
+		height: 92%;
+		float: right;
+		box-sizing: border-box;
+		margin-bottom: 0;
+		padding-top: $woid;
+
+		li {
+			padding: $woid;
+			padding-left: $woid*3;
+			border-bottom: 2px dashed $banana-color-red;
+	
+				&:last-child {
+					border-bottom: 0;
+				}
+		}
+
+		div.slave-meta {
+			width: 60%;
+			display: inline-block;
+			margin-right: $woid*2;
+
+			&:nth-child(2) {
+				margin-right: 0;
+				margin-left: $woid*2;
+			}
+
+			h3 {
+				
+			}
+		}
+		
+		img {
+			width: 180px;
+			height: 180px;
+			display: inline-block;
+			vertical-align: top;
+
+			border-radius: 100%;
+			border: 3px dotted $banana-color-red;
+			box-shadow: 0 0 7px #666;
+		}
+	}
+}
+
+section.comments {
+	background: url('../media/landing/ricepaper.png');
+}
+
+
+
+/*
+*
+*
+*		contact
+*
+*/
+
+
+section.landing-contact {
+	background: url('../media/landing/4YCB0VAY1L.jpg');
+	background-size: cover;
+	padding-top: 150px;
+	text-align: center;
+
+	div {
+		background: url('../media/landing/ricepaper.png');
+		border: 5px dashed $banana-color-red;
+		box-shadow: 0 0 7px #666;
+
+		width: 75%;
+		margin: 0 auto;
+
+		h2.landing-contact-mail {
+			font-size: 2.3em;
+			margin-top: $woid;
+
+			a:hover {
+        		text-decoration: none;
+			}
+		}
+
+		h2 {
+			font-size: 2.7em;
+			margin-top: $woid*2;
+		}
+		h3, h4 {
+			margin-top: $woid;
+		}
+
+
+	}
+
+	
+
+}
+
+
+
+
+.saying:after{
+	content:"|";
+	font-family:Arial, sans-serif;
+	font-size:1.2em;
+	line-height:1;
+	display:inline-block;
+	vertical-align:baseline;
+	opacity:1;
+}
+/*
+#fp-nav ul li .fp-tooltip.left {
+	width: 100px;
+	height: 40px;
+	border: 1px solid $banana-color-red;
+	background: rgba($banana-color, 0.8);
+
+	color: #fff;
+	font-size: 1.4em;
+	padding:$woid/2;
+
+}
+*/
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	background: $banana-color-red !important;
+}
+
+
+.fp-controlArrow.fp-prev {
+	border-color: transparent $banana-color transparent transparent !important;
+}
+
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent $banana-color !important;
+}
+
+
+.active-offer {
+	background: $banana-color;
+	color: #fff !important;
+}

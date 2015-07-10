@@ -16,7 +16,6 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
     vertical-align: baseline;
 }
@@ -37,15 +36,12 @@ body {
     font-family: $font-banana;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
+
     color: $text-color;
     background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-
     border-top: 0;
-
-    -border-bottom: 5px solid $banana-color-red;
     background: url(../media/tumblr_mb093wW1xv1r9xnnwo1_1280.png);
+    letter-spacing: normal;
 }
 
 
@@ -81,9 +77,7 @@ ul {
  */
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-banana-medium;
-    font-weight: 300;
-    
-
+    font-weight: normal;
 }
 
 h1 {
@@ -156,11 +150,21 @@ pre {
 
 
 
-/**
- *      Clearfix
- */
-.clear {
-    clear: both;
+  /**
+  *      Clearfix
+  *
+  *
+  *      @include clearfix();
+  */
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
 }
         
 
@@ -201,8 +205,8 @@ div.stripes {
 } 
 
 .spinner {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   margin: 0px auto;
   background-color: $banana-color-red;
   border-radius: 100%;  

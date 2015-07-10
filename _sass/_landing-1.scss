@@ -1,0 +1,291 @@
+nav#landing-nav {
+	position: fixed;
+	top: 0;
+	z-index: 99;
+
+	width: 70px;
+	height: 100%;
+	background: $banana-color;
+	border-right: 1px solid $banana-color-red;
+
+	opacity: 0.9;
+	text-align: center;
+
+	padding-top: $woid;
+	padding-bottom: $woid;
+
+
+
+		h2 {
+			width: 70px;
+			margin-top: 0;
+			font-size: 2.4em;
+			color: $banana-color-red;
+
+				sub {
+					color: $color-green-nice;
+				}
+		}
+		ul {
+			margin-bottom: 300px;
+		}
+		ul li {
+
+			margin: 0;
+			
+			font-size: 1.2em;
+			color: $banana-color-red;
+
+				h4 {
+					color: $color-green-nice;
+				}	
+		}
+		
+
+	}
+
+
+div#fullPage {
+	margin-left: 70px;
+}
+
+
+/*
+*
+*
+*		sky
+*
+*/
+
+header.sky {
+	background: url('../media/landing/OSJQVTURTM.jpg');
+	background-size: cover;
+	height: 500px;
+	text-align:center;
+
+		h1.theater {
+			-text-align: left;
+
+			font-size: 5.5em;
+			margin: 0;
+			padding-top: 15%;
+			margin-bottom: 11%;
+
+			span#god {
+				-display: block;
+				-margin-left: -3%;
+			}
+			span#coma {
+				
+			}
+		}
+
+		h2 {
+			margin: 0;
+			padding: $woid*2 $woid*3;
+			-color: $banana-color-red;
+
+		}
+
+		ul.like-and-share {
+			margin: 0;
+			padding: $woid;
+			line-height: 0 !important;
+			
+			li {
+				display: inline-block;
+				margin: 0 $woid;
+				padding-bottom: $woid;
+				padding-top: $woid;
+				vertical-align: top;
+
+			}
+
+			li.vk {
+				margin-right: -20px;
+			}
+		}
+}
+
+
+/*
+*
+*
+*		offer
+*
+*/
+
+section.offer {
+	-min-height: 500px;
+	padding: $woid $woid*4 0;
+
+	text-align:left;
+
+	-background: url('../media/landing/stardust.png');
+	background: url('../media/grass.jpg');
+
+	.fp-slides {
+		height: 90%;
+	}
+
+	hr {
+		border-style: solid;
+		color: $banana-color-red;
+
+	}
+
+		nav#offer-nav {
+			text-align: center;
+
+			ul {
+				margin-bottom: $woid/2;
+			}
+
+			ul li {
+				display: inline-block;
+				box-sizing: border-box;
+				margin-left: $woid;
+				margin-right: $woid;
+
+				background: url('../media/landing/ricepaper.png');
+				border: 1px solid $banana-color-red;
+
+				a {
+					-max-height: 40px;
+					
+					display: block;
+					padding: $woid/2;
+					color: darken($brand-color, 15%);
+					font-size: 1.1em;
+
+					&:hover {
+						text-decoration: none;
+						background: $banana-color;
+						color: #fff;
+					}
+				}
+
+			}
+			h4 {
+				margin: 0;
+			}
+		}
+
+		div.slide {
+			height: 100%;
+			border: 2px solid $banana-color-red; 
+			-padding: $woid/2 $woid*2;
+			background: url('../media/landing/ricepaper.png');
+			box-sizing: border-box;
+			
+
+			div.slide-text, div.slide-img {
+				height: 90%;
+				width: 50%;
+				margin: 0;	
+				padding: $woid;			
+				box-sizing: border-box;
+			}
+
+			div.slide-text {
+				float: left;
+				
+			}
+			div.slide-img {
+				float: right;
+			}
+
+			h2 {
+				margin-top: 0;
+				padding-left: $woid*2;
+				font-size: 39px;
+			}
+
+			ol, ul {
+				display: inline-block;
+				min-width: 40%;
+				margin-left: $woid*2; 
+			}
+			
+			h4 {
+				margin: 0;
+				display: inline-block;
+				padding: $woid/2;
+				background: $color-green-nice;
+				border: 1px solid $banana-color-red;
+				color: #fff;
+				font-size: 1.1em;
+			}
+
+			h3 {
+				margin: 0;
+				margin-bottom: $woid/2;
+				font-size: 19px;
+			}
+
+			div.brief {
+				width: 80%;
+				margin: 0 auto;
+				border: 1px dashed $banana-color-red;
+				text-align: center;
+				clear: both;
+
+
+				a {
+					display: block;
+					height: 100%;
+					padding: $woid/2;
+					background: rgba($banana-color-red, 0.9);
+					color: #fff;
+					font-size: 1.4em;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+
+			}
+		}
+}
+
+div.portal {
+	img {
+		width: 100%;
+		height: 30%;
+		margin-bottom: $woid;
+
+		&:first-child {
+			margin-top: $woid;
+		}
+	}
+					
+}
+div.seo {
+	img {
+		width: 45%;
+		height: 45%;
+		display: inline-block;
+	}
+}
+div.landos {
+	img {
+		width: 48%;
+		height: 100%;
+		display: inline-block;
+
+		&:first-child {
+			margin-right: $woid;
+		}
+
+	}
+
+}
+div.support {
+
+}
+div.e-commerce {
+	img {
+		height: 100%;
+	}
+}
+

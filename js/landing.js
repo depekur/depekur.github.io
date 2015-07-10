@@ -26,11 +26,12 @@ theater
 	.write("god: для твоего бизнеса", 2000, false)
 	.write(fuckTheKing, "god: которые решают задачи", 2000, fuckTheKing)				
 	.write("god: и их сопровождение", 2000, false)
-	.write("god: для производств", 2000, false)
+	.write("god: для B2B сегмента", 2000, false)
 	.write(fuckTheKing, "god: лендингов, магазинов", 2000, fuckTheKing)
-	//.write("god: для твоего магазина", 2000)
+	.write("god: для твоего магазина", 2000)
 	.write(fuckTheKing, "god: которые продают", 2000, fuckTheKing)	
 	.write("god: для твоей компании", 2000)
+	.write("god: для предпринимателей", 2000)
 	.write(function () { theater.play(true); });
 
 

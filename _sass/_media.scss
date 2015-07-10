@@ -2,34 +2,126 @@
 
 @media only screen and (max-width: 767px) { 
 
-	nav#landing-nav {
+body {
+	background: #fff;
+}
+
+nav#landing-nav {
+	display: none;
+}
+
+div#fullPage {
+	margin-left: 0;
+}
+
+header.sky {
+	h1.theater {
+		padding-top: 30%;
+  		font-size: 2.5em !important;
+	}
+	ul.like-and-share {
+		position: absolute;
+		bottom: 50px;
+		right: 30%;
+	}
+	ul.like-and-share li {
+		display: block;
+	}
+
+}
+
+
+section.offer {
+	background: #fff;
+	padding: 0;
+
+	nav#offer-nav {
 		display: none;
 	}
-
-	div#fullPage {
-		margin-left: 0;
+	.fp-slides {
+		height: 100%;
 	}
-	span#how-to-nav {
-		display: none;
+	.fp-controlArrow.fp-prev,  .fp-controlArrow.fp-next{
+		top: 40px;
+		background: $banana-color !important;
+		width: 40%;
+		height: 40px;
+		color: #000;
+		font-size: 2em;
+		border: 2px dashed $banana-color-red !important;
+		border-top: 0 !important;
+		&:after {
+			position: absolute;
+			top: -7px;
+		}
 	}
-
-	header.sky h1.theater {
-		padding-top: 20%;
-  		font-size: 2.6em !important;
-
+	.fp-controlArrow.fp-prev {
+		&:after {
+			content: '<<---';
+			left: 30px;
+		}
 	}
-  	h2.landing-contact-mail {
-		font-size: 1.2em !important;
-	}
+	.fp-controlArrow.fp-next {
+		&:after {
+			content: '--->>';
+			right: 30px;
 
-	nav#portfolio-nav {
-		display: none;
+		}
 	}
+	div.slide {
+		div.slide-img {
+			display: none;
+		}
+		div.slide-text {
+			float: none;
+			width: 100%;
+			height: auto;
 
-	.fp-controlArrow {
-		display: none !important;
+			h2 {
+				font-size: 21px;
+				margin-top: 40px;
+			}
+			p {
+				font-size: 15px;
+			}
+		}
+		div.brief a{
+			font-size: 1.2em;
+		}
 	}
 }
+	
+
+section.portfolio {
+	h2 {
+		font-size: 1.5em;
+	}
+	ul.banana-grid li {
+		width: 45%;
+		height: 140px;
+		margin: 0;
+	}
+}
+section.about {
+	div.about-banana {
+		width: 100%;
+		float: none;
+		border-right: 0;
+		-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+		box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+	}
+	p {
+		font-size: 15px;
+	}
+	ul {
+		display: none;
+	}
+}
+
+h2.landing-contact-mail {
+	font-size: 1.2em !important;
+}
+} //end phones
 
 
 
@@ -65,7 +157,7 @@
 
 
 
-/* big guy. for you */
+/* Big guy. For you */
 
 @media only screen and (min-width : 1824px) {
 
