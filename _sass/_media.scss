@@ -3,7 +3,7 @@
 @media only screen and (max-width: 767px) { 
 
 body {
-	background: #fff;
+	background: url('../media/landing/ricepaper.png');
 }
 
 nav#landing-nav {
@@ -15,6 +15,7 @@ div#fullPage {
 }
 
 header.sky {
+	background: none;
 	h1.theater {
 		padding-top: 30%;
   		font-size: 2.5em !important;
@@ -32,7 +33,7 @@ header.sky {
 
 
 section.offer {
-	background: #fff;
+	background: none;
 	padding: 0;
 
 	nav#offer-nav {
@@ -78,11 +79,11 @@ section.offer {
 			height: auto;
 
 			h2 {
-				font-size: 21px;
+				font-size: 25px;
 				margin-top: 40px;
 			}
 			p {
-				font-size: 15px;
+				font-size: 14px;
 			}
 		}
 		div.brief a{
@@ -94,7 +95,7 @@ section.offer {
 
 section.portfolio {
 	h2 {
-		font-size: 1.5em;
+		font-size: 25px;
 	}
 	ul.banana-grid li {
 		width: 45%;
@@ -103,24 +104,52 @@ section.portfolio {
 	}
 }
 section.about {
+	border-bottom: 0;
+	margin-bottom: 270px;//ебануть еще медиа для оче маленьких пхонов
 	div.about-banana {
 		width: 100%;
 		float: none;
 		border-right: 0;
-		-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
-		box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+
+		h2 {
+			font-size: 25px;
+		}
+		div {
+			width: 100%;
+			padding: $woid/3;
+		}
 	}
 	p {
-		font-size: 15px;
+		font-size: 14px;
 	}
 	ul {
 		display: none;
 	}
 }
+section.landing-contact {
+	border-top: 2px dashed $banana-color-red;
+	background: none;
+	padding-top: $woid*2;
 
-h2.landing-contact-mail {
-	font-size: 1.2em !important;
+	div {
+		h2 {
+			font-size: 25px;
+		}
+		h3 {
+			font-size: 18px;
+		}
+		h4 {
+			font-size: 16px;
+		}
+		h2.landing-contact-mail {
+			font-size: 1.2em !important;
+		}
+	}
+
+	
+
 }
+
 } //end phones
 
 
