@@ -94,13 +94,13 @@ h4 {
 a {
     color: tomato;
     text-decoration: none;
-
+/*
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
     -ms-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in; 
-
+*/
     &:visited {
         color: darken($brand-color, 15%);
     }
