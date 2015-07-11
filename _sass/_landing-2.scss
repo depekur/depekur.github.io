@@ -69,8 +69,9 @@ section.portfolio {
 
 section.about {
 	background: url('../media/landing/ricepaper.png');
-	border-top: 2px dashed $banana-color-red;
-	border-bottom: 2px dashed $banana-color-red;
+	-border-top: 2px dashed $banana-color-red;
+	-border-bottom: 2px dashed $banana-color-red;
+	border-right: 2px dashed $banana-color-red;
 
 
 	p {

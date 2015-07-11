@@ -17,16 +17,20 @@ div#fullPage {
 header.sky {
 	background: none;
 	h1.theater {
-		padding-top: 30%;
-  		font-size: 2.5em !important;
+		padding-top: 20%;
+  		font-size: 2.3em !important;
+  		max-width: 90%;
+  		margin: 0 auto;
 	}
 	ul.like-and-share {
 		position: absolute;
-		bottom: 50px;
+		bottom: 40px;
 		right: 30%;
 	}
 	ul.like-and-share li {
 		display: block;
+		padding-top: $woid/2;
+		padding-bottom: $woid/2;
 	}
 
 }
@@ -70,6 +74,8 @@ section.offer {
 		}
 	}
 	div.slide {
+		border-right: 0;
+		border-left: 0;
 		div.slide-img {
 			display: none;
 		}
@@ -105,7 +111,8 @@ section.portfolio {
 }
 section.about {
 	border-bottom: 0;
-	margin-bottom: 270px;//ебануть еще медиа для оче маленьких пхонов
+	border-right: 0;
+	margin-bottom: 200px;//ебануть еще медиа для оче маленьких пхонов
 	div.about-banana {
 		width: 100%;
 		float: none;
@@ -115,8 +122,15 @@ section.about {
 			font-size: 25px;
 		}
 		div {
-			width: 100%;
-			padding: $woid/3;
+			width: 90%;
+			padding: $woid;
+				p {
+					margin: 0;
+					a {
+						font-size: 18px;
+						padding: $woid/3;
+					}
+				}
 		}
 	}
 	p {

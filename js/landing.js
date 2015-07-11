@@ -61,12 +61,18 @@ $(document).ready(function() {
 			  	navigation: true,
 				navigationPosition: 'left',
 				navigationTooltips: ['hello', 'offer', 'portfolio', 'about', 'contacts'],
+				//slidesNavigation: true,
+				//slidesNavPosition: 'top',
+				//menu: '#offer-n',
 
 
 				onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
-			            var leavingSlide = $(this);
-			            console.log(anchorLink);
+						var offerNav = $('#offer-nav ul li');
+			            //var leavingSlide = $(this);
+			            //console.log(anchorLink);
 			        }				
 
 			}); //fullpage END
 		});
+
+

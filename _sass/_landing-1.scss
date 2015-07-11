@@ -154,7 +154,7 @@ section.offer {
 					-max-height: 40px;
 					
 					display: block;
-					padding: $woid/2;
+					padding: $woid/2 $woid;
 					color: darken($brand-color, 15%);
 					font-size: 1.1em;
 
@@ -247,19 +247,18 @@ section.offer {
 			}
 		}
 }
+section.offer  {
+	div.portal {
+		img {
+			width: 100%;
+			height: 30%;
+			margin-bottom: $woid;
 
-div.portal {
-	img {
-		width: 100%;
-		height: 30%;
-		margin-bottom: $woid;
-
-		&:first-child {
-			margin-top: $woid;
-		}
+			&:first-child {
+				margin-top: $woid;
+			}
+		}					
 	}
-					
-}
 div.seo {
 	img {
 		width: 45%;
@@ -289,3 +288,32 @@ div.e-commerce {
 	}
 }
 
+div.banana-more {
+	div.slide-text {
+		width: 100%;
+		text-align: center;
+		h2 {
+			width: 60%;
+			margin: 0 auto;
+			font-size: 26px;
+		}
+	}
+	ol {
+		margin-top: $woid*3;
+		padding-left: $woid*4;
+		padding-right: $woid*2;
+		text-align: left;
+		li {
+			padding-bottom: $woid/2;
+		}
+	}
+	
+	.ol-column {
+		display: inline-block;
+		width: 45%;
+		&:nth-child(2) {
+			margin-left: 5%;
+		}
+	}
+}
+}
