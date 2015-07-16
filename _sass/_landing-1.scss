@@ -179,21 +179,24 @@ section.offer {
 			box-sizing: border-box;
 			
 
-			div.slide-text, div.slide-img {
+			div.slide-text {
 				height: 90%;
-				width: 50%;
+				width: 100%;
 				margin: 0;	
 				padding: $woid;			
 				box-sizing: border-box;
+				text-align: center;
+
+				p {
+					width: 70%;
+					margin: 0 auto;
+					padding-top: $woid*2;
+					text-align: left;
+					text-indent: $woid;
+				}
 			}
 
-			div.slide-text {
-				float: left;
-				
-			}
-			div.slide-img {
-				float: right;
-			}
+
 
 			h2 {
 				margin-top: 0;
@@ -290,10 +293,9 @@ div.e-commerce {
 
 div.banana-more {
 	div.slide-text {
-		width: 100%;
-		text-align: center;
+
 		h2 {
-			width: 60%;
+			width: 80%;
 			margin: 0 auto;
 			font-size: 26px;
 		}
@@ -303,12 +305,14 @@ div.banana-more {
 		padding-left: $woid*4;
 		padding-right: $woid*2;
 		text-align: left;
+
 		li {
 			padding-bottom: $woid/2;
 		}
 	}
 	
 	.ol-column {
+		vertical-align: top;
 		display: inline-block;
 		width: 45%;
 		&:nth-child(2) {
