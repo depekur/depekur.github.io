@@ -93,7 +93,7 @@ section.offer {
 			}
 		}
 		div.brief a{
-			font-size: 1.2em;
+			font-size: 1em;
 		}
 	}
 }
@@ -112,7 +112,7 @@ section.portfolio {
 section.about {
 	border-bottom: 0;
 	border-right: 0;
-	margin-bottom: 200px;//ебануть еще медиа для оче маленьких пхонов
+	//margin-bottom: 200px;
 	div.about-banana {
 		width: 100%;
 		float: none;
@@ -145,18 +145,22 @@ section.landing-contact {
 	background: none;
 	padding-top: $woid*2;
 
-	div {
+	div.landing-contact-list {
 		h2 {
 			font-size: 25px;
 		}
-		h3 {
-			font-size: 18px;
+		p {
+			width: 100%;
+			float: none;
+			font-size: 14px;
 		}
-		h4 {
-			font-size: 16px;
-		}
-		h2.landing-contact-mail {
-			font-size: 1.2em !important;
+		table.contact-table {
+			width: 100%;
+			float: none;
+
+			td {
+				padding: 0 $woid/3;
+			}
 		}
 	}
 
@@ -167,35 +171,6 @@ section.landing-contact {
 } //end phones
 
 
-
-/* tablets */
-
-@media only screen and (min-width: 768px) and (max-width: 959px) { 
-
-	header.sky h1.theater {
-	  		font-size: 3.8em;
-
-	}
-
-	nav#portfolio-nav {
-		ul {
-			margin-bottom: 0;
-		}
-		ul li {
-			margin-left: 0 !important;
-			margin-right: 0 !important;
-
-			a {
-				padding-right: $woid/3 !important;
-				padding-left: $woid/3 !important;
-			}
-		}
-	}
-
-	.fp-controlArrow {
-		display: none !important;
-	}
- }
 
 
 

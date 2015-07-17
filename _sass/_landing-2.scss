@@ -124,50 +124,44 @@ section.about {
 			}
 		}
 	}
-	ul {
+	ul.slaves {
 		width: 50%;
-		height: 92%;
 		float: right;
 		box-sizing: border-box;
 		margin-bottom: 0;
-		padding-top: $woid;
-
 		li {
+			@include clearfix();
+
 			padding: $woid;
-			padding-left: $woid*3;
 			border-bottom: 2px dashed $banana-color-red;
-
 	
-				&:last-child {
-					border-bottom: 0;
-				}
-		}
-
-		div.slave-meta {
-			width: 55%;
-			display: inline-block;
-			margin-right: $woid*2;
-
-			&:nth-child(2) {
-				margin-right: 0;
-				margin-left: $woid*2;
+			&:last-child {
+				border-bottom: 0;
 			}
-
 			h3 {
+				margin-top: 0;
+
+			}
+			img {
+				width: 150px;
+				height: 150px;
+				float: left;
+				vertical-align: top;
+				margin-right: $woid;
+
+				//border-radius: 100%;
+				border: 3px dotted $banana-color-red;
+				box-shadow: 0 0 7px #666;
+			}
+			p {
 				
 			}
-		}
+			span {
+				display: block;
+				float: right;
+			}
+		}		
 		
-		img {
-			width: 170px;
-			height: 170px;
-			display: inline-block;
-			vertical-align: top;
-
-			border-radius: 100%;
-			border: 3px dotted $banana-color-red;
-			box-shadow: 0 0 7px #666;
-		}
 	}
 }
 

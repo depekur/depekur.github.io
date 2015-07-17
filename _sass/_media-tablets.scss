@@ -1,0 +1,126 @@
+/* tablets */
+
+@media only screen and (min-width: 768px) and (max-width: 1059px) { 
+
+body {
+	background: #fff;
+}
+
+nav#landing-nav {
+	display: none;
+}
+div#fullPage {
+	margin-left: 0;
+}
+#fp-nav {
+	display: none;
+}
+
+header.sky h1.theater {
+  		font-size: 3.8em;
+
+}
+
+section.offer {
+	padding-right: $woid*2;
+	padding-left: $woid*2;
+	nav#offer-nav {
+		ul {
+			margin-bottom: 0;
+			li {
+				margin-left: 0;
+				margin-right: 0;
+				font-size: 15px;
+				a {
+					padding-right: $woid/3;
+					padding-left: $woid/3;
+				}
+			}
+		}
+		
+	}
+	div.slide {
+
+		div.slide-text {
+			height: auto;
+			h2 {
+				font-size: 28px;
+				margin-top: 0;
+			}
+			p {
+				padding-top: $woid/2;
+				width: 90%;
+				font-size: 14px;
+			}
+		}
+		div.brief a{
+			font-size: 1.1em;
+		}
+	}
+	div.banana-more {
+		div.slide-text {
+			h2 {
+				font-size: 23px;
+				width: 100%;
+				padding-left: 0;
+			}
+			ol {				
+				margin: 0;
+				div.ol-column {
+					li {
+						font-size: 14px;
+
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.fp-controlArrow {
+	display: none !important;
+}
+
+section.about {
+	border-bottom: 0;
+	border-right: 0;
+	div.about-banana {
+		h2 {
+			font-size: 25px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+	ul.slaves {
+		li {
+			font-size: 14px;
+			img {
+				width: 80px;
+				height: 80px;
+			}
+		}		
+	}
+}
+section.landing-contact {
+	padding-top: 50px;
+	div.landing-contact-list {
+		width: 85%;
+		h2 {
+			font-size: 2em;
+		}
+		p {
+			font-size: 14px;
+
+		}
+		table.contact-table {
+			font-size: 14px;
+			td {
+				padding: 0 $woid/3;
+			}
+		}
+	}
+}
+} //end tablets
+
