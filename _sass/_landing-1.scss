@@ -8,7 +8,7 @@ nav#landing-nav {
 	background: $banana-color;
 	border-right: 1px solid $banana-color-red;
 
-	opacity: 0.9;
+	//opacity: 0.9;
 	text-align: center;
 
 	padding-top: $woid;
@@ -58,9 +58,10 @@ div#fullPage {
 */
 
 header.sky {
-	background: url('../media/landing/OSJQVTURTM.jpg');
-	background-size: cover;
-	height: 500px;
+	//background: url('../media/landing/OSJQVTURTM.jpg');
+	//background-size: cover;
+	background: url('../media/landing/ricepaper.png');
+	//height: 500px;
 	text-align:center;
 
 		h1.theater {
@@ -68,8 +69,8 @@ header.sky {
 
 			font-size: 5.5em;
 			margin: 0;
-			padding-top: 15%;
-			margin-bottom: 11%;
+			padding-top: 10%;
+			//margin-bottom: 11%;
 
 			span#god {
 				-display: block;
@@ -121,8 +122,8 @@ section.offer {
 
 	text-align:left;
 
-	-background: url('../media/landing/stardust.png');
-	background: url('../media/grass.jpg');
+	background: url('../media/landing/stardust.png');
+	//background: url('../media/grass.jpg');
 
 	.fp-slides {
 		height: 90%;
@@ -270,16 +271,28 @@ div.seo {
 	}
 }
 div.landos {
-	img {
-		width: 48%;
-		height: 100%;
-		display: inline-block;
-
-		&:first-child {
-			margin-right: $woid;
+	div.slide-text {
+		@include clearfix();
+		p, ol {
+			width: 50%;		
+			padding: $woid;
+			box-sizing: border-box;
 		}
+		p {
+			float: left;
 
+		}
+		ol {
+			float: right;
+			text-align: left;
+			margin-left: 0;
+			padding-left: $woid*4;
+			li {
+				padding-bottom: $woid/2;
+			}
+		}
 	}
+	
 
 }
 div.support {

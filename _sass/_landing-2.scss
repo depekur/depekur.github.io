@@ -126,13 +126,16 @@ section.about {
 	}
 	ul.slaves {
 		width: 50%;
+		//height: 100%;
 		float: right;
 		box-sizing: border-box;
 		margin-bottom: 0;
 		li {
 			@include clearfix();
 
-			padding: $woid;
+
+			height: (100% / 3);
+			padding: $woid $woid 0 $woid;
 			border-bottom: 2px dashed $banana-color-red;
 	
 			&:last-child {
@@ -143,8 +146,8 @@ section.about {
 
 			}
 			img {
-				width: 150px;
-				height: 150px;
+				width: 130px;
+				height: 130px;
 				float: left;
 				vertical-align: top;
 				margin-right: $woid;
@@ -178,9 +181,10 @@ section.about {
 
 
 section.landing-contact {
-	background: url('../media/landing/4YCB0VAY1L.jpg');
-	
-	background-size: cover;
+	//background: url('../media/landing/4YCB0VAY1L.jpg');
+	//background-size: cover;
+
+	background: url('../media/landing/stardust.png');
 	padding-top: 100px;
 	text-align: center;
 
