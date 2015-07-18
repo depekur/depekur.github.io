@@ -1,3 +1,63 @@
+/*
+*
+*
+*		how banana work
+*
+*/
+
+section.how-banana-work {
+	background: url('../media/landing/stardust.png');
+	text-align: center;
+
+	h2 {
+		padding: $woid;
+		font-size: 2.5em;
+		border-bottom: 3px solid $banana-color-red;
+		margin: 0;
+		background: url('../media/landing/ricepaper.png');
+
+	}
+
+	ul {
+		margin-top: $woid*3;
+		
+		height: 100%;
+
+		li {
+			display: inline-block;
+			vertical-align: top;
+			width: (100% / 3.5);
+			background: url('../media/landing/ricepaper.png');
+			position: relative;
+			margin: 0 $woid;
+			border: 2px solid $banana-color-red;
+
+			div.how-work-count {
+				position: absolute;
+				top: -25px;
+				left: -25px;
+				width: 50px;
+				height: 50px;
+				background: $banana-color-red;
+				border: 1px solid $banana-color;
+				font-size: 30px;
+				color: #ECE9E5;
+				vertical-align: baseline;
+			}
+			h3 {
+				background: $banana-color;
+				font-size: 2em;
+				margin-top: 0;
+				-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+  				box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+			}
+			p {
+				text-align: left;
+				padding: $woid;
+			}
+		}
+	}
+} 
 
 /*
 *
@@ -8,7 +68,7 @@
 
 
 section.portfolio {
-	background: url('../media/landing/b23.png');
+	//background: url('../media/landing/b23.png');
 
 	text-align: center;
 	overflow: hidden;
@@ -151,10 +211,10 @@ section.about {
 				float: left;
 				vertical-align: top;
 				margin-right: $woid;
-
+				margin-bottom: $woid;
 				//border-radius: 100%;
 				border: 3px dotted $banana-color-red;
-				box-shadow: 0 0 7px #666;
+				box-shadow: 0 0 10px #666;
 			}
 			p {
 				
@@ -191,7 +251,8 @@ section.landing-contact {
 	div.landing-contact-list {
 		background: url('../media/landing/ricepaper.png');
 		border: 5px dashed $banana-color-red;
-		box-shadow: 0 0 7px #666;
+		-webkit-box-shadow: 0 0 20px #ECE9E5;
+		box-shadow: 0 0 20px #ECE9E5;
 
 		width: 75%;
 		margin: 0 auto;
@@ -260,10 +321,13 @@ section.landing-contact {
 
 }
 */
-#fp-nav ul li a span, .fp-slidesNav ul li a span {
+#fp-nav ul li a span {
 	background: $banana-color-red !important;
 }
 
+.fp-slidesNav ul li a span {
+	background: $banana-color !important;
+}
 
 .fp-controlArrow.fp-prev {
 	border-color: transparent $banana-color transparent transparent !important;

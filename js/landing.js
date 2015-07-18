@@ -60,12 +60,12 @@ $(document).ready(function() {
 				//animateAnchor: true,
 				responsiveWidth: 768,
 				responsiveHeight: 500,
-				anchors: ['hello', 'offer', 'portfolio', 'about', 'contacts'],
+				anchors: ['hello', 'offer', 'portfolio', 'how-banana-work', 'about', 'contacts'],
 			  	navigation: true,
 				navigationPosition: 'left',
-				navigationTooltips: ['hello', 'offer', 'portfolio', 'about', 'contacts'],
-				//slidesNavigation: true,
-				//slidesNavPosition: 'top',
+				navigationTooltips: ['hello', 'offer', 'portfolio', 'how-banana-work', 'about', 'contacts'],
+				slidesNavigation: true,
+				slidesNavPosition: 'top',
 				//menu: '#offer-n',
 
 
