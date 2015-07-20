@@ -11,16 +11,85 @@ nav#landing-nav {
 	//opacity: 0.9;
 	text-align: center;
 
-	padding-top: $woid;
+	//padding-top: $woid;
 	padding-bottom: $woid;
 
-	div.wtf {
-		width: 50px;
-		height: 50px;
-		background: url('../media/landing/pretty-sprite.png') no-repeat -9px -46px;
+	div.toogle-nav {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 70px;
+		height: 70px;
+		text-align: center;
+		//border-bottom: 1px solid $banana-color-red;
+		//border-left: 1px solid $banana-color-red;
+		opacity: 0.7;
+		padding-top: 10px;
+		box-sizing: border-box;
+		cursor: pointer;
+		&:hover {
+			background: darken($banana-color, 20%);
+		}
+
 	}
 
+	a.go-to-blog {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 70px;
+		height: 70px;
+		padding-top: $woid/2;
+		//border-top: 1px solid $banana-color-red;
+		//border-left: 1px solid $banana-color-red;
+		color: #857D5B;
+		&:hover {
+			background: darken($banana-color, 20%);
+			color: #857D5B;
+		}
+		&:visited {
+			color: #857D5B;
+		}
+	}
+	hr {
+		border-color: $banana-color-red;
+		border-style: solid;
+		position: absolute;
+		width: 100%;
+		margin: 0;
+	}
+	hr.top-nav-hr {
+		top: 70px;
+	}
+	hr.bottom-nav-hr {
+		bottom: 77.5px;
+	}
+	ul {
+		height: 100%;
+		padding-top: 50%;
+		margin-right: $woid;
+		float: right;
 
+		li {			
+			
+			a {
+				padding: $woid;
+				display: block;
+				color: $text-color;
+				font-size: 1.2em;
+				//border-top: 1px solid $banana-color-red;
+				//border-bottom: 1px solid $banana-color-red;
+				&:hover {
+					background: darken($banana-color, 20%);
+					color: #ECE9E5;
+					text-decoration: none;
+
+				}
+
+			}
+		}
+	}
 
 	h2 {
 		width: 70px;
@@ -32,20 +101,7 @@ nav#landing-nav {
 				color: $color-green-nice;
 			}
 	}
-	ul {
-		margin-bottom: 300px;
-	}
-	ul li {
 
-		margin: 0;
-		
-		font-size: 1.2em;
-		color: $banana-color-red;
-
-			h4 {
-				color: $color-green-nice;
-			}	
-	}
 		
 
 	}
@@ -123,6 +179,8 @@ header.sky {
 			height: 50px;
 			//background: url('../media/landing/pretty-sprite.png') no-repeat -44px -44px;
 			background: url('../media/landing/scroll-down.png');
+			opacity: 0.5;
+			cursor: pointer;
 		}
 		
 }

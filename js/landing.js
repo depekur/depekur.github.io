@@ -64,7 +64,7 @@ function fuckTheKing() {
 				anchors: ['hello', 'offer', 'portfolio', 'how-banana-work', 'about', 'contacts'],
 			  	navigation: true,
 				navigationPosition: 'left',
-				navigationTooltips: ['hello', 'offer', 'portfolio', 'how-banana-work', 'about', 'contacts'],
+				//navigationTooltips: ['приветик', 'offer', 'portfolio', 'how-banana-work', 'about', 'contacts'],
 				slidesNavigation: true,
 				slidesNavPosition: 'bottom',
 				//menu: '#offer-n',
@@ -79,38 +79,47 @@ function fuckTheKing() {
 			}); //fullpage END
 
 
-
-/*
-* 	Automatic Image Montage (portfolio section)
-*/
-			$(function() {
-
-				var $container 	= $('#banana-grid'),
-					$imgs		= $container.find('img').hide(),
-					totalImgs	= $imgs.length,
-					cnt			= 0;
-				
-				$imgs.each(function(i) {
-					var $img	= $(this);
-					$('<img/>').load(function() {
-						++cnt;
-						if( cnt === totalImgs ) {
-							$imgs.show();
-							$container.montage({
-								fillLastRow				: false,
-								alternateHeight			: true,
-								margin					: 5,	
-								alternateHeightRange	: {
-									min	: 100,
-									max	: 120
-								}
-							});
-		
-						}
-					}).attr('src',$img.attr('src'));
-				});	
-				
-			});
-		});//end doc.ready
+// my button is on fire
 
 
+
+	
+
+
+	
+});//end doc.ready
+
+var buttonFire = $('.toogle-nav'),
+	landingNav = $('.landing-nav'),
+	superNav = $('#super-pupper-navigation'),
+	fireInTheButton = true;
+
+	buttonFire.click(function() {
+		if (fireInTheButton) {
+			landingNav.stop(true, false)
+			superNav.toggleClass('death');
+			landingNav.animate({
+				'width' : '300px'},
+				1000, 
+				'easeOutElastic', 
+				function() {
+					fireInTheButton = false;					
+				});
+		} else {
+			landingNav.stop(true, false);
+			superNav.toggleClass('death');
+			landingNav.animate({
+				'width' : '70px'},
+				1000, 
+				'easeOutElastic', 
+				function() {
+					fireInTheButton = true;
+				});			
+		}		
+	});
+
+
+
+$('.scroll-down-please').click(function(){
+	$.fn.fullpage.moveSectionDown();
+});

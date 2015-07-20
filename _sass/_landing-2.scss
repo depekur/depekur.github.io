@@ -14,7 +14,7 @@ section.how-banana-work {
 	}
 
 	ul {
-		margin-top: $woid*3;
+		margin-top: $woid*2;
 		
 		height: 100%;
 
@@ -28,7 +28,8 @@ section.how-banana-work {
 			margin: 0 $woid;
 			border: 2px solid $banana-color-red;
 			max-height: 300px;
-			margin-bottom: $woid*3;
+			margin-bottom: $woid*2;
+			padding-bottom: $woid;
 
 
 			div.how-work-count {
@@ -39,7 +40,7 @@ section.how-banana-work {
 				height: 50px;
 				border-radius: 100%;
 				background: $banana-color-red;
-				border: 1px solid $banana-color;
+				border: 2px solid $banana-color;
 				font-size: 30px;
 				color: #ECE9E5;
 				vertical-align: middle;
@@ -143,7 +144,8 @@ section.about {
 		
 		p {
 			margin: $woid $woid*2;
-			overflow: hidden;			
+			overflow: hidden;	
+			padding: 0 $woid*3;		
 		}
 		div {
 			width: 80%;

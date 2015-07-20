@@ -1,15 +1,26 @@
 ---
 layout: landing
 
-title: Разработка интернет решений от студии bananagarden.net! Интернет магазины, лендинги, порталы, блоги, портфолио, торговые площадки, доски объявлений, индивидуальные проекты.
+title: Разработка сайтов от студии bananagarden.net! Интернет магазины, лендинги, порталы, каталоги, индивидуальные проекты под ключ.
 
 keywords: создание сайтов, сделать лендинг, интернет магазин, разработка сайтов, сделать интернет магазин, сделать сайт
 
 description:  Создание сайтов которые решают реальные проблемы
 ---
-<nav id="landing-nav" >
+<nav id="landing-nav" class="landing-nav">
 
-   <div class="wtf"></div>
+   <div class="toogle-nav"><i class="fa fa-bars fa-3x"></i></div>
+   <hr class="top-nav-hr">
+   <ul class="death" id="super-pupper-navigation">
+      <li><a href="#hello">bananagarden.net</a></li>
+      <li><a href="#offer">предложение</a></li>
+      <li><a href="#portfolio">портфолио</a></li>
+      <li><a href="#how-banana-work">процесс</a></li>
+      <li><a href="#about">команда</a></li>
+      <li><a href="#contacts">контакты</a></li>
+   </ul>
+   <hr class="bottom-nav-hr">
+   <a class="go-to-blog death" href="./blog" title="Блог веб студии bananagarden.net" alt="Блог"><i class="fa fa-book fa-3x"></i></a>
 </nav>
 
 <div id="fullPage">
@@ -48,7 +59,7 @@ description:  Создание сайтов которые решают реал
          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+         proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
          <div>от 700 $</div>
       </li>
       <li>
@@ -62,54 +73,41 @@ description:  Создание сайтов которые решают реал
          <div>от 500 $</div>
       </li>
    </ul>
+   <!--
    <div class="brief"><a href="">Заполните бриф на разработку и мы сможем начать уже сегодня</a></div>
+   -->
 </section>
 
 {% include offer.html %}
 
 
 <section class="section how-banana-work">
-<h2 class="section-header">Как мы работаем?</h2>
+<h2 class="section-header">Как мы работаем</h2>
    <ul>
       <li>
          <div class="how-work-count">1</div>
          <h3>Аналитика</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-         consequat.</p>
+         <p>Вникаем в ваш бизнес, изучаем ваш рынок, знакомимся с вашими конкурентами, клиентами и партнерами, особенностями. Этап стратегического планирования, поиска возможных решений, мозговой штурм. Завершением этапа считается длинный список решений, которые будут тестироваться на втором этапе.</p>
       </li>
       <li>
          <div class="how-work-count">2</div>
          <h3>Прототип</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-         consequat.</p>
+         <p>Первые наброски. Продумываем структуру, набрасываем верстку. На этом этапе мы не думаем о деталях - мы создаем общий концепт, смотрим как выглядят идеи на реальном сайте. Отбираем лучшие идеи из предыдущего этапа и согласовываем их с вами. Утверждаем макет и переходим к разработке.</p>
       </li>
       <li>
          <div class="how-work-count">3</div>
          <h3>Разработка</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-         consequat. </p>
+         <p>Кодим, рисуем, верстаем. Полная реализация запланированного функционала. Подгоняем движок под проект. Разрабатываем адаптивные версии проекта для смартфонов, планшетов и больших экранов. Попутно готовим контент (если необходимо). Уделяем внимание мелочам.</p>
       </li>
       <li>
          <div class="how-work-count">4</div>
          <h3>Тесты</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-         consequat. </p>
+         <p>Доводим проект до ума. Находим баги и исправляем их. Тестируем проект в разных браузерах, проверяем адаптивность на разных устройствах и разрешениях. </p>
       </li>
       <li>
          <div class="how-work-count">5</div>
          <h3>Запуск</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-         consequat. </p>
+         <p>Разворачиваем проект на ваших (или наших) серверах. Обучаем обращению с сайтом. По окончании этого этапа проект готов к запуску рекламной компании.</p>
       </li>
    </ul>
 </section>
@@ -130,7 +128,14 @@ description:  Создание сайтов которые решают реал
       </li>
    </ul>
    <div class="about-banana">      
-      <p>Мы - команда фрилансеров. У нас нет офиса, мы децентрализированны, свободны и динамичны. Веб-разработка - наша страсть. Нас никто не подгоняет - мы сами заинтересованны делать свою работу. Мимо нас не проходит ни одна новая технология, мы всегда в тренде. У нас нет графика работы - мы работаем на результат. Нам не платят ставку, у нас нет отпусков и выходных. Пока остальные жалуются на переработки - мы не спим ночами и думаем как сделать проект лучше. Все чем мы живем - результат. </p>
+      <p>Мы - команда фрилансеров. У нас нет офиса, мы децентрализированны, свободны и динамичны. Веб-разработка - наша страсть. Нас никто не подгоняет - мы сами заинтересованны делать свою работу.</p>
+      <p>Мимо нас не проходит ни одна новая технология, мы всегда в тренде. У нас нет графика работы - мы работаем на результат. Нам не платят ставку, у нас нет отпусков и выходных. Пока остальные жалуются на переработки - мы не спим ночами и думаем как сделать проект лучше. Все чем мы живем - результат. </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
    </div> 
    <ul class="slaves">
       <li>
