@@ -14,32 +14,38 @@ nav#landing-nav {
 	padding-top: $woid;
 	padding-bottom: $woid;
 
+	div.wtf {
+		width: 50px;
+		height: 50px;
+		background: url('../media/landing/pretty-sprite.png') no-repeat -9px -46px;
+	}
 
 
-		h2 {
-			width: 70px;
-			margin-top: 0;
-			font-size: 2.4em;
-			color: $banana-color-red;
 
-				sub {
-					color: $color-green-nice;
-				}
-		}
-		ul {
-			margin-bottom: 300px;
-		}
-		ul li {
+	h2 {
+		width: 70px;
+		margin-top: 0;
+		font-size: 2.4em;
+		color: $banana-color-red;
 
-			margin: 0;
-			
-			font-size: 1.2em;
-			color: $banana-color-red;
+			sub {
+				color: $color-green-nice;
+			}
+	}
+	ul {
+		margin-bottom: 300px;
+	}
+	ul li {
 
-				h4 {
-					color: $color-green-nice;
-				}	
-		}
+		margin: 0;
+		
+		font-size: 1.2em;
+		color: $banana-color-red;
+
+			h4 {
+				color: $color-green-nice;
+			}	
+	}
 		
 
 	}
@@ -106,8 +112,31 @@ header.sky {
 				margin-right: -20px;
 			}
 		}
+
+		span.scroll-down-please {
+			position: absolute;
+			bottom: 10px;
+			left: 50%;
+			margin-left: -25px;
+			display: block;
+			width: 50px;
+			height: 50px;
+			//background: url('../media/landing/pretty-sprite.png') no-repeat -44px -44px;
+			background: url('../media/landing/scroll-down.png');
+		}
+		
 }
 
+.section-header {
+	margin: 0;
+	padding-top: $woid/2;
+	padding-bottom: $woid/2;
+	font-size: 2.3em;
+	text-align: center;
+	-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+	-moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+}
 
 /*
 *
@@ -115,15 +144,94 @@ header.sky {
 *		offer
 *
 */
-
 section.offer {
-	-min-height: 500px;
-	padding: $woid*4 $woid*4 0;
+	background: url('../media/landing/stardust.png');
+
+	h2 {
+		background: url('../media/landing/ricepaper.png');
+	}
+
+	ul {
+		margin-top: $woid*3;
+		text-align: center;	
+		height: 70%;
+		margin-bottom: 0;	
+
+		li {
+			display: inline-block;
+			vertical-align: top;
+			width: (100% / 3.5);
+			min-width: 300px;
+			background: url('../media/landing/ricepaper.png');
+			margin: 0 $woid;
+			border: 2px solid $banana-color-red;
+			border-bottom: 0;
+			margin-bottom: $woid*3;
+
+			h3 {
+				background: $banana-color;
+				font-size: 1.9em;
+				margin: 0;
+				-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+  				box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+			}
+			p {
+				text-align: left;
+				padding: $woid;
+				margin-bottom: 0;
+			}
+			div {
+				background: $banana-color-red;
+				font-size: 1.3em;
+				padding: $woid/4;
+				margin: 0;
+				-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+  				box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+  				color: #ECE9E5;
+			}
+		}
+	}
+	div.brief {
+		width: 80%;
+		margin: 0 auto;
+		border: 1px solid $banana-color;
+		text-align: center;
+		clear: both;
+		a {
+			display: block;
+			height: 100%;
+			padding: $woid/2;
+			background: rgba($banana-color-red, 0.9);
+			color: #ECE9E5;
+			font-size: 1.4em;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+	}
+}
+
+
+
+
+/*
+*
+*
+*		slider
+*
+*/
+
+section.slider {
+	//padding: 0 $woid*4 0;
 
 	text-align:left;
 
-	background: url('../media/landing/stardust.png');
+	background: url('../media/landing/ricepaper.png');
 	//background: url('../media/grass.jpg');
+
+
 
 	.fp-slides {
 		height: 95%;
@@ -135,48 +243,11 @@ section.offer {
 
 	}
 
-		nav#offer-nav {
-			text-align: center;
-
-			ul {
-				margin-bottom: $woid/2;
-			}
-
-			ul li {
-				display: inline-block;
-				box-sizing: border-box;
-				margin-left: $woid;
-				margin-right: $woid;
-
-				background: url('../media/landing/ricepaper.png');
-				border: 1px solid $banana-color-red;
-
-				a {
-					-max-height: 40px;
-					
-					display: block;
-					padding: $woid/2 $woid;
-					color: darken($brand-color, 15%);
-					font-size: 1.1em;
-
-					&:hover {
-						text-decoration: none;
-						background: $banana-color;
-						color: #fff;
-					}
-				}
-
-			}
-			h4 {
-				margin: 0;
-			}
-		}
-
 		div.slide {
 			height: 100%;
-			border: 2px solid $banana-color-red; 
+
 			-padding: $woid/2 $woid*2;
-			background: url('../media/landing/ricepaper.png');
+			//background: url('../media/landing/ricepaper.png');
 			box-sizing: border-box;
 			
 
@@ -201,8 +272,11 @@ section.offer {
 
 			h2 {
 				margin-top: 0;
-				padding-left: $woid*2;
+				box-sizing: border-box;
+				
 				font-size: 39px;
+				-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+  				box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
 			}
 
 			ol, ul {
@@ -227,31 +301,10 @@ section.offer {
 				font-size: 19px;
 			}
 
-			div.brief {
-				width: 80%;
-				margin: 0 auto;
-				border: 1px dashed $banana-color-red;
-				text-align: center;
-				clear: both;
-
-
-				a {
-					display: block;
-					height: 100%;
-					padding: $woid/2;
-					background: rgba($banana-color-red, 0.9);
-					color: #fff;
-					font-size: 1.4em;
-
-					&:hover {
-						text-decoration: none;
-					}
-				}
-
-			}
+			
 		}
 }
-section.offer  {
+section.slider  {
 	div.portal {
 		img {
 			width: 100%;

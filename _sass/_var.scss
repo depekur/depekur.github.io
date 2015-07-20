@@ -1,4 +1,4 @@
-$banana-color:       #EFC232;
+$banana-color:       #F7DD6E; //#EFC232
 $banana-color-light: lighten($banana-color, 25%);
 $banana-color-dark:  darken($banana-color, 15%);
 $banana-color-old:   darken($banana-color, 60%);
@@ -22,7 +22,7 @@ $font-banana-logo:   "junction";
 $font-banana-junc:  "junction-light";
 
 
-$base-font-size:     17px;
+$base-font-size:     16px;
 $small-font-size:    $base-font-size * 0.875;
 $base-line-height:   1.5;
 
