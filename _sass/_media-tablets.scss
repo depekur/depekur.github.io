@@ -1,6 +1,6 @@
 /* tablets */
 
-@media only screen and (min-width: 768px) and (max-width: 1059px) { 
+@media only screen and (min-width: 768px) and (max-width: 1159px) { 
 
 body {
 	background: #fff;
@@ -20,57 +20,57 @@ header.sky h1.theater {
   		font-size: 3.8em;
 
 }
-
+.section-header {
+	font-size: 1.8em;
+}
 section.offer {
-	padding-right: $woid*2;
-	padding-left: $woid*2;
-	nav#offer-nav {
-		ul {
-			margin-bottom: 0;
-			li {
-				margin-left: 0;
-				margin-right: 0;
-				font-size: 15px;
-				a {
-					padding-right: $woid/3;
-					padding-left: $woid/3;
-				}
-			}
-		}
-		
-	}
-	div.slide {
+	ul {
+		margin-top: $woid;
+		li {
+			margin: 0 0 $woid;
+			width: 31%;
+			box-sizing: border-box;
 
-		div.slide-text {
-			height: auto;
-			h2 {
-				font-size: 28px;
-				margin-top: 0;
+
+			h3 {
+				font-size: 1.3em;
 			}
 			p {
-				padding-top: $woid/2;
-				width: 90%;
+				//display: none;
 				font-size: 14px;
 			}
-		}
-		div.brief a{
-			font-size: 1.1em;
+			div {
+				font-size: 1em;
+			}
 		}
 	}
-	div.banana-more {
-		div.slide-text {
-			h2 {
-				font-size: 23px;
-				width: 100%;
-				padding-left: 0;
-			}
-			ol {				
-				margin: 0;
-				div.ol-column {
-					li {
-						font-size: 14px;
 
-					}
+
+}
+
+section.how-banana-work {
+	ul {
+		margin-bottom: 0;
+		li {
+			padding-bottom: 0;
+			min-width: 26%;
+			width: 26%;
+
+			div.how-work-count {
+				height: 30px;
+				width: 30px;
+				font-size: 20px;
+				top: -15px;
+	  			left: -15px;
+			}
+			h3 {
+				font-size: 1.3em;
+			}
+			p {
+				font-size: 14px;
+				padding: $woid/2;
+				span {
+					display: none;
 				}
 			}
 		}
@@ -78,33 +78,74 @@ section.offer {
 }
 
 
-.fp-controlArrow {
-	display: none !important;
+section.escort {
+
+	div.urrrghhh {
+		width: 40%;
+
+		div.how-work-count {
+			height: 30px;
+			width: 30px;
+			font-size: 20px;
+			top: -15px;
+  			left: -15px;
+		}
+		h3 {
+			font-size: 1.3em;
+		}
+		p {
+			font-size: 14px;
+			padding: $woid;
+		}
+		div.banana-price {
+			font-size: 1em;
+		}
+	}
+	div.about-escort {
+
+		margin-left: 0;
+		font-size: 14px;
+		padding: $woid;
+		margin-bottom: $woid*2;
+		h3{
+			font-size: 1.3em;
+			padding: $woid;
+		}
+	}
 }
+
 
 section.about {
 	border-bottom: 0;
 	border-right: 0;
 	div.about-banana {
+		width: 50%;
 		h2 {
 			font-size: 25px;
 		}
 		p {
 			font-size: 14px;
+			span {
+				display: none;
+			}
 		}
 	}
 	ul.slaves {
 		li {
 			font-size: 14px;
+			width: auto;
+			h3 {
+				padding: $woid;
+			}
 			img {
-				width: 80px;
-				height: 80px;
+				width: 100px;
+				height: 100px;
 			}
 		}		
 	}
 }
 section.landing-contact {
-	padding-top: 50px;
+
 	div.landing-contact-list {
 		width: 85%;
 		h2 {
@@ -117,7 +158,7 @@ section.landing-contact {
 		table.contact-table {
 			font-size: 14px;
 			td {
-				padding: 0 $woid/3;
+				//padding: 0 $woid/3;
 			}
 		}
 	}

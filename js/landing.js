@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 /*
 * 	theater
-*/
+
 
 var theater = new TheaterJS({ locale: "ru" });
 
@@ -44,6 +44,54 @@ theater
 function fuckTheKing() {
 	$("#coma").toggleClass("death");
 }
+*/
+
+
+
+var theater = new TheaterJS({ locale: "ru" });
+4
+theater
+	.describe("jenya", { speed: .9, accuracy: .9, invincibility: 1 }, "#jenya")
+	.describe("dima", { speed: .9, accuracy: .7, invincibility: 2 }, "#dima")
+	.describe("valia", { speed: .9, accuracy: .6, invincibility: 4 }, "#valia")
+	.describe("igor", { speed: .9, accuracy: .7, invincibility: 10 }, "#igor");
+
+theater
+	.on("say:start, erase:start", function (eventName) {
+        var self    = this,
+            current = self.current.voice;
+
+        self.utils.addClass(current, "saying");
+    })
+    .on("say:end, erase:end", function (eventName) {
+        var self    = this,
+            current = self.current.voice;
+
+        self.utils.removeClass(current, "saying");
+    });
+
+theater
+	.write("jenya: я вам проект принес", 400)
+	.write("igor: ура, я не буду голодать", 400)	
+	.write("dima: опять лендинг притащил?", 500)
+	.write("valia: ближе к делу! что рисовать будем?", 500)
+	.write("jenya: итак, у нас сегодня интернет магазин резиновых членов", 500)
+	.write("igor: бля", 500)
+	.write("valia: я не буду это рисовать!", 500)
+	.write("dima: ща престашопик развернем, шаблончик накатим..", 500)
+	.write("jenya: дима начинай, валя - рисуй давай, иначе без премии будешь!", 500)
+	.write("valia: фуууууу", 500)
+	.write("valia: ок)))", 500)
+	.write("igor: может купим наконец-то премиум шаблон? надоело верстать ну", 500)	
+	.write("jenya: а я пойду поем", 500)
+	.write("dima: сук))", 500)
+	.write("igor: бля", 500)
+	.write("valia: ну ты че((", 500)
+	
+
+	
+	.write(function () { theater.play(true); });
+
 
 
 /*
@@ -61,7 +109,7 @@ function fuckTheKing() {
 				//animateAnchor: true,
 				responsiveWidth: 768,
 				responsiveHeight: 500,
-				anchors: ['hello', 'offer', 'portfolio', 'how-banana-work', 'about', 'contacts'],
+				anchors: ['hello', 'offer', 'portfolio', 'how-banana-work', 'escort', 'about', 'contacts'],
 			  	navigation: true,
 				navigationPosition: 'left',
 				//navigationTooltips: ['приветик', 'offer', 'portfolio', 'how-banana-work', 'about', 'contacts'],
@@ -96,7 +144,7 @@ var buttonFire = $('.toogle-nav'),
 
 	buttonFire.click(function() {
 		if (fireInTheButton) {
-			landingNav.stop(true, false)
+			landingNav.stop(true, true)
 			superNav.toggleClass('death');
 			landingNav.animate({
 				'width' : '300px'},
@@ -106,7 +154,7 @@ var buttonFire = $('.toogle-nav'),
 					fireInTheButton = false;					
 				});
 		} else {
-			landingNav.stop(true, false);
+			landingNav.stop(true, true);
 			superNav.toggleClass('death');
 			landingNav.animate({
 				'width' : '70px'},

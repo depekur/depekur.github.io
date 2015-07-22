@@ -1,5 +1,7 @@
 /* phones */
 
+@charset "utf-8"; 
+
 @media only screen and (max-width: 767px) { 
 
 body {
@@ -17,58 +19,77 @@ div#fullPage {
 header.sky {
 	background: none;
 	h1.theater {
-		padding-top: 20%;
+		padding-top: 200px;
   		font-size: 2.3em !important;
   		max-width: 90%;
   		margin: 0 auto;
 	}
 	ul.like-and-share {
 		position: absolute;
-		bottom: 40px;
-		right: 30%;
+		top: 0;
+
+
 	}
 	ul.like-and-share li {
-		display: block;
-		padding-top: $woid/2;
-		padding-bottom: $woid/2;
+		display: inline-block;
+		padding-top: $woid;
+		padding-bottom: $woid;
 	}
 
 }
 
+.section-header {
+	font-size: 1.5em;
+}
 
 section.offer {
-	background: none;
-	padding: 0;
-
-	nav#offer-nav {
-		display: none;
+	height: auto !important;
+	ul li {
+		margin-bottom: $woid;
+		width: 90%;
+		h3 {
+			font-size: 1.3em;
+		}
+		p {
+			//display: none;
+			font-size: 14px;
+		}
+		div {
+			font-size: 1em;
+		}
 	}
+}
+
+section.slider {
+	height: auto !important;
+
+
 	.fp-slides {
 		height: 100%;
 	}
 	.fp-controlArrow.fp-prev,  .fp-controlArrow.fp-next{
-		top: 40px;
+		top: 100px;
 		background: $banana-color !important;
-		width: 40%;
+		width: 30%;
 		height: 40px;
 		color: #000;
-		font-size: 2em;
+		font-size: 3em;
 		border: 2px dashed $banana-color-red !important;
-		border-top: 0 !important;
 		&:after {
 			position: absolute;
-			top: -7px;
+			top: -20px;
 		}
 	}
 	.fp-controlArrow.fp-prev {
 		&:after {
-			content: '<<---';
+			content: "\21E0";
 			left: 30px;
+
 		}
 	}
 	.fp-controlArrow.fp-next {
 		&:after {
-			content: '--->>';
+			content: '\21E2';
 			right: 30px;
 
 		}
@@ -76,6 +97,7 @@ section.offer {
 	div.slide {
 		border-right: 0;
 		border-left: 0;
+		padding-top: 50px;
 		div.slide-img {
 			display: none;
 		}
@@ -109,43 +131,132 @@ section.portfolio {
 		margin: 0;
 	}
 }
+
+
+section.how-banana-work {
+	height: auto !important;
+	ul {
+		margin-bottom: 0;
+		li {
+			padding-bottom: 0;
+			width: 90%;
+			min-width: 90%;
+			div.how-work-count {
+				height: 30px;
+				width: 30px;
+				font-size: 20px;
+				top: -15px;
+	  			left: -15px;
+			}
+			h3 {
+				font-size: 1.3em;
+			}
+			p {
+				font-size: 14px;
+			}
+
+		}
+	}
+}
+
+section.escort {
+	height: auto !important;
+	h2.section-header {
+		font-size: 1.3em;
+	}
+	div.urrrghhh {
+		width: 90%;
+		margin-right: 0;
+		div.how-work-count {
+			height: 30px;
+			width: 30px;
+			font-size: 20px;
+			top: -15px;
+  			left: -15px;
+		}
+		h3 {
+			font-size: 1.3em;
+		}
+		p {
+			font-size: 14px;
+		}
+		div.banana-price {
+			font-size: 1em;
+		}
+	}
+	div.about-escort {
+		width: 80%;
+		margin-left: 0;
+		font-size: 14px;
+		padding: $woid;
+		margin-bottom: $woid*2;
+		h3{
+			font-size: 1.3em;
+			padding: $woid;
+		}
+	}
+}
+
 section.about {
+	height: auto !important;
 	border-bottom: 0;
 	border-right: 0;
-	//margin-bottom: 200px;
+
+
+	ul.slaves {
+
+		 
+		li {
+			float: left;
+			width: 50%;
+			margin-bottom: 0;
+
+			//border-top: 0;
+			//border-bottom: 0;
+
+			h3 {
+				font-size: 1em;
+				height: 50px;
+				padding-left: $woid/2;
+				padding-right: $woid/2;
+			}
+			img {
+				width: 130px;
+				height: 130px;
+			}
+
+		}
+	}
 	div.about-banana {
 		width: 100%;
 		float: none;
 		border-right: 0;
+		padding-top: 0;
 
 		h2 {
 			font-size: 25px;
 		}
-		div {
-			width: 90%;
-			padding: $woid;
-				p {
-					margin: 0;
-					a {
-						font-size: 18px;
-						padding: $woid/3;
-					}
-				}
+		p {
+			padding: 0;
+			font-size: 14px;
 		}
+
 	}
-	p {
-		font-size: 14px;
-	}
-	ul {
-		display: none;
-	}
+	
+
 }
 section.landing-contact {
-	border-top: 2px dashed $banana-color-red;
+
 	background: none;
 	padding-top: $woid*2;
+	height: auto !important;
+	padding-bottom: $woid;
 
 	div.landing-contact-list {
+		margin-top: 0;
+		width: 100%;
+		padding: 0;
+		text-align: center;
 		h2 {
 			font-size: 25px;
 		}
@@ -153,6 +264,8 @@ section.landing-contact {
 			width: 100%;
 			float: none;
 			font-size: 14px;
+			padding: $woid*2;
+			box-sizing: border-box;
 		}
 		table.contact-table {
 			width: 100%;

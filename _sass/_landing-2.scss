@@ -1,72 +1,9 @@
-/*
-*
-*
-*		how banana work
-*
-*/
 
-section.how-banana-work {
-	background: url('../media/landing/stardust.png');
-	text-align: center;
-
-	h2.section-header {
-		background: url('../media/landing/ricepaper.png');
-	}
-
-	ul {
-		margin-top: $woid*2;
-		
-		height: 100%;
-
-		li {
-			display: inline-block;
-			vertical-align: top;
-			width: (100% / 3.5);
-			min-width: 300px;
-			background: url('../media/landing/ricepaper.png');
-			position: relative;
-			margin: 0 $woid;
-			border: 2px solid $banana-color-red;
-			max-height: 300px;
-			margin-bottom: $woid*2;
-			padding-bottom: $woid;
-
-
-			div.how-work-count {
-				position: absolute;
-				top: -25px;
-				left: -25px;
-				width: 50px;
-				height: 50px;
-				border-radius: 100%;
-				background: $banana-color-red;
-				border: 2px solid $banana-color;
-				font-size: 30px;
-				color: #ECE9E5;
-				vertical-align: middle;
-			}
-			h3 {
-				background: $banana-color;
-				font-size: 1.9em;
-				margin: 0;
-
-				-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
-  				box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
-			}
-			p {
-				text-align: left;
-				padding: $woid;
-				margin-bottom: 0;
-			}
-		}
-	}
-} 
-
-/*
+/*************************************************************************************************
 *
 *
 *		portfolio
-*
+*************************************************************************************************
 */
 
 
@@ -117,11 +54,165 @@ section.portfolio {
 
 }
 
-/*
+
+
+
+/*************************************************************************************************
+*
+*
+*		how banana work
+*************************************************************************************************
+*/
+
+section.how-banana-work {
+	background: url('../media/landing/stardust.png');
+	text-align: center;
+
+	h2.section-header {
+		background: url('../media/landing/ricepaper.png');
+	}
+
+	ul {
+		margin-top: $woid*2;
+		
+		height: 100%;
+
+		li {
+			display: inline-block;
+			vertical-align: top;
+			width: (100% / 3.5);
+			min-width: 300px;
+			background: url('../media/landing/ricepaper.png');
+			position: relative;
+			margin: 0 $woid;
+			border: 2px solid $banana-color-red;
+			max-height: 300px;
+			margin-bottom: $woid*2;
+			padding-bottom: $woid;
+
+
+			div.how-work-count {
+				position: absolute;
+				top: -20px;
+				left: -20px;
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+				background: $banana-color-red;
+				border: 2px solid $banana-color;
+				font-size: 27px;
+				color: #ECE9E5;
+				vertical-align: middle;
+				-webkit-box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.175);
+				box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.175);
+			}
+			h3 {
+				background: $banana-color;
+				font-size: 1.9em;
+				margin: 0;
+
+				-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+  				box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+			}
+			p {
+				text-align: left;
+				padding: $woid;
+				margin-bottom: 0;
+			}
+		}
+	}
+} 
+
+
+/*************************************************************************************************
+*
+*
+*		ESCORT
+*************************************************************************************************
+*/
+
+section.escort {
+	background: url('../media/landing/stardust.png');
+	text-align: center;
+
+
+	h2.section-header {
+		background: url('../media/landing/ricepaper.png');
+		margin-bottom: $woid*4;
+	}
+
+	div.urrrghhh {
+		width: 30%;
+		vertical-align: top;
+		display: inline-block;
+		margin-right: $woid*2;
+		background: url('../media/landing/ricepaper.png');
+		position: relative;
+		border: 2px solid $banana-color-red;
+		margin-bottom: $woid*2;
+
+
+		h3 {
+			background: $banana-color;
+			font-size: 1.9em;
+			margin: 0;
+			-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+			box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+		}
+		p {
+			text-align: left;
+			padding: $woid*2;
+			margin-bottom: 0;
+		}
+		div.how-work-count {
+			position: absolute;
+			top: -20px;
+			left: -20px;
+			width: 40px;
+			height: 40px;
+			border-radius: 100%;
+			background: $banana-color-red;
+			border: 2px solid $banana-color;
+			font-size: 27px;
+			color: #ECE9E5;
+			vertical-align: middle;
+			-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+			box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+		}
+		div.banana-price {
+			background: $banana-color-red;
+			font-size: 1.3em;
+			padding: $woid/4;
+			margin: 0;
+			-webkit-box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.175);
+			box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.175);
+			color: #ECE9E5;
+		}
+	}
+	div.about-escort {
+		display: inline-block;
+		vertical-align: top;
+		width: 40%;
+		border: 2px solid $banana-color-red;
+
+		padding: $woid*3;
+		margin-left: $woid*2;
+		background: url('../media/landing/ricepaper.png');
+		h3 {
+			background: $banana-color-red;
+			color: #ECE9E5;
+			font-size: 1.3em;
+			padding: $woid;
+		}
+	}
+}
+
+
+/*************************************************************************************************
 *
 *
 *		banana people
-*
+*************************************************************************************************
 */
 
 section.about {
@@ -172,34 +263,90 @@ section.about {
 	}
 	ul.slaves {
 		box-sizing: border-box;
+		margin-top: $woid*3;
 		margin-bottom: 0;
-		text-align: center;
+		text-align: left;
+		//vertical-align: top;
 		display: inline-block;
-		vertical-align: top;
+		//width: 50%;
 		li {
 			@include clearfix();
-			margin: $woid*2 auto;
-			width: 250px;
-			padding: $woid 0;
-			border: 2px dashed $banana-color-red;
+
+			width: 50%;
+			float: left;
+			padding: $woid;
 			box-sizing: border-box;
-	
-			h3 {
-				margin-top: 0;
-				padding-bottom: $woid;
-				border-bottom: 2px dashed $banana-color-red;
-			}
+
+
 			img {
-				width: 180px;
-				height: 180px;
-				margin: 0 auto;
-				vertical-align: top;
-				border-radius: 100%;
-				//border: 3px dotted $banana-color-red;
+				width: 140px;
+				height: 140px;
+				//vertical-align: top;
 				box-shadow: 0 0 10px #666;
+				border-radius: 100%;
+
 			}
+
+			&:nth-child(1) {
+				border-right: 1px solid $banana-color-red;
+				border-bottom: 1px solid $banana-color-red;				
+				img {
+					float: right;
+					margin-left: $woid;
+				}
+				h3 {
+					text-align: right;
+				}
+				p {
+					float: left;
+				}
+			}
+			&:nth-child(2) {
+				border-left: 1px solid $banana-color-red;
+				border-bottom: 1px solid $banana-color-red;
+				img {
+					float: left;
+					margin-right: $woid;
+				}
+				p {
+					float: right;
+				}
+			}
+			&:nth-child(3) {
+				border-top: 1px solid $banana-color-red;
+				border-right: 1px solid $banana-color-red;
+				img {
+					float: right;
+					margin-left: $woid;
+				}
+				h3 {
+					text-align: right;
+				}
+				p {
+					float: left;
+				}
+			}	
+			&:nth-child(4) {
+				border-left: 1px solid $banana-color-red;
+				border-top: 1px solid $banana-color-red;
+				img {
+					float: left;
+					margin-right: $woid;
+				}
+				p {
+					float: right;
+				}
+			}
+
+			h3 {
+				margin: 0;
+				padding: $woid;
+			}
+			
 			p {
-				
+				font-size: 1.2em;
+				width: 300px;
+				text-align: left;
 			}
 			span {
 				display: block;
@@ -214,11 +361,11 @@ section.about {
 
 
 
-/*
+/*************************************************************************************************
 *
 *
 *		contact
-*
+*************************************************************************************************
 */
 
 
@@ -227,17 +374,20 @@ section.landing-contact {
 	//background-size: cover;
 
 	background: url('../media/landing/stardust.png');
-	padding-top: 100px;
+	//padding-top: 100px;
 	text-align: center;
+
+	h2.section-header {
+		background: url('../media/landing/ricepaper.png');
+	}
 
 	div.landing-contact-list {
 		background: url('../media/landing/ricepaper.png');
 		//border: 5px dashed $banana-color-red;
 		-webkit-box-shadow: 0 0 20px #ECE9E5;
 		box-shadow: 0 0 20px #ECE9E5;
-
 		width: 75%;
-		margin: 0 auto;
+		margin: 100px auto 0;
 		padding: $woid*2;
 
 		h2 {
