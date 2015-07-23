@@ -1,9 +1,14 @@
 $banana-color:       #F7DD6E; //#EFC232
+$banana-color-red:   #CC3333;
+$banana-color-white: #ECE9E5; 
+
+
+
 $banana-color-light: lighten($banana-color, 25%);
 $banana-color-dark:  darken($banana-color, 15%);
 $banana-color-old:   darken($banana-color, 60%);
 
-$banana-color-red:   #CC3333;
+
 $banana-color-orange:#FF9900;
 $banana-color-blue:  #003366;
 $banana-color-grey:  #CCCCCC;

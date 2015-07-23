@@ -51,10 +51,10 @@ function fuckTheKing() {
 var theater = new TheaterJS({ locale: "ru" });
 4
 theater
-	.describe("jenya", { speed: .9, accuracy: .9, invincibility: 100 }, "#jenya")
-	.describe("dima", { speed: .9, accuracy: .7, invincibility: 2 }, "#dima")
-	.describe("valia", { speed: .9, accuracy: .6, invincibility: 4 }, "#valia")
-	.describe("igor", { speed: .9, accuracy: .7, invincibility: 10 }, "#igor");
+	.describe("jenya", { speed: 1, accuracy: .9, invincibility: 100 }, "#jenya_speech")
+	.describe("dima", { speed: 1, accuracy: .7, invincibility: 100 }, "#dima_speech")
+	.describe("valia", { speed: 1, accuracy: .7, invincibility: 100 }, "#valia_speech")
+	.describe("igor", { speed: 1, accuracy: .9, invincibility: 100 }, "#igor_speech");
 
 theater
 	.on("say:start, erase:start", function (eventName) {

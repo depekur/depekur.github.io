@@ -308,8 +308,11 @@ section.about {
 				margin: 0;
 				padding: $woid;
 				-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
-	-moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
-	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+				-moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+				box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+				span {
+
+				}
 			}
 			div {
 				position: absolute;
@@ -482,10 +485,7 @@ section.about {
 			}
 			
 
-			span {
-				display: block;
-				float: right;
-			}
+
 		}		
 		
 	}
@@ -517,49 +517,54 @@ section.landing-contact {
 
 	div.landing-contact-list {
 		background: url('../media/landing/ricepaper.png');
-		//border: 5px dashed $banana-color-red;
-		-webkit-box-shadow: 0 0 20px #ECE9E5;
-		box-shadow: 0 0 20px #ECE9E5;
+		border: 2px solid $banana-color-red;
+		-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+		-moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+		box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
 		width: 75%;
-		margin: 100px auto 0;
+		margin: 50px auto 0;
 		padding: $woid*2;
 
 		h2 {
 			font-size: 2.7em;
 			margin-top: 0;
-			text-align: center;
+			
 		}
-
-		p {
-			width: 50%;
-			float: left;
-			text-align: left;
-
+		h3 {
+			font-size: 1.6em;
+			margin-top: 0;
 		}
-
-		table.contact-table {
+		p.contact-massage {
+			border-bottom: 2px dashed $banana-color-red;
+			padding: $woid;
+			margin-bottom: 0;
+		}
+		p.please-help {
+			background: $banana-color-red;
+			color: $banana-color-white;
+			font-size: 1.2em;
+			padding: $woid;
+			width: 80%;
+			margin: 0 auto;
+			-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+			-moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+			box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+		}
+		ul{
+			width: 40%;
+			display: inline-block;
 			text-align: left;
-			width: 45%;
-			float: right;
-
-
-			td {
-				padding: $woid/2;
+			box-sizing: border-box;
+			margin: $woid*3 0;
+			li {
+				font-size: 1.1em;
+				vertical-align: middle;
+				i {
+					width: 50px;
+				}
 			}
 		}
-
-
-
-		
-		h3, h4 {
-			margin-top: $woid;
-		}
-
-
 	}
-
-	
-
 }
 
 
