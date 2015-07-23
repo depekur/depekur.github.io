@@ -107,7 +107,7 @@ theater
 				scrollingSpeed: 800,
 				controlArrows: true,
 				//animateAnchor: true,
-				responsiveWidth: 768,
+				responsiveWidth: 908,
 				responsiveHeight: 500,
 				anchors: ['hello', 'offer', 'about', 'how-banana-work', 'escort', 'contacts'],
 			  	navigation: true,
