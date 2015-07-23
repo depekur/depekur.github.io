@@ -44,14 +44,14 @@ theater
 function fuckTheKing() {
 	$("#coma").toggleClass("death");
 }
+
+
 */
-
-
 
 var theater = new TheaterJS({ locale: "ru" });
 4
 theater
-	.describe("jenya", { speed: .9, accuracy: .9, invincibility: 1 }, "#jenya")
+	.describe("jenya", { speed: .9, accuracy: .9, invincibility: 100 }, "#jenya")
 	.describe("dima", { speed: .9, accuracy: .7, invincibility: 2 }, "#dima")
 	.describe("valia", { speed: .9, accuracy: .6, invincibility: 4 }, "#valia")
 	.describe("igor", { speed: .9, accuracy: .7, invincibility: 10 }, "#igor");
@@ -109,7 +109,7 @@ theater
 				//animateAnchor: true,
 				responsiveWidth: 768,
 				responsiveHeight: 500,
-				anchors: ['hello', 'offer', 'portfolio', 'how-banana-work', 'escort', 'about', 'contacts'],
+				anchors: ['hello', 'offer', 'about', 'how-banana-work', 'escort', 'contacts'],
 			  	navigation: true,
 				navigationPosition: 'left',
 				//navigationTooltips: ['приветик', 'offer', 'portfolio', 'how-banana-work', 'about', 'contacts'],

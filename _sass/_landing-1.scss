@@ -53,11 +53,13 @@ nav#landing-nav {
 		}
 	}
 	hr {
-		border-color: $banana-color-red;
-		border-style: solid;
+		border: 1px solid $banana-color-red;
+		border-bottom: 0;
+		//border-style: solid;
 		position: absolute;
 		width: 100%;
 		margin: 0;
+		border-width: 1px;
 	}
 	hr.top-nav-hr {
 		top: 70px;

@@ -221,10 +221,6 @@ section.about {
 	text-align: center;
 
 
-	p {
-		text-indent: $woid;
-	}
-
 	div.about-banana {	
 		display: inline-block;
 		width: 50%;
@@ -262,80 +258,221 @@ section.about {
 			}
 		}
 	}
+	div.about-wrapp {
+		text-align: center;
+		height: 88%;
+		&:before {
+			content: '';
+			display: inline-block;
+			height: 100%; 
+			vertical-align: middle;
+			//margin-right: -0.25em;
+		}
+	}
 	ul.slaves {
-		box-sizing: border-box;
-		margin-top: $woid*3;
-		margin-bottom: 0;
-		text-align: left;
-		//vertical-align: top;
 		display: inline-block;
-		//width: 50%;
+  		vertical-align: middle;
+		box-sizing: border-box;		
+		text-align: left;
+
+		//vertical-align: top;
+
+		
 		li {
-			@include clearfix();
+			//@include clearfix();
 
 			width: 50%;
+			//height: 50%;
 			float: left;
 			padding: $woid;
 			box-sizing: border-box;
-
-
+			text-align: left;
+			position: relative;
 			img {
-				width: 140px;
-				height: 140px;
+				width: 160px;
+				height: 160px;
 				//vertical-align: top;
 				box-shadow: 0 0 10px #666;
 				border-radius: 100%;
-
+			}
+			p {
+				font-size: 1.1em;
+				//width: 300px;
+				//height: 300px;
+				text-align: left;
+				height: 100px;
+				width: 250px;
+				max-height: 100px;
+				max-width: 250px;
+				border-radius: 10px;
+				margin: 0;
+				padding: $woid;
+				-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+	-moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+			}
+			div {
+				position: absolute;
+				margin: 0;
+				padding: 0;
+				
 			}
 
+			#jenya {
+				position: relative;
+				background: $banana-color;
+				border: 2px solid $banana-color-red;
+
+				&:after, &:before {
+					left: 100%;
+					top: 50%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					position: absolute;
+					pointer-events: none;
+				}
+				&:after {
+					//border-color: rgba(136, 183, 213, 0);
+					border-left-color: $banana-color;
+					border-width: 20px;
+					margin-top: -20px;
+				}
+				&:before {
+					//border-color: rgba(194, 225, 245, 0);
+					border-left-color: $banana-color-red;
+					border-width: 22px;
+					margin-top: -22px;
+				}
+
+			}
+			#dima {
+				position: relative;
+				background: $banana-color;
+				border: 2px solid $banana-color-red;
+
+				&:after, &:before {
+					right: 100%;
+					top: 50%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					position: absolute;
+					pointer-events: none;
+				}
+				&:after {
+					//border-color: rgba(136, 183, 213, 0);
+					border-right-color: $banana-color;
+					border-width: 20px;
+					margin-top: -20px;
+				}
+				&:before {
+					//border-color: rgba(194, 225, 245, 0);
+					border-right-color: $banana-color-red;
+					border-width: 22px;
+					margin-top: -22px;
+				}
+			}
+			#valia {
+				position: relative;
+				background: $banana-color;
+				border: 2px solid $banana-color-red;
+
+				&:after, &:before {
+					left: 100%;
+					top: 50%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					position: absolute;
+					pointer-events: none;
+				}
+				&:after {
+					//border-color: rgba(136, 183, 213, 0);
+					border-left-color: $banana-color;
+					border-width: 20px;
+					margin-top: -20px;
+				}
+				&:before {
+					//border-color: rgba(194, 225, 245, 0);
+					border-left-color: $banana-color-red;
+					border-width: 22px;
+					margin-top: -22px;
+				}
+			}
+			#igor {
+				position: relative;
+				background: $banana-color;
+				border: 2px solid $banana-color-red;
+
+				&:after, &:before {
+					right: 100%;
+					top: 50%;
+					border: solid transparent;
+					content: " ";
+					height: 0;
+					width: 0;
+					position: absolute;
+					pointer-events: none;
+				}
+				&:after {
+					//border-color: rgba(136, 183, 213, 0);
+					border-right-color: $banana-color;
+					border-width: 20px;
+					margin-top: -20px;
+				}
+				&:before {
+					//border-color: rgba(194, 225, 245, 0);
+					border-right-color: $banana-color-red;
+					border-width: 22px;
+					margin-top: -22px;
+				}
+			}
+
+
 			&:nth-child(1) {
-				border-right: 1px solid $banana-color-red;
-				border-bottom: 1px solid $banana-color-red;				
 				img {
 					float: right;
 					margin-left: $woid;
+					vertical-align: bottom;					
 				}
-				h3 {
-					text-align: right;
-				}
-				p {
-					float: left;
+				div {
+					top: -10px;
+					left: -90px;
 				}
 			}
 			&:nth-child(2) {
-				border-left: 1px solid $banana-color-red;
-				border-bottom: 1px solid $banana-color-red;
 				img {
 					float: left;
 					margin-right: $woid;
+					//vertical-align: bottom;
 				}
-				p {
-					float: right;
+				div {
+					top: -10px;
+					right: -90px;
 				}
 			}
 			&:nth-child(3) {
-				border-top: 1px solid $banana-color-red;
-				border-right: 1px solid $banana-color-red;
 				img {
 					float: right;
 					margin-left: $woid;
 				}
-				h3 {
-					text-align: right;
-				}
-				p {
-					float: left;
+				div {
+					top: 50px;
+					left: -90px;
 				}
 			}	
 			&:nth-child(4) {
-				border-left: 1px solid $banana-color-red;
-				border-top: 1px solid $banana-color-red;
 				img {
 					float: left;
 					margin-right: $woid;
 				}
-				p {
-					float: right;
+				div {
+					top: 50px;
+					right: -90px;
 				}
 			}
 
@@ -344,11 +481,7 @@ section.about {
 				padding: $woid;
 			}
 			
-			p {
-				font-size: 1.2em;
-				width: 300px;
-				text-align: left;
-			}
+
 			span {
 				display: block;
 				float: right;
