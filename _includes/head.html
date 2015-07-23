@@ -18,22 +18,23 @@
 	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 	<meta property="og:url" content="{{ site.url }}" />
 
-	<meta property="og:image" content="" />
+	<meta property="og:image" content="{% if page.meta_image %}{{ page.meta_image }}{% else %}{{ site.meta_image }}{% endif %}" />
 
 	<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-	<meta property="og:site_name" content="{{ site.title }}" />
+	<meta property="og:site_name" content="bananagarden.net" />
 	<meta property="og:type" content="website" />
 	<meta property="og:locale" content="ru_RU" />
 	<meta property="og:locale:alternate" content="uk_UA" />
 	<meta property="og:locale:alternate" content="en_US" />
 	 
 	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@Twitter" />
+	<meta name="twitter:site" content="{{ site.twitter }}" />
 
-	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta name="twitter:title" content="{{ page.twitt_title }}" />
 
-	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+	<meta name="twitter:description" content="{{ page.twitt_desc }}" />
 	<meta name="twitter:url" content="{{ site.url }}" />
+	<meta name="twitter:image" content="{% if page.meta_image %}{{ page.meta_image }}{% else %}{{ site.meta_image }}{% endif %}" />
 
 
 
