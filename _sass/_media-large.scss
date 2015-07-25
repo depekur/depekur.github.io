@@ -1,0 +1,134 @@
+/* Big guy. For you */
+
+@media only screen and (min-width : 1824px) {
+
+header.sky {
+	h1.theater {
+		font-size: 7em;
+	}
+}
+
+.section-header {
+	font-size: 3em;
+}
+
+section.offer {
+	ul {
+		li {
+			margin: 0 $woid*3;
+			width: 22%;
+
+			h3 {
+				font-size: 2.2em;
+			}
+			p {
+				font-size: 1.2em;
+				padding: $woid*2;
+			}
+			div {
+				font-size: 1.5em;
+			}
+		}
+	}
+}
+
+section.about {
+	ul.slaves {
+		li {
+			width: 1000px;
+			img {
+				width: 180px;
+				height: 180px;
+			}
+			p {
+				height: 150px;
+			    width: 680px;
+			    max-height: 150px;
+			    max-width: 680px;
+			    font-size: 1.3em;
+			}
+		}
+	}
+}
+
+section.how-banana-work {
+	ul {
+		li {
+			width: 22%;
+			margin-left: $woid*3;
+			margin-right: $woid*3;
+			div.how-work-count {
+				width: 50px;
+    			height: 50px;
+    			font-size: 32px;
+			}
+			h3 {
+				font-size: 2.2em;
+			}
+			p {
+				font-size: 1.3em;
+				padding: $woid $woid*2;
+
+			}
+		}
+	}
+}
+
+section.escort  {
+	h2.section-header {
+		margin-bottom: 160px;
+	}
+	div.urrrghhh {
+		div.how-work-count {
+			width: 50px;
+			height: 50px;
+			font-size: 32px;
+		}
+		h3 {
+			font-size: 2.2em;
+		}
+		p {
+			font-size: 1.2em;
+			padding: $woid $woid*2;
+
+		}
+		div {
+			font-size: 1.5em;
+		}
+	}
+	div.about-escort {
+		font-size: 1.2em;
+		h3 {
+			font-size: 1.6em;
+		}
+	}
+}
+
+section.landing-contact {
+	div.landing-contact-list {
+		width: 55%;
+		margin-top: 150px;
+		h3 {
+			font-size: 1.6em;
+		}
+		p {
+			font-size: 1.2em;
+		}
+		ul {
+			li {
+				font-size: 1.5em;
+				i {
+					font-size: 2em;
+				}
+			}
+		}
+		p.please-help {
+			font-size: 1.6em;
+		}
+	}
+}
+
+
+
+
+}

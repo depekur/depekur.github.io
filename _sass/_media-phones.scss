@@ -1,14 +1,12 @@
 /* phones */
 
-@charset "utf-8"; 
-
 @media only screen and (max-width: 767px) { 
 
 body {
 	background: url('../media/landing/ricepaper.png');
 }
 
-nav#landing-nav {
+aside#landing-nav {
 	display: none;
 }
 
@@ -179,6 +177,7 @@ section.escort {
 		}
 		p {
 			font-size: 14px;
+			padding: $woid;
 		}
 		div.banana-price {
 			font-size: 1em;
@@ -204,25 +203,115 @@ section.about {
 
 
 	ul.slaves {
-
+		padding-top: $woid*2;
 		 
 		li {
-			float: left;
-			width: 50%;
+			width: 100%;
+			//float: none;
+			//width: 100%;
 			margin-bottom: 0;
-
+			padding: $woid/2;
+			box-sizing: border-box;
 			//border-top: 0;
 			//border-bottom: 0;
 
-			h3 {
-				font-size: 1em;
-				height: 50px;
-				padding-left: $woid/2;
-				padding-right: $woid/2;
-			}
+
 			img {
-				width: 130px;
-				height: 130px;
+				//display: inline-block;
+				width: 60px;
+				height: 60px;
+				//border: 1px solid $banana-color-red;
+			}
+			p {
+				font-size: 0.9em;
+				height: 110px;
+				//min-width: 150px;
+				width: 200px;
+				max-height: 110px;
+				max-width: 200px;
+			}
+			div {
+				
+			}
+
+			&:nth-child(1) {
+				img {
+					//float: right;
+					margin-left: $woid;
+					//vertical-align: middle;					
+				}
+				div {
+
+				}
+			}
+			&:nth-child(2) {
+				img {
+					//float: left;
+					margin-right: $woid;
+					//vertical-align: bottom;
+				}
+				div {
+
+				}
+			}
+			&:nth-child(3) {
+				img {
+					//float: right;
+					margin-left: $woid;
+				}
+				div {
+
+				}
+			}	
+			&:nth-child(4) {
+				img {
+					//float: left;
+					margin-right: $woid;
+				}
+				div {
+
+				}
+			}
+
+			#jenya {
+				&:after {
+					border-width: 10px;
+					margin-top: -10px;
+				}
+				&:before {
+					border-width: 12px;
+					margin-top: -12px;
+				}
+			}
+			#dima {
+				&:after {
+					border-width: 10px;
+					margin-top: -10px;
+				}
+				&:before {
+					border-width: 12px;
+					margin-top: -12px;
+				}
+			}
+			#valia {
+				&:after {
+					border-width: 10px;
+					margin-top: -10px;
+				}
+				&:before {
+					border-width: 12px;
+					margin-top: -12px;
+				}
+			}
+			#igor {
+				&:after {
+					border-width: 10px;
+					margin-top: -10px;
+				}
+				&:before {
+					border-width: 12px;
+					margin-top: -12px;
+				}
 			}
 
 		}
@@ -256,23 +345,30 @@ section.landing-contact {
 		margin-top: 0;
 		width: 100%;
 		padding: 0;
+		padding-top: $woid*2;
 		text-align: center;
-		h2 {
-			font-size: 25px;
+		border: 0;
+
+		h3 {
+			display: none;
 		}
-		p {
+		p.contact-massage {
+			display: none;
 			width: 100%;
 			float: none;
 			font-size: 14px;
 			padding: $woid*2;
 			box-sizing: border-box;
 		}
-		table.contact-table {
-			width: 100%;
-			float: none;
-
-			td {
-				padding: 0 $woid/3;
+		p.please-help {
+			margin-top: $woid;
+			font-size: 1.1em;
+		}
+		ul {
+			width: 90%;
+			margin: 0 auto;
+			li {
+				font-size: 1em;
 			}
 		}
 	}
@@ -288,8 +384,3 @@ section.landing-contact {
 
 
 
-/* Big guy. For you */
-
-@media only screen and (min-width : 1824px) {
-
-}

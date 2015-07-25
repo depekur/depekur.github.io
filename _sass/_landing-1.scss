@@ -1,4 +1,4 @@
-nav#landing-nav {
+aside#landing-nav {
 	position: fixed;
 	top: 0;
 	z-index: 99;
@@ -13,6 +13,7 @@ nav#landing-nav {
 
 	//padding-top: $woid;
 	padding-bottom: $woid;
+	//box-sizing: border-box;
 
 	div.toogle-nav {
 		position: absolute;
@@ -31,6 +32,42 @@ nav#landing-nav {
 			background: darken($banana-color, 20%);
 		}
 
+	}
+
+	#super-pupper-navigation {
+		position: fixed;
+		top: 0;
+		left: 71px;
+		z-index: 99;
+		background: $banana-color;
+		border-right: 1px solid $banana-color-red;
+		height: 100%;
+		width: 0;
+		box-sizing: border-box;
+		display: none;
+		ul {
+			position: absolute;
+			top: 0;
+			margin-right: $woid;
+			display: inline-block;
+			li {						
+				a {
+					padding: $woid;
+					display: block;
+					color: $text-color;
+					font-size: 1.2em;
+					//border-top: 1px solid $banana-color-red;
+					//border-bottom: 1px solid $banana-color-red;
+					&:hover {
+						background: darken($banana-color, 20%);
+						color: #ECE9E5;
+						text-decoration: none;
+
+					}
+
+				}
+			}
+		}
 	}
 
 	a.go-to-blog {
@@ -67,31 +104,7 @@ nav#landing-nav {
 	hr.bottom-nav-hr {
 		bottom: 77.5px;
 	}
-	ul {
-		height: 100%;
-		padding-top: 50%;
-		margin-right: $woid;
-		float: right;
 
-		li {			
-			
-			a {
-				padding: $woid;
-				display: block;
-				color: $text-color;
-				font-size: 1.2em;
-				//border-top: 1px solid $banana-color-red;
-				//border-bottom: 1px solid $banana-color-red;
-				&:hover {
-					background: darken($banana-color, 20%);
-					color: #ECE9E5;
-					text-decoration: none;
-
-				}
-
-			}
-		}
-	}
 
 	h2 {
 		width: 70px;

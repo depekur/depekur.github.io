@@ -86,7 +86,7 @@ section.how-banana-work {
 			position: relative;
 			margin: 0 $woid;
 			border: 2px solid $banana-color-red;
-			max-height: 300px;
+			//max-height: 300px;
 			margin-bottom: $woid*2;
 			padding-bottom: $woid;
 
@@ -258,52 +258,42 @@ section.about {
 			}
 		}
 	}
-	div.about-wrapp {
-		text-align: center;
-		height: 88%;
-		&:before {
-			content: '';
-			display: inline-block;
-			height: 100%; 
-			vertical-align: middle;
-			//margin-right: -0.25em;
-		}
-	}
+
 	ul.slaves {
-		display: inline-block;
-  		vertical-align: middle;
+		//width: 90%;
+		//margin: 0 auto;
+		padding-top: $woid*3;
+		//display: inline-block;
 		box-sizing: border-box;		
-		text-align: left;
-
-		//vertical-align: top;
-
-		
+		text-align: left;		
 		li {
-			//@include clearfix();
-
-			width: 50%;
-			//height: 50%;
-			float: left;
-			padding: $woid;
-			box-sizing: border-box;
-			text-align: left;
+			width: 766px;
+			margin: 0 auto;
+			//height: 180px;
+			//float: left;
+			//padding: $woid;
+			//box-sizing: border-box;
+			text-align: center;
 			position: relative;
 			img {
-				width: 160px;
-				height: 160px;
-				//vertical-align: top;
+				width: 130px;
+				height: 130px;
+				vertical-align: middle;
 				box-shadow: 0 0 10px #666;
 				border-radius: 100%;
+				border: 1px solid $banana-color-red;
+
 			}
 			p {
+				box-sizing: border-box;
 				font-size: 1.1em;
 				//width: 300px;
 				//height: 300px;
 				text-align: left;
 				height: 100px;
-				width: 250px;
+				width: 480px;
 				max-height: 100px;
-				max-width: 250px;
+				max-width: 480px;
 				border-radius: 10px;
 				margin: 0;
 				padding: $woid;
@@ -315,7 +305,9 @@ section.about {
 				}
 			}
 			div {
-				position: absolute;
+				//position: absolute;
+				display: inline-block;
+				vertical-align: middle;
 				margin: 0;
 				padding: 0;
 				
@@ -339,16 +331,15 @@ section.about {
 				&:after {
 					//border-color: rgba(136, 183, 213, 0);
 					border-left-color: $banana-color;
-					border-width: 20px;
-					margin-top: -20px;
+					border-width: 15px;
+					margin-top: -15px;
 				}
 				&:before {
 					//border-color: rgba(194, 225, 245, 0);
 					border-left-color: $banana-color-red;
-					border-width: 22px;
-					margin-top: -22px;
+					border-width: 17px;
+					margin-top: -17px;
 				}
-
 			}
 			#dima {
 				position: relative;
@@ -368,14 +359,14 @@ section.about {
 				&:after {
 					//border-color: rgba(136, 183, 213, 0);
 					border-right-color: $banana-color;
-					border-width: 20px;
-					margin-top: -20px;
+					border-width: 15px;
+					margin-top: -15px;
 				}
 				&:before {
 					//border-color: rgba(194, 225, 245, 0);
 					border-right-color: $banana-color-red;
-					border-width: 22px;
-					margin-top: -22px;
+					border-width: 17px;
+					margin-top: -17px;
 				}
 			}
 			#valia {
@@ -396,14 +387,14 @@ section.about {
 				&:after {
 					//border-color: rgba(136, 183, 213, 0);
 					border-left-color: $banana-color;
-					border-width: 20px;
-					margin-top: -20px;
+					border-width: 15px;
+					margin-top: -15px;
 				}
 				&:before {
 					//border-color: rgba(194, 225, 245, 0);
 					border-left-color: $banana-color-red;
-					border-width: 22px;
-					margin-top: -22px;
+					border-width: 17px;
+					margin-top: -17px;
 				}
 			}
 			#igor {
@@ -424,58 +415,54 @@ section.about {
 				&:after {
 					//border-color: rgba(136, 183, 213, 0);
 					border-right-color: $banana-color;
-					border-width: 20px;
-					margin-top: -20px;
+					border-width: 15px;
+					margin-top: -15px;
 				}
 				&:before {
 					//border-color: rgba(194, 225, 245, 0);
 					border-right-color: $banana-color-red;
-					border-width: 22px;
-					margin-top: -22px;
+					border-width: 17px;
+					margin-top: -17px;
 				}
 			}
 
 
 			&:nth-child(1) {
 				img {
-					float: right;
-					margin-left: $woid;
-					vertical-align: bottom;					
+					//float: right;
+					margin-left: $woid*3;
+					//vertical-align: bottom;					
 				}
 				div {
-					top: -10px;
-					left: -90px;
+					//float: right;
 				}
 			}
 			&:nth-child(2) {
 				img {
-					float: left;
-					margin-right: $woid;
+					//float: left;
+					margin-right: $woid*3;
 					//vertical-align: bottom;
 				}
 				div {
-					top: -10px;
-					right: -90px;
+				
 				}
 			}
 			&:nth-child(3) {
 				img {
-					float: right;
-					margin-left: $woid;
+					//float: right;
+					margin-left: $woid*3;
 				}
 				div {
-					top: 50px;
-					left: -90px;
+					
 				}
 			}	
 			&:nth-child(4) {
 				img {
-					float: left;
-					margin-right: $woid;
+					//float: left;
+					margin-right: $woid*3;
 				}
 				div {
-					top: 50px;
-					right: -90px;
+					
 				}
 			}
 
@@ -527,8 +514,7 @@ section.landing-contact {
 
 		h2 {
 			font-size: 2.7em;
-			margin-top: 0;
-			
+			margin-top: 0;			
 		}
 		h3 {
 			font-size: 1.6em;
@@ -556,12 +542,16 @@ section.landing-contact {
 			text-align: left;
 			box-sizing: border-box;
 			margin: $woid*3 0;
+			vertical-align: top;
 			li {
-				font-size: 1.1em;
+				font-size: 1.2em;
 				vertical-align: middle;
 				i {
-					width: 50px;
+					width: 30px;
 				}
+			}
+			li.freetown {
+				font-size: 1.1em;
 			}
 		}
 	}

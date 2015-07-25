@@ -6,7 +6,7 @@ body {
 	background: #ECE9E5;
 }
 
-nav#landing-nav {
+aside#landing-nav {
 	display: none;
 }
 div#fullPage {
@@ -24,6 +24,7 @@ header.sky h1.theater {
 	font-size: 1.8em;
 }
 section.offer {
+	height: auto !important;
 	ul {
 		margin-top: $woid;
 		li {
@@ -49,6 +50,7 @@ section.offer {
 }
 
 section.how-banana-work {
+	height: auto !important;
 	ul {
 		margin-bottom: 0;
 		li {
@@ -70,7 +72,7 @@ section.how-banana-work {
 				font-size: 14px;
 				padding: $woid/2;
 				span {
-					display: none;
+					//display: none;
 				}
 			}
 		}
@@ -79,6 +81,7 @@ section.how-banana-work {
 
 
 section.escort {
+	height: auto !important;
 
 	div.urrrghhh {
 		width: 40%;
@@ -116,6 +119,7 @@ section.escort {
 
 
 section.about {
+	height: auto !important;
 	border-bottom: 0;
 	border-right: 0;
 	div.about-banana {
@@ -131,9 +135,11 @@ section.about {
 		}
 	}
 	ul.slaves {
+		padding-top: $woid*2;
 		li {
 			font-size: 14px;
-			width: auto;
+			//width: auto;
+			padding: $woid;
 			h3 {
 				padding: $woid;
 			}
@@ -145,6 +151,7 @@ section.about {
 	}
 }
 section.landing-contact {
+	height: auto !important;
 
 	div.landing-contact-list {
 		width: 85%;
