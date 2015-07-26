@@ -51,21 +51,26 @@ aside#landing-nav {
 		opacity: 0;
 
 		ul {
-			margin-top: $woid;
+			//margin-top: $woid;
 			//display: table;
 			//vertical-align: middle;
 
 			
 			li {	
 				&:first-child {
-					margin-bottom: $woid*4;
+					margin-bottom: $woid*6;
+					padding-top: $woid;
 					font-size: 1.1em;
+					height: 70px;
+
 				}	
 				&:last-child {
 					position: absolute;
 					bottom: $woid;
+					width: 100%;
 					font-size: 0.9em;
-					padding-left: $woid*3;
+					border-top: 1px solid $banana-color-red;
+					padding-top: $woid;
 				}				
 				a {
 					text-align: left;
@@ -78,10 +83,11 @@ aside#landing-nav {
 					i {
 						display: block;
 						float: right;
+						font-size: 1.3em;
 					}
 					&:hover {
 						background: darken($banana-color, 20%);
-						color: #ECE9E5;
+						color: $banana-color-white;
 						text-decoration: none;
 						i {
 							color: $banana-color-red;
