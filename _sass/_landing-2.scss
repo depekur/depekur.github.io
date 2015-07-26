@@ -199,6 +199,7 @@ section.escort {
 		padding: $woid*3;
 		margin-left: $woid*2;
 		background: url('../media/landing/ricepaper.png');
+		cursor: default;
 		h3 {
 			background: $banana-color-red;
 			color: #ECE9E5;
@@ -557,8 +558,15 @@ section.landing-contact {
 	}
 }
 
+@-webkit-keyframes caret {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 
-
+@keyframes caret {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 
 .saying:after{
 	content:"|";
@@ -568,6 +576,7 @@ section.landing-contact {
 	display:inline-block;
 	vertical-align:baseline;
 	opacity:1;
+	animation: caret 500ms infinite;
 }
 /*
 #fp-nav ul li .fp-tooltip.left {

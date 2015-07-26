@@ -51,7 +51,7 @@ function fuckTheKing() {
 var theater = new TheaterJS({ locale: "ru" });
 
 theater
-	.describe("jenya", { speed: 2, accuracy: .9, invincibility: 4 }, "#jenya_speech")
+	.describe("jenya", { speed: 1, accuracy: .9, invincibility: 4 }, "#jenya_speech")
 	.describe("dima", { speed: 1, accuracy: .7, invincibility: 4 }, "#dima_speech")
 	.describe("valia", { speed: 1, accuracy: .7, invincibility: 4 }, "#valia_speech")
 	.describe("igor", { speed: 1, accuracy: .9, invincibility: 4 }, "#igor_speech");
@@ -71,22 +71,25 @@ theater
     });
 
 theater
-	.write("jenya: я вам проект принес", 400)
-	.write("igor: ура, я не буду голодать", 400)	
-	.write("dima: опять лендинг притащил?", 500)
-	.write("valia: ближе к делу! что рисовать будем?", 500)
-	.write("jenya: итак, у нас сегодня интернет магазин резиновых членов", 500)
-	.write("igor: бля", 500)
-	.write("valia: я не буду это рисовать!", 500)
-	.write("dima: ща престашопик развернем, шаблончик накатим..", 500)
-	.write("jenya: дима начинай, валя - рисуй давай, иначе без премии будешь!", 500)
-	.write("valia: фуууууу", 500)
-	.write("valia: ок)))", 500)
-	.write("igor: может купим наконец-то премиум шаблон? надоело верстать ну", 500)	
-	.write("jenya: а я пойду поем", 500)
-	.write("dima: сук))", 500)
-	.write("igor: бля", 500)
-	.write("valia: ну ты че((", 500)
+	.write("jenya: доложить обстановку", 400)
+	.write("igor: фронтенд почти готов", 300, "igor: сегодня выкачу мобильную версию")
+	.write("dima: есть взрывная идея по стройматериалам!", 500, "dima: по автозапчастям смотрю конкурентов")	
+	.write("valia: инфографики у тебя на почте, проверил бы", 500)		
+	.write("jenya: вижу инфографики, хороши", 500, "jenya: и Валя, сделай уже нам логотип с бананом!", 200)
+	.write("valia: да ты оху", -9, "valia: тебе же не угодишь!!", 300, "valia: шестой рисовать не буду!!", 400)
+	.write("jenya: ладно, а что там за идея по стройке?", 400)
+	.write("dima: если в двух словах то нужно просто..", 10)
+	.write("igor: ребята, я клиента нашел!", 100)
+	.write("jenya: опа", 100, "dima: тематика?", 100, "valia: бананы ему..", 300)
+	.write("igor: вообщем есть один татуировщик", 300, "igor: у него только группа вконтактике", 300, "igor: надоело говорит, хочет другой уровень")
+	.write("jenya: по классике портфолио ему, что еще?", 400)
+	.write("dima: календарь с расписанием например", 400, "dima: или примерку татух", 400)
+	.write("valia: фирменный стиль у него есть?", 500, "valia: и мне нужны его работы в качестве", 400)
+	.write("jenya: примерку на 3д модель можно сделать", 400, "jenya: или пусть свои фото загружают..", 400, "jenya: Димас, с тебя решения", 400, "jenya: Игорь, про планшеты не забываем", 400, "jenya: дедлайн на носу", 400, "jenya: а на мне еще магазин висит", 400)
+	.write("dima: уже смотрю тату салон из калифорнии", 400, "dima: у нас аналогов наверное нет", 400, "dima: будет круто", 400)
+	.write("valia: хочу татуху..", 500, "valia: Жень может предложи ему бартер, м?", 400)
+	.write("jenya: решено, набьем тебе бананы на жоп", -3, "булк", -4, "шею", 400)
+	.write("valia: увольняюсь!", 500, "jenya: с тебя сегодня иконки для магазина", 400, "jenya: расслабимся в отпуске", 400)
 	
 
 	
@@ -127,7 +130,7 @@ theater
 			}); //fullpage END
 
 
-// my button is on fire
+
 
 
 
@@ -137,38 +140,15 @@ theater
 	
 });//end doc.ready
 
+
+// my button is on fire
 var buttonFire = $('.toogle-nav'),
-	landingNav = $('.landing-nav'),
-	superNav = $('#super-pupper-navigation'),
-	fireInTheButton = true;
+	superNav = $('.super-pupper-navigation');
+
 
 buttonFire.click(function() {
-	superNav.toogle(1000);
+	superNav.toggleClass('active-nav', 500, "easeInOutBack");
 });
-
-/*
-	buttonFire.click(function() {
-		if (fireInTheButton) {
-			landingNav.stop(true, true)
-			landingNav.animate({
-				'width' : '300px'},
-				1000, 
-				'easeOutElastic', 
-				function() {
-					fireInTheButton = false;					
-				});
-		} else {
-			landingNav.stop(true, true);
-			landingNav.animate({
-				'width' : '70px'},
-				1000, 
-				'easeOutElastic', 
-				function() {
-					fireInTheButton = true;
-				});			
-		}		
-	});
-*/
 
 
 $('.scroll-down-please').click(function(){

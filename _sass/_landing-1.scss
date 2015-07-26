@@ -28,13 +28,17 @@ aside#landing-nav {
 		padding-top: 10px;
 		box-sizing: border-box;
 		cursor: pointer;
+		-webkit-user-select: none;  
+		-moz-user-select: none;     
+		-ms-user-select: none;     
+		user-select: none;
 		&:hover {
 			background: darken($banana-color, 20%);
 		}
 
 	}
 
-	#super-pupper-navigation {
+	.super-pupper-navigation {
 		position: fixed;
 		top: 0;
 		left: 71px;
@@ -44,30 +48,56 @@ aside#landing-nav {
 		height: 100%;
 		width: 0;
 		box-sizing: border-box;
-		display: none;
+		opacity: 0;
+
 		ul {
-			position: absolute;
-			top: 0;
-			margin-right: $woid;
-			display: inline-block;
-			li {						
+			margin-top: $woid;
+			//display: table;
+			//vertical-align: middle;
+
+			
+			li {	
+				&:first-child {
+					margin-bottom: $woid*4;
+					font-size: 1.1em;
+				}	
+				&:last-child {
+					position: absolute;
+					bottom: $woid;
+					font-size: 0.9em;
+					padding-left: $woid*3;
+				}				
 				a {
+					text-align: left;
 					padding: $woid;
 					display: block;
 					color: $text-color;
-					font-size: 1.2em;
+					font-size: 1em;
 					//border-top: 1px solid $banana-color-red;
 					//border-bottom: 1px solid $banana-color-red;
+					i {
+						display: block;
+						float: right;
+					}
 					&:hover {
 						background: darken($banana-color, 20%);
 						color: #ECE9E5;
 						text-decoration: none;
+						i {
+							color: $banana-color-red;
+						}
 
 					}
 
 				}
 			}
 		}
+	}
+
+	.active-nav {
+		opacity: 1;
+		width: 230px !important;
+
 	}
 
 	a.go-to-blog {
