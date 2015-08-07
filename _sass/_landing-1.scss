@@ -182,7 +182,7 @@ header.sky {
 
 			font-size: 5.5em;
 			margin: 0;
-			padding-top: 10%;
+			padding-top: 15%;
 			//margin-bottom: 11%;
 
 			span#god {
@@ -202,10 +202,14 @@ header.sky {
 		}
 
 		ul.like-and-share {
-			margin: 0;
+			float: left;
+			margin: $woid*2 $woid*2 $woid*2 $woid*4;
 			padding: $woid;
 			line-height: 0 !important;
-			
+			text-align: left;
+			-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+  				box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+
 			li {
 				display: inline-block;
 				margin: 0 $woid;
@@ -217,6 +221,20 @@ header.sky {
 
 			li.vk {
 				margin-right: -20px;
+
+			}
+		}
+		ul.header-contact {
+			@include clearfix();
+			float: right;
+			margin: $woid*2 $woid*4 $woid*2 $woid*2;
+			padding: $woid;
+			text-align: left;
+			//border: 2px solid $banana-color-red;
+			-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+  				box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+			li {
+				font-size: 1.2em;
 			}
 		}
 
@@ -275,7 +293,7 @@ section.offer {
 			background: url('../media/landing/ricepaper.png');
 			margin: 0 $woid;
 			border: 2px solid $banana-color-red;
-			border-bottom: 0;
+			//border-bottom: 0;
 			margin-bottom: $woid*3;
 
 			h3 {

@@ -25,13 +25,30 @@ header.sky {
 	ul.like-and-share {
 		position: absolute;
 		top: 0;
+		margin: 0;
+		box-shadow: none;
+		-webkit-box-shadow: none;
 
+	
 
 	}
 	ul.like-and-share li {
 		display: inline-block;
 		padding-top: $woid;
 		padding-bottom: $woid;
+	}
+
+	ul.header-contact {
+		position: absolute;
+    	bottom: 80px;
+    	margin: 0;
+
+    	box-shadow: none;
+		-webkit-box-shadow: none;
+
+    	li {
+    		font-size: 1em;
+    	}
 	}
 
 }

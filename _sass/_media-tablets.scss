@@ -16,9 +16,29 @@ div#fullPage {
 	display: none;
 }
 
-header.sky h1.theater {
-  		font-size: 3.8em;
+header.sky {
 
+	h1.theater {
+  		font-size: 3.8em;
+  		padding-top: 8%;
+	}
+
+	ul.like-and-share {
+		margin: 0 auto;
+		width: 75%;
+		float: none;
+		text-align: center;
+		-webkit-box-shadow: none;
+  				box-shadow: none;
+	}
+	ul.header-contact {
+		margin: 0 auto;
+		width: 60%;
+		float: none;
+		text-align: center;
+		-webkit-box-shadow: none;
+  				box-shadow: none;
+	}
 }
 .section-header {
 	font-size: 1.8em;
