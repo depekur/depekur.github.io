@@ -159,7 +159,7 @@ aside#landing-nav {
 
 
 div#fullPage {
-	margin-left: 70px;
+	//margin-left: 70px;
 }
 
 
@@ -170,45 +170,30 @@ div#fullPage {
 *************************************************************************************************
 */
 
-header.sky {
-	//background: url('../media/landing/OSJQVTURTM.jpg');
-	//background-size: cover;
+section.sky {
 	background: url('../media/landing/ricepaper.png');
-	//height: 500px;
 	text-align:center;
 
-		h1.theater {
-			-text-align: left;
+	header {
+		width: 65%;
+		float: left;
 
-			font-size: 5.5em;
+		h1.theater {	
+			display: inline-block;		
+			font-size: 3.5em;
 			margin: 0;
-			padding-top: 15%;
+			padding-top: 10%;
+			padding-left: $woid*2;
 			//margin-bottom: 11%;
-
-			span#god {
-				-display: block;
-				-margin-left: -3%;
-			}
-			span#coma {
-				
-			}
-		}
-
-		h2 {
-			margin: 0;
-			padding: $woid*2 $woid*3;
-			-color: $banana-color-red;
 
 		}
 
 		ul.like-and-share {
-			float: left;
 			margin: $woid*2 $woid*2 $woid*2 $woid*4;
-			padding: $woid;
+			//padding: $woid;
 			line-height: 0 !important;
-			text-align: left;
-			-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
-  				box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+			//-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+  			//box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
 
 			li {
 				display: inline-block;
@@ -224,35 +209,89 @@ header.sky {
 
 			}
 		}
+	}
+
+		
+	aside {
+		float: right;
+		width: 30%;
+		height: 90%;
+		padding: $woid*2;
+		//border-left: 2px dotted $banana-color-red;
+
+		
+
 		ul.header-contact {
-			@include clearfix();
-			float: right;
-			margin: $woid*2 $woid*4 $woid*2 $woid*2;
+			
+			//margin: $woid*2 $woid*4 $woid*2 $woid*2;
 			padding: $woid;
 			text-align: left;
 			//border: 2px solid $banana-color-red;
-			-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
-  				box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+			
 			li {
 				font-size: 1.2em;
 			}
 		}
-
-		span.scroll-down-please {
-			position: absolute;
-			bottom: 10px;
-			left: 50%;
-			margin-left: -25px;
-			display: block;
-			width: 50px;
-			height: 50px;
-			//background: url('../media/landing/pretty-sprite.png') no-repeat -44px -44px;
-			background: url('../media/landing/scroll-down.png');
-			opacity: 0.5;
-			cursor: pointer;
-		}
+	}
 		
+	
+
+	span.scroll-down-please {
+		position: absolute;
+		bottom: 10px;
+		left: 32.5%;
+		margin-left: -25px;
+		display: block;
+		width: 50px;
+		height: 50px;
+		//background: url('../media/landing/pretty-sprite.png') no-repeat -44px -44px;
+		background: url('../media/landing/scroll-down.png');
+		opacity: 0.5;
+		cursor: pointer;
+	}
+	
 }
+
+div.yoba-form {
+			margin: 0;
+			padding-top: 20%;
+			form {
+				text-align: center;
+				padding: $woid;
+				border: 1px solid $banana-color-red;
+				-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+				-moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+				box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+				
+				input, textarea {
+				    width: 250px;
+				    height: 30px;
+				    font: 1.1em Arial, sans-serif;
+				    padding: $woid/3 $woid;
+				    margin: $woid;
+				    border: 0;
+				    border-left: 2px solid #E91E63;
+		
+				    &:focus {
+				    	outline: none;
+				    }
+				}
+				textarea {
+					height: 90px;
+					max-width: 250px;
+				}
+				input[type="submit"] {
+					color: $banana-color-white;
+					background: $banana-color-red;
+					width: 300px;
+				    height: 50px;
+				    cursor: pointer;
+				    -webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+  							box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+	
+				}
+			}
+		}
 
 .section-header {
 	margin: 0;

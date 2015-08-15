@@ -539,14 +539,15 @@ section.landing-contact {
 		}
 		ul{
 			width: 40%;
-			display: inline-block;
+			float: left;
 			text-align: left;
 			box-sizing: border-box;
-			margin: $woid*3 0;
+			margin: $woid*3;
 			vertical-align: top;
 			li {
-				font-size: 1.2em;
+				font-size: 1.3em;
 				vertical-align: middle;
+				padding-bottom: $woid;
 				i {
 					width: 30px;
 				}
@@ -555,8 +556,38 @@ section.landing-contact {
 				font-size: 1.1em;
 			}
 		}
+
+		div.yoba-form {
+			float: right;
+			width: 40%;
+			padding-top: 0;
+			margin-right: $woid*3;
+
+			form {
+				border: 1px solid $banana-color-red;
+				-webkit-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+				-moz-box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+				box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.175);
+
+			}
+		}
+
 	}
+
+
 }
+
+
+
+/*************************************************************************************************
+*
+*
+*		my awesome form
+*************************************************************************************************
+*/
+
+
+
 
 @-webkit-keyframes caret {
   0%, 100% { opacity: 1; }
@@ -592,11 +623,11 @@ section.landing-contact {
 }
 */
 #fp-nav ul li a span {
-	background: $banana-color-red !important;
+	background: #FC6347 !important;
 }
 
 .fp-slidesNav ul li a span {
-	background: $banana-color-red !important;
+	background: #FC6347 !important;
 }
 
 .fp-controlArrow.fp-prev {
