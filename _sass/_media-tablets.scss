@@ -17,19 +17,60 @@ div#fullPage {
 }
 
 section.sky {
-
-	h1.theater {
-  		font-size: 3.8em;
-  		padding-top: 8%;
-	}
-
-	ul.like-and-share {
-		margin: 0 auto;
-		width: 75%;
+	height: auto !important;
+	header {
 		float: none;
-		text-align: center;
-		-webkit-box-shadow: none;
-  				box-shadow: none;
+		width: 100%;
+		h1.theater {
+	  		font-size: 3.8em;
+	  		padding-top: 8%;
+		}
+
+		ul.like-and-share {
+			margin: 0 auto;
+			width: 75%;
+			float: none;
+			text-align: center;
+			-webkit-box-shadow: none;
+	  				box-shadow: none;
+		}
+	}
+	aside {
+		float: none;
+		width: 100%;
+		padding: 0;
+
+		div.yoba-form {
+			padding-bottom: $woid*4;
+			padding-top: $woid*3;
+			form {
+				border: 0;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+
+				h2 {
+					font-size: 1.3em;
+				}
+
+				input, textarea {
+					vertical-align: top;
+				    width: 200px;
+				    height: 20px;
+				    font: 0.9em Arial, sans-serif;
+				}
+				textarea {
+					height: 60px;
+					max-width: 200px;
+				}
+				input[type="submit"] {
+					width: 250px;
+				    height: 50px;
+	
+				}
+			}
+				
+		}
 	}
 	ul.header-contact {
 		margin: 0 auto;

@@ -16,40 +16,83 @@ div#fullPage {
 
 section.sky {
 	background: none;
-	h1.theater {
-		padding-top: 200px;
-  		font-size: 2.3em !important;
-  		max-width: 90%;
-  		margin: 0 auto;
-	}
-	ul.like-and-share {
-		position: absolute;
-		top: 0;
-		margin: 0;
-		box-shadow: none;
-		-webkit-box-shadow: none;
+	height: auto !important;
 
+	span.scroll-down-please {
+		left: 50%;
+	}
+
+	header {
+		float: none;
+		width: 100%;
+		h1.theater {
+			padding-top: 200px;
+	  		font-size: 2.3em !important;
+	  		max-width: 90%;
+	  		margin: 0 auto;
+		}
+		ul.like-and-share {
+			position: absolute;
+			top: 0;
+			margin: 0;
+			box-shadow: none;
+			-webkit-box-shadow: none;
+		}
+		ul.like-and-share li {
+			display: inline-block;
+			padding-top: $woid;
+			padding-bottom: $woid;
+		}
+	}
 	
+	aside {
+		float: none;
+		width: 100%;
+		padding: 0;
+		ul.header-contact {
+			position: absolute;
+	    	bottom: 80px;
+	    	margin: 0;
+	    	box-shadow: none;
+			-webkit-box-shadow: none;
 
+	    	li {
+	    		font-size: 1em;
+	    	}
+		}
+		div.yoba-form {
+			padding-bottom: $woid*4;
+			padding-top: $woid*3;
+			form {
+				border: 0;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+
+				h2 {
+					font-size: 1.3em;
+				}
+
+				input, textarea {
+				    width: 200px;
+				    height: 20px;
+				    font: 0.9em Arial, sans-serif;
+				}
+				textarea {
+					height: 60px;
+					max-width: 200px;
+				}
+				input[type="submit"] {
+					width: 250px;
+				    height: 50px;
+	
+				}
+			}
+				
+		}
 	}
-	ul.like-and-share li {
-		display: inline-block;
-		padding-top: $woid;
-		padding-bottom: $woid;
-	}
-
-	ul.header-contact {
-		position: absolute;
-    	bottom: 80px;
-    	margin: 0;
-
-    	box-shadow: none;
-		-webkit-box-shadow: none;
-
-    	li {
-    		font-size: 1em;
-    	}
-	}
+	
+	
 
 }
 
@@ -384,9 +427,40 @@ section.landing-contact {
 		ul {
 			width: 90%;
 			margin: 0 auto;
+			float: none;
 			li {
 				font-size: 1em;
 			}
+		}
+		div.yoba-form {
+			float: none;
+			width: 100%;
+			form {
+				border: 0;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+
+				h2 {
+					font-size: 1.3em;
+				}
+
+				input, textarea {
+				    width: 200px;
+				    height: 20px;
+				    font: 0.9em Arial, sans-serif;
+				}
+				textarea {
+					height: 60px;
+					max-width: 200px;
+				}
+				input[type="submit"] {
+					width: 250px;
+				    height: 50px;
+	
+				}
+			}
+				
 		}
 	}
 
