@@ -154,3 +154,15 @@ buttonFire.click(function() {
 $('.scroll-down-please').click(function(){
 	$.fn.fullpage.moveSectionDown();
 });
+
+
+
+
+$.ajax({
+  method: "POST",
+  url: "http://mom-kebab.herokuapp.com/slack/invite",
+  data: { "email": "depekur@gmail.com" }
+})
+  .done(function( msg ) {
+    alert( "done: " + msg );
+  });
