@@ -158,11 +158,3 @@ $('.scroll-down-please').click(function(){
 
 
 
-$.ajax({
-  method: "POST",
-  url: "http://mom-kebab.herokuapp.com/slack/invite",
-  data: { "email": "depekur@gmail.com" }
-})
-  .done(function( msg ) {
-    alert( "done: " + msg );
-  });
