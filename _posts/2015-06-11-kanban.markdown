@@ -1,9 +1,0 @@
----
-layout: post
-title:  "Я, снова я, и лист фанеры (или как канбан доска упрощает жизнь фрилансеру)"
-date:   2015-06-11 
-categories: web
-permalink: /kanban/
-published: false
----
-
